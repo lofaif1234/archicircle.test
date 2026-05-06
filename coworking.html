@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coworking - Archicercle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="images/Archicercle.png" alt="Archicercle Logo">
+            </a>
+
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="coworking.html" class="nav-link active">Coworking</a></li>
+                    <li><a href="sobre-nosotros.html" class="nav-link">Sobre nosotros</a></li>
+                    <li><a href="corte-laser-online.html" class="nav-link">Corte Láser Online</a></li>
+                    <li><a href="servicios-de-diseno.html" class="nav-link">Servicios de diseño</a></li>
+                    <li><a href="servicios-de-fabricacion.html" class="nav-link">Servicios de Fabricación</a></li>
+                    <li><a href="materiales.html" class="nav-link">Materiales</a></li>
+                    <li><a href="maquinaria.html" class="nav-link">Maquinaria</a></li>
+                    <li><a href="tienda.html" class="nav-link">Tienda</a></li>
+                    <li class="mobile-only"><a href="contacto.html" class="contact-btn">CONTACTO</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="contacto.html" class="contact-btn">CONTACTO</a>
+            </div>
+
+            <button class="mobile-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Combined Coworking Hero & Info Section -->
+        <section class="coworking-hero-full">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <!-- Top Hero Content -->
+                <div class="coworking-hero-content">
+                    <h1 class="coworking-title">Tu espacio de fabricación, sin límites</h1>
+                    <p class="coworking-subtitle">
+                        Un FabLab con todo lo que necesitas para pasar del plano a la realidad.<br>
+                        Máquinas, materiales y el conocimiento de quienes las han usado al máximo.
+                    </p>
+                    <div class="coworking-ctas">
+                        <a href="#" class="btn-coworking">Reserva tu puesto</a>
+                        <a href="#" class="btn-coworking">Descubre el Fablab</a>
+                    </div>
+                </div>
+
+                <!-- Divider Line -->
+                <div class="coworking-divider"></div>
+
+                <!-- Three Column Info Grid -->
+                <div class="info-grid">
+                    <!-- Col 1 -->
+                    <div class="info-col">
+                        <div class="info-header">
+                            <i data-lucide="box" class="check-icon"></i>
+                            <h3>¿Qué es el Archicercle FabLab?</h3>
+                        </div>
+                        <ul class="info-list">
+                            <li>Un taller completo, abierto para ti.</li>
+                            <li>Ponemos a tu disposición todas las máquinas que hemos usado durante años en nuestro propio estudio: desde equipos CNC y láser, hasta herramientas manuales y semiautomáticas.</li>
+                            <li>Aquí puedes fabricar, prototipar, personalizar y experimentar... con nuestro asesoramiento siempre a mano.</li>
+                            <li>Espacio equipado para fabricación digital y manual.</li>
+                            <li>Máquinas calibradas y listas para producir Asesoramiento técnico personalizado en cada proyecto</li>
+                        </ul>
+                    </div>
+
+                    <!-- Col 2 -->
+                    <div class="info-col">
+                        <div class="info-header">
+                            <i data-lucide="zap" class="check-icon"></i>
+                            <h3>¿Por qué elegir nuestro FabLab?</h3>
+                        </div>
+                        <ul class="info-list">
+                            <li>Toda la experiencia Archicercle, ahora abierta al público.</li>
+                            <li>Maquinaria variada: CNC, láser, impresión 3D, vinilo, carpintería, metales y mucho más.</li>
+                            <li>Materiales y consumibles disponibles en nuestras instalaciones.</li>
+                            <li>Asesoramiento de expertos en procesos y optimización.</li>
+                            <li>Conexión con nuestra red de proveedores y fabricantes.</li>
+                            <li>Cursos y formación en diseño y fabricación.</li>
+                            <li>En contacto con una comunidad en constante crecimiento, fomentando colaboraciones y sinergias.</li>
+                            <li>Hemos diseñado y fabricado más de 10.000 productos.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Col 3 -->
+                    <div class="info-col">
+                        <div class="info-header">
+                            <i data-lucide="cpu" class="check-icon"></i>
+                            <h3>¿Cómo funciona?</h3>
+                        </div>
+                        <ul class="info-list">
+                            <li>Reserva tu acceso: elige un plan, por días, mensual, semanal o anual.</li>
+                            <li>Llega y fabrica: trae tus diseños o crea aquí mismo.</li>
+                            <li>Cuenta con nosotros: si necesitas soporte técnico o soluciones, estamos a tu lado.</li>
+                            <li>Llévate tu proyecto: prototipos, piezas finales, personalizaciones... listos para usar.</li>
+                        </ul>
+                        <a href="#" class="btn-reserva-small">Reserva tu puesto</a>
+                    </div>
+                </div>
+
+                <!-- Bottom Icons -->
+                <div class="info-footer-icons">
+                    <div class="footer-icon-item">
+                        <i data-lucide="shuffle"></i>
+                        <span>Flexibilidad</span>
+                    </div>
+                    <div class="footer-icon-item">
+                        <i data-lucide="folder"></i>
+                        <span>Asesoramiento</span>
+                    </div>
+                    <div class="footer-icon-item">
+                        <i data-lucide="graduation-cap"></i>
+                        <span>Formación y cursos</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Who Can Use It Section -->
+        <section class="coworking-who-section">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="who-layout">
+                    <div class="who-image">
+                        <div class="image-frame">
+                            <img src="images/ChatGPT Image 14 ago 2025 12_48_03.png" alt="FabLab Illustration">
+                        </div>
+                    </div>
+                    <div class="who-text">
+                        <h2 class="who-title">¿Quien puede usarlo?</h2>
+                        <div class="who-content">
+                            <p>Nuestro coworking es de otro mundo y ofrece posibilidades infinitas para todas aquellas personas y empresas creativas que quieran tener un espacio y un gran parque de maquinaria a su disposición sin la necesidad de invertir grandes sumas de dinero ni externalizar la fabricación de sus productos, pudiendo prototipar y realizar tantas pruebas como sean necesarias antes de pasar a la producción en serie.</p>
+                            <p>Tanto si eres freelance cómo si tienes tu propio estudio, en El Coworking de Archicercle encontrarás tu socio ideal.</p>
+                            <p>Además contarás con asesoramiento y experiencia, descuentos en cursos impartidos en software de diseño aplicado a los procesos de fabricación posteriores y uso de máquinas, y el apoyo de un partner altamente cualificado y tecnológico cómo es Archicercle.</p>
+                            <p>Podrás acceder a mejores precios para auto-fabricar, a colaboraciones y descuentos en los servicios y nuevas máquinas que disponemos en el nuevo estudio/fabrica de Archicercle.</p>
+                        </div>
+                        <ul class="who-list">
+                            <li>- Emprendedores que quieran lanzar su primer producto</li>
+                            <li>- Empresas que necesiten fabricar piezas o prototipos</li>
+                            <li>- Creativos y diseñadores que quieran experimentar</li>
+                            <li>- Estudiantes que requieran acceso a maquinaria profesional</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Avatar Personas Section -->
+        <section class="coworking-avatars-section">
+            <div class="container">
+                <div class="avatars-row">
+                    <div class="avatar-item">
+                        <div class="avatar-img">
+                            <img src="images/test images/Screenshot 2026-05-04 115234.png" alt="El diseñador">
+                        </div>
+                        <span class="avatar-label">El diseñador</span>
+                    </div>
+                    <div class="avatar-item">
+                        <div class="avatar-img">
+                            <img src="images/test images/Screenshot 2026-05-04 115245.png" alt="El arquitecto">
+                        </div>
+                        <span class="avatar-label">El arquitecto</span>
+                    </div>
+                    <div class="avatar-item">
+                        <div class="avatar-img">
+                            <img src="images/test images/Screenshot 2026-05-04 115300.png" alt="La empresa">
+                        </div>
+                        <span class="avatar-label">La empresa</span>
+                    </div>
+                    <div class="avatar-item">
+                        <div class="avatar-img">
+                            <img src="images/test images/Screenshot 2026-05-04 115306.png" alt="El emprendedor">
+                        </div>
+                        <span class="avatar-label">El emprendedor</span>
+                    </div>
+                    <div class="avatar-item">
+                        <div class="avatar-img">
+                            <img src="images/test images/Screenshot 2026-05-04 115313.png" alt="El maker">
+                        </div>
+                        <span class="avatar-label">El maker</span>
+                    </div>
+                    <div class="avatar-item">
+                        <div class="avatar-img">
+                            <img src="images/test images/Screenshot 2026-05-04 115331.png" alt="El rotulista">
+                        </div>
+                        <span class="avatar-label">El rotulista</span>
+                    </div>
+                    <div class="avatar-item">
+                        <div class="avatar-img">
+                            <img src="images/test images/Screenshot 2026-05-04 115339.png" alt="El fabricante">
+                        </div>
+                        <span class="avatar-label">El fabricante</span>
+                    </div>
+                    <div class="avatar-item">
+                        <div class="avatar-img">
+                            <img src="images/test images/Screenshot 2026-05-04 115345.png" alt="El estudiante">
+                        </div>
+                        <span class="avatar-label">El estudiante</span>
+                    </div>
+                    <div class="avatar-item">
+                        <div class="avatar-img">
+                            <img src="images/test images/Screenshot 2026-05-04 115354.png" alt="El jubilado">
+                        </div>
+                        <span class="avatar-label">El jubilado</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- More Than A Space Section -->
+        <section class="coworking-cta-card-section">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="cta-card-layout">
+                    <div class="cta-featured-image">
+                        <img src="images/ChatGPT Image 14 ago 2025 12_41_21.png" alt="FabLab Collaboration">
+                    </div>
+                    <div class="cta-info-card">
+                        <h4 class="card-subtitle">Más que un espacio</h4>
+                        <p class="card-text">
+                            No es solo un lugar con máquinas: Es un entorno de fabricación colaborativo, donde se comparten ideas, procesos y contactos.<br><br>
+                            Donde puedes aprender, crecer y fabricar mejor.
+                        </p>
+                        <a href="#" class="btn-reserva-small">Reserva tu puesto</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Plans Section -->
+        <section class="coworking-plans-section">
+            <div class="container">
+                <h2 class="plans-main-title">NUESTROS PLANES</h2>
+                
+                <div class="plans-grid">
+                    <!-- Plan 1: Anual -->
+                    <div class="plan-card">
+                        <div class="plan-header-box">
+                            <h3 class="plan-title">Anual</h3>
+                            <div class="plan-price-row">
+                                <span class="price">7900€+IVA</span>
+                            </div>
+                            <div class="plan-button-row">
+                                <a href="contacto.html" class="btn-info-red">+ Info</a>
+                            </div>
+                        </div>
+                        <ul class="plan-features">
+                            <li>Mesa para diseño propia</li>
+                            <li>Wifi</li>
+                            <li>Mesa de trabajo compartida</li>
+                            <li>*300 horas de máquina CNC incluidas</li>
+                            <li>Uso de herramientas eléctricas y manuales ilimitado</li>
+                            <li>Tus propias llaves 24h/7 días a la semana.</li>
+                            <li>Formación gratuita en el uso de las máquinas</li>
+                            <li>Asesoramiento técnico gratuito y descuento en servicios adicionales.</li>
+                            <li>Descuento del 60% en horas adicionales y del 20% en materiales</li>
+                        </ul>
+                    </div>
+
+                    <!-- Plan 2: Mensual -->
+                    <div class="plan-card">
+                        <div class="plan-header-box">
+                            <h3 class="plan-title">Mensual</h3>
+                            <div class="plan-price-row">
+                                <span class="price">1200€+IVA</span>
+                            </div>
+                            <div class="plan-button-row">
+                                <a href="contacto.html" class="btn-info-red">+ Info</a>
+                            </div>
+                        </div>
+                        <ul class="plan-features">
+                            <li>Mesa para diseño propia</li>
+                            <li>Wifi</li>
+                            <li>Mesa de trabajo compartida</li>
+                            <li>*30 horas de máquina CNC incluidas</li>
+                            <li>Uso de herramientas eléctricas y manuales ilimitado</li>
+                            <li>Tus propias llaves 24h/7 días a la semana.</li>
+                            <li>Formación gratuita en el uso de las máquinas</li>
+                            <li>Asesoramiento técnico gratuito y descuento en servicios adicionales.</li>
+                            <li>Descuento del 40% en horas adicionales and del 10% en materiales</li>
+                        </ul>
+                    </div>
+
+                    <!-- Plan 3: Semanal -->
+                    <div class="plan-card">
+                        <div class="plan-header-box">
+                            <h3 class="plan-title">Semanal</h3>
+                            <div class="plan-price-row">
+                                <span class="price">490€+IVA</span>
+                            </div>
+                            <div class="plan-button-row">
+                                <a href="contacto.html" class="btn-info-red">+ Info</a>
+                            </div>
+                        </div>
+                        <ul class="plan-features">
+                            <li>Mesa para diseño propia</li>
+                            <li>Wifi</li>
+                            <li>Mesa de trabajo compartida</li>
+                            <li>*10 horas de máquina CNC incluidas</li>
+                            <li>Uso de herramientas eléctricas y manuales ilimitado</li>
+                            <li>Horario de 10:00 a 18:00 de lunes a domingo</li>
+                            <li>Descuento del 20% en horas adicionales y del 5% en materiales.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Plan 4: Diario -->
+                    <div class="plan-card">
+                        <div class="plan-header-box">
+                            <h3 class="plan-title">Diario</h3>
+                            <div class="plan-price-row">
+                                <span class="price">90€ + IVA</span>
+                            </div>
+                            <div class="plan-button-row">
+                                <a href="contacto.html" class="btn-info-red">+ Info</a>
+                            </div>
+                        </div>
+                        <ul class="plan-features">
+                            <li>Mesa para diseño propia</li>
+                            <li>Wifi</li>
+                            <li>Mesa de trabajo compartida</li>
+                            <li>1 Hora de máquina CNC incluida.</li>
+                            <li>8 horas de espacio.</li>
+                            <li>Uso de herramientas eléctricas y manuales ilimitado</li>
+                            <li>Horario de 10:00 a 18:00 de lunes a viernes</li>
+                            <li>Copra de materiales in-situ.</li>
+                            <li>*Para usar cada una de las máquinas se requiere una formación previo pago.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Conditions Box -->
+                <div class="conditions-box">
+                    <h4>CONDICIONES</h4>
+                    <div class="conditions-text">
+                        <p>✓ El tiempo necesario en el uso de las máquinas CNC en los planes Anual, Mensual y Semanal se comunicarán previamente, para la correcta organización y funcionamiento del Coworking. En caso de solapes, se le comunicará al usuario la próxima disponibilidad inmediata. Los planes Anuales, Mensuales, Semanal y diario, tendrán preferencia en el orden mencionado.</p>
+                        <p>✓ Una hora es el tiempo total durante el que la máquina está ocupada por un usuario, esté en funcionamiento o no (Esto incluye configuración de parámetros, calibración, puesta de material, retirar piezas y limpieza si es necesario). No se restará del tiempo piezas mal trabajadas o mal cortadas ya que depende de la pericia del usuario hacer las comprobaciones oportunas.</p>
+                        <p>✓ Consulta el precio para incrementar el número de personas en cada plan.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Machine Rental Pricing Section -->
+        <section class="machine-rental-section">
+            <div class="container">
+                <h2 class="rental-title">Precio de Alquiler de máquinas por horas</h2>
+                
+                <div class="machine-grid">
+                    <!-- Machine 1 -->
+                    <div class="machine-card">
+                        <div class="machine-info">
+                            <h5 class="m-title">Laser Co2 150W 2,5x1,3m</h5>
+                            <div class="m-img">
+                                <img src="images/Maquina-Corte-Laser-Fibra-Metal-Gran-Formato-Archicercle.jpg" alt="Laser Co2 150W">
+                            </div>
+                            <div class="m-price-tag">45 €/h</div>
+                        </div>
+                    </div>
+                    <!-- Machine 2 -->
+                    <div class="machine-card">
+                        <div class="machine-info">
+                            <h5 class="m-title">Laser Co2 90W/40W Doble cabezal 1,4x0,9m</h5>
+                            <div class="m-img">
+                                <img src="images/placeholder.png" alt="Laser Co2 Doble Cabezal">
+                            </div>
+                            <div class="m-price-tag">35 €/h</div>
+                        </div>
+                    </div>
+                    <!-- Machine 3 -->
+                    <div class="machine-card">
+                        <div class="machine-info">
+                            <h5 class="m-title">Laser Co2 80W 1,2x0,9m</h5>
+                            <div class="m-img">
+                                <img src="images/placeholder.png" alt="Laser Co2 80W">
+                            </div>
+                            <div class="m-price-tag">30 €/h</div>
+                        </div>
+                    </div>
+                    <!-- Machine 4 -->
+                    <div class="machine-card">
+                        <div class="machine-info">
+                            <h5 class="m-title">Laser Co2 90W 1,3x0,9m</h5>
+                            <div class="m-img">
+                                <img src="images/placeholder.png" alt="Laser Co2 90W">
+                            </div>
+                            <div class="m-price-tag">45 €/h</div>
+                        </div>
+                    </div>
+                    <!-- Machine 5 -->
+                    <div class="machine-card">
+                        <div class="machine-info">
+                            <h5 class="m-title">Laser galvanométrico Fibra 50W</h5>
+                            <div class="m-img">
+                                <img src="images/maquina-laser-fibra-corte-grabado-no-metales-archicercle-1200x804.jpg" alt="Laser Fibra 50W">
+                            </div>
+                            <div class="m-price-tag">50 €/h</div>
+                        </div>
+                    </div>
+                    <!-- Machine 6 -->
+                    <div class="machine-card">
+                        <div class="machine-info">
+                            <h5 class="m-title">Laser galvanométrico Co2 100W 50W</h5>
+                            <div class="m-img">
+                                <img src="images/placeholder.png" alt="Laser galvanométrico Co2">
+                            </div>
+                            <div class="m-price-tag">60 €/h</div>
+                        </div>
+                    </div>
+                    <!-- Machine 7 -->
+                    <div class="machine-card">
+                        <div class="machine-info">
+                            <h5 class="m-title">Termo-dobladora de plásticos en caliente</h5>
+                            <div class="m-img">
+                                <img src="images/placeholder.png" alt="Termo-dobladora">
+                            </div>
+                            <div class="m-price-tag">25 €/h</div>
+                        </div>
+                    </div>
+                    <!-- Machine 8 -->
+                    <div class="machine-card">
+                        <div class="machine-info">
+                            <h5 class="m-title">Fresadora CNC 1,2x1,2m 9KW</h5>
+                            <div class="m-img">
+                                <img src="images/Maquina_letras_corporeas_3d_Archicercle.jpg" alt="Fresadora CNC">
+                            </div>
+                            <div class="m-price-tag">45 €/h</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools Box -->
+                <div class="tools-rental-box">
+                    <p class="tools-title">Herramientas eléctricas y manuales</p>
+                    <p class="tools-price">10€/h a 45€/h</p>
+                </div>
+
+                <!-- Central CTA -->
+                <div class="rental-cta">
+                    <a href="#" class="btn-reserva-main">Quiero reservar una máquina</a>
+                </div>
+
+                <!-- Training Banner -->
+                <div class="courses-banner">
+                    <img src="images/cursos-formacion-fabricacion-digital-corte-laser-cnc-archicercle-web.jpg" alt="Cursos Formativos">
+                    <div class="banner-btn-wrapper">
+                        <a href="#" class="btn-info-small">Quiero más información</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spin-off Projects Section -->
+        <section class="coworking-spinoff-section">
+            <div class="container">
+                <div class="spinoff-header">
+                    <h2 class="spinoff-title">Spin-off</h2>
+                    <span class="spinoff-tagline">PROYECTOS SATÉLITE</span>
+                    <div class="spinoff-description">
+                        <p>Con los años el estudio ha ido creciendo. Hemos creado decenas proyectos, con su propio ecosistema, que necesitaban tener una identidad bien definida para convertirse en empresa.</p>
+                        <p>Proyectos que ahora orbitan alrededor de nuestro sol Archicercle, y existen gracias a él.</p>
+                        <p>Aquí puede estar tu empresa co-creada, asóciate con nosotros.</p>
+                    </div>
+                </div>
+
+                <div class="coworking-spinoff-content">
+                    <!-- Featured Big Box -->
+                    <div class="coworking-spinoff-featured">
+                        <div class="coworking-spinoff-img-box">
+                            <img src="images/placeholder.png" alt="Tu empresa aquí">
+                            <div class="coworking-spinoff-red-label">Tu empresa aquí</div>
+                        </div>
+                    </div>
+
+                    <!-- 3x3 Grid -->
+                    <div class="coworking-spinoff-grid">
+                        <div class="coworking-spinoff-item">
+                            <div class="coworking-spinoff-img-box">
+                                <img src="images/placeholder.png" alt="Fotomatón">
+                                <div class="coworking-spinoff-red-label">Fotomatón</div>
+                            </div>
+                        </div>
+                        <div class="coworking-spinoff-item">
+                            <div class="coworking-spinoff-img-box">
+                                <img src="images/placeholder.png" alt="Mirror design">
+                                <div class="coworking-spinoff-red-label">Mirror design</div>
+                            </div>
+                        </div>
+                        <div class="coworking-spinoff-item">
+                            <div class="coworking-spinoff-img-box">
+                                <img src="images/placeholder.png" alt="Ringbox">
+                                <div class="coworking-spinoff-red-label">Ringbox</div>
+                            </div>
+                        </div>
+                        <div class="coworking-spinoff-item">
+                            <div class="coworking-spinoff-img-box">
+                                <img src="images/placeholder.png" alt="Fabrica tu metacrilato">
+                                <div class="coworking-spinoff-red-label">Fabrica tu metacrilato</div>
+                            </div>
+                        </div>
+                        <div class="coworking-spinoff-item">
+                            <div class="coworking-spinoff-img-box">
+                                <img src="images/placeholder.png" alt="Cursos">
+                                <div class="coworking-spinoff-red-label">Cursos</div>
+                            </div>
+                        </div>
+                        <div class="coworking-spinoff-item">
+                            <div class="coworking-spinoff-img-box">
+                                <img src="images/placeholder.png" alt="Machines">
+                                <div class="coworking-spinoff-red-label">Machines</div>
+                            </div>
+                        </div>
+                        <div class="coworking-spinoff-item">
+                            <div class="coworking-spinoff-img-box">
+                                <img src="images/placeholder.png" alt="GR products">
+                                <div class="coworking-spinoff-red-label">GR products</div>
+                            </div>
+                        </div>
+                        <div class="coworking-spinoff-item">
+                            <div class="coworking-spinoff-img-box">
+                                <img src="images/placeholder.png" alt="Just lasercut">
+                                <div class="coworking-spinoff-red-label">Just lasercut</div>
+                            </div>
+                        </div>
+                        <div class="coworking-spinoff-item">
+                            <div class="coworking-spinoff-img-box">
+                                <img src="images/placeholder.png" alt="Cosas 3d">
+                                <div class="coworking-spinoff-red-label">Cosas 3d</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Manifesto Section -->
+        <section class="manifesto-section">
+            <div class="container">
+                <div class="manifesto-grid">
+                    <!-- Left: Illustration -->
+                    <div class="manifesto-img">
+                        <img src="images/Captura-de-pantalla-2025-11-04-a-las-12.20.46.png" alt="Archicercle FabLab Illustration">
+                    </div>
+                    
+                    <!-- Right: Text Content -->
+                    <div class="manifesto-content">
+                        <h2 class="manifesto-title">MANIFIESTO</h2>
+                        <span class="manifesto-subtitle">DE ARCHICERCLE & CO</span>
+                        
+                        <div class="manifesto-text">
+                            <p class="m-highlight">Somos más que un espacio con máquinas. Somos el puente entre la idea y la realidad.</p>
+                            
+                            <p>Aquí no vienes solo a usar herramientas: vienes a fabricar sin límites con el respaldo de quienes han vivido cada proceso, probado cada máquina y afinado cada detalle.</p>
+                            
+                            <p>No creemos en barreras técnicas ni en excusas. Creemos en prototipos que se tocan, en piezas que funcionan y en proyectos que nacen para quedarse.</p>
+                            
+                            <p>Cada máquina aquí tiene historia. Cada mesa ha visto ideas convertirse en productos. Y cada persona que entra, sale con algo nuevo: una pieza, un conocimiento, una conexión... o todo junto.</p>
+                            
+                            <p class="manifesto-footer">Esto es Archicercle FabLab. Tu espacio. Tus máquinas. Nuestra experiencia. Hagamos que tu proyecto exista.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        </section>
+
+        <!-- Contact Section (Hablemos) -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-layout">
+                    <div class="contact-info">
+                        <h2 class="contact-title">Hablemos</h2>
+                        <div class="contact-description">
+                            <p>Las marcas tienen que comunicarse con sus clientes. Y no sólo hablar, también tienen que escuchar y responder.</p>
+                            <p>Hablar, dialogar, debatir, escuchar, ponerse en la piel del otro... no hemos inventado nada, es lo que siempre se ha llamado comunicación.</p>
+                            <p>Y es lo que hacemos con nuestros clientes y con todo aquel que quiera conocernos y que lo conozcamos.</p>
+                            <p>Aquí tiene nuestra dirección, nuestro teléfono y un correo de contacto. Le esperamos con las puertas (y las mentes) bien abiertas.</p>
+                            <p><strong>¡Nos vemos!</strong></p>
+                        </div>
+                        
+                        <ul class="contact-meta">
+                            <li>
+                                <i data-lucide="map-pin"></i>
+                                <span>Calle Utiel nº 6, CP 46021 (Cerca de la parada de metro de Benimaclet)</span>
+                            </li>
+                            <li>
+                                <i data-lucide="mail"></i>
+                                <span>archicercle@archicercle.com</span>
+                            </li>
+                            <li>
+                                <i data-lucide="phone"></i>
+                                <span>649 999 853</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="consulta">Consulta</label>
+                                <select id="consulta" name="consulta">
+                                    <option value="diseno">Servicios de Diseño</option>
+                                    <option value="fabricacion">Servicios de Fabricación</option>
+                                    <option value="coworking" selected>Coworking</option>
+                                    <option value="otros">Otros</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Correo electrónico</label>
+                                <input type="email" id="email" name="email" placeholder="Correo electrónico">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="telefono">Teléfono</label>
+                                <input type="tel" id="telefono" name="telefono" placeholder="Teléfono">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea id="mensaje" name="mensaje" placeholder="Mensaje" rows="5"></textarea>
+                            </div>
+
+                            <div class="form-privacy">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <label for="privacy">He leído y acepto el aviso legal y la política de privacidad.</label>
+                            </div>
+
+                            <button type="submit" class="btn-submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="faq-main-title">Preguntas frecuentes</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span class="faq-plus">+</span>
+                            <span>¿Qué es Archicercle y qué servicios de diseño y fabricación digital ofrece?</span>
+                        </button>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span class="faq-plus">+</span>
+                            <span>¿Cuál es la diferencia entre Archicercle y una fábrica tradicional?</span>
+                        </button>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span class="faq-plus">+</span>
+                            <span>¿Qué tipo de clientes pueden trabajar con Archicercle?</span>
+                        </button>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span class="faq-plus">+</span>
+                            <span>¿Dónde se encuentra Archicercle y se puede visitar el estudio?</span>
+                        </button>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span class="faq-plus">+</span>
+                            <span>¿Qué ventajas tiene fabricar en Archicercle frente a buscar un proveedor externo?</span>
+                        </button>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span class="faq-plus">+</span>
+                            <span>¿Archicercle trabaja solo a nivel local o también a nivel nacional e internacional?</span>
+                        </button>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span class="faq-plus">+</span>
+                            <span>¿Puedo traer mi propio diseño para fabricarlo en Archicercle?</span>
+                        </button>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span class="faq-plus">+</span>
+                            <span>¿Qué significa que Archicercle combina artesanía y tecnología?</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="main-footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- Column 1: Logo & Social -->
+                    <div class="footer-col about-col">
+                        <img src="images/Archicercle.png" alt="Archicercle" class="footer-logo">
+                        <p class="footer-slogan">Fabricación digital y artesanal creativa.</p>
+                                                                                                                        <div class="footer-socials">
+                            <a href="https://www.instagram.com/archicercle/" target="_blank" aria-label="Instagram"><img src="images/instagram.png" alt="Instagram"></a>
+                            <a href="https://it.pinterest.com/archicercle" target="_blank" aria-label="Pinterest"><img src="images/pinterest.png" alt="Pinterest"></a>
+                            <a href="https://www.tiktok.com/@archicercle" target="_blank" aria-label="TikTok"><img src="images/tik-tok.png" alt="TikTok"></a>
+                            <a href="https://wa.me/34649999853" target="_blank" aria-label="WhatsApp"><img src="images/whatsapp.png" alt="WhatsApp"></a>
+                            <a href="mailto:PabloPastor@archicercle.com" aria-label="Email"><img src="images/email.png" alt="Email"></a>
+                            <a href="https://www.linkedin.com/in/pastorpablo/" target="_blank" aria-label="LinkedIn"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Contact -->
+                    <div class="footer-col contact-col">
+                        <h3>Contacto</h3>
+                        <div class="contact-item">
+                            <p>- Coworking fablab Archicercle: <a href="https://www.google.com/maps/search/?api=1&query=Calle+Utiel+6+bajo+derecha+46020+Valencia" target="_blank">Calle Utiel 6 bajo derecha, 46020, Valencia</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <p>- Estudio Fábrica Archicercle: <a href="https://www.google.com/maps/search/?api=1&query=Placa+Pere+Maria+Orts+i+Bosch+18+bajo+46014+Valencia" target="_blank">Plaça Pere Maria Orts i Bosch 18, bajo. 46014, Valencia</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <p>Mail: <a href="mailto:PabloPastor@archicercle.com">PabloPastor@archicercle.com</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <p>Móvil: <a href="https://wa.me/34649999853" target="_blank">649 999 853</a></p>
+                        </div>
+                    </div>
+
+                    <!-- Column 3: Quick Links -->
+                    <div class="footer-col links-col">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="coworking.html">Coworking</a></li>
+                            <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+                            <li><a href="corte-laser-online.html">Corte laser online</a></li>
+                            <li><a href="servicios-de-diseno.html">Servicios de diseño</a></li>
+                            <li><a href="servicios-de-fabricacion.html">Servicios de fabricación</a></li>
+                            <li><a href="materiales.html">Materiales</a></li>
+                            <li><a href="maquinaria.html">Maquinaria</a></li>
+                            <li><a href="tienda.html">Tienda</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 4: Kit Digital -->
+                    <div class="footer-col kit-col">
+                        <h3>Kit Digital</h3>
+                        <div class="kit-logos">
+                            <img src="images/ue-kit.png" alt="Financiado por la Unión Europea" class="kit-img">
+                            <img src="images/prtr-kit.png" alt="Plan de Recuperación" class="kit-img">
+                        </div>
+                        <a href="declaracion.html" class="accessibility-link">DECLARACIÓN DE ACCESIBILIDAD</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sub Footer -->
+            <div class="sub-footer">
+                <div class="container">
+                    <p>2025 Todos los derechos reservados | Diseño y desarrollo web por Ahmed Gomaa In Archicercle.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <a href="https://wa.me/" class="whatsapp-float" aria-label="WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

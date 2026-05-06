@@ -1,0 +1,42 @@
+backend:
+  name: git-gateway
+  branch: main # Ensure this matches your repository branch
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "data/home.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - { label: "Description", name: "description", widget: "text" }
+      
+      - label: "Sobre Nosotros"
+        name: "about"
+        file: "data/about.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - { label: "Description", name: "description", widget: "text" }
+
+      - label: "Materiales"
+        name: "materials"
+        file: "data/materials.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - { label: "Description", name: "description", widget: "text" }
+
+      - label: "Maquinaria"
+        name: "machines"
+        file: "data/machines.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - { label: "Description", name: "description", widget: "text" }
