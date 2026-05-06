@@ -1,18 +1,20 @@
+source: ""
+base_url: ""
+
 _enabled_editors:
   - visual
   - content
 
 collections_config:
   pages:
-    path: ""
+    name: Pages
+    path: "/"
+    parser: html
     output: true
     filter:
       base: none
       search:
         - "*.html"
-    _enabled_editors:
-      - visual
-      - content
 
 editor:
   default_view: visual
