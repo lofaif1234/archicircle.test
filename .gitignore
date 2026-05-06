@@ -1,0 +1,20 @@
+# Astro
+dist/
+.astro/
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# Environment
+.env
+.env.production
+
+# Editor
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

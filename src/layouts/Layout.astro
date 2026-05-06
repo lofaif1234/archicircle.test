@@ -1,0 +1,132 @@
+---
+import '../styles/style.css';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Netlify Identity -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="/" class="logo">
+                <img class="editable" data-editable="image" data-prop="site_logo" src="/images/Archicercle.png" alt="Archicercle Logo">
+            </a>
+
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="/" class={`nav-link ${Astro.url.pathname === '/' ? 'active' : ''}`}>Inicio</a></li>
+                    <li><a href="/coworking" class={`nav-link ${Astro.url.pathname === '/coworking' || Astro.url.pathname === '/coworking/' ? 'active' : ''}`}>Coworking</a></li>
+                    <li><a href="/sobre-nosotros" class={`nav-link ${Astro.url.pathname === '/sobre-nosotros' || Astro.url.pathname === '/sobre-nosotros/' ? 'active' : ''}`}>Sobre nosotros</a></li>
+                    <li><a href="/corte-laser-online" class={`nav-link ${Astro.url.pathname === '/corte-laser-online' || Astro.url.pathname === '/corte-laser-online/' ? 'active' : ''}`}>Corte Láser Online</a></li>
+                    <li><a href="/servicios-de-diseno" class={`nav-link ${Astro.url.pathname === '/servicios-de-diseno' || Astro.url.pathname === '/servicios-de-diseno/' ? 'active' : ''}`}>Servicios de diseño</a></li>
+                    <li><a href="/servicios-de-fabricacion" class={`nav-link ${Astro.url.pathname === '/servicios-de-fabricacion' || Astro.url.pathname === '/servicios-de-fabricacion/' ? 'active' : ''}`}>Servicios de Fabricación</a></li>
+                    <li><a href="/materiales" class={`nav-link ${Astro.url.pathname === '/materiales' || Astro.url.pathname === '/materiales/' ? 'active' : ''}`}>Materiales</a></li>
+                    <li><a href="/maquinaria" class={`nav-link ${Astro.url.pathname === '/maquinaria' || Astro.url.pathname === '/maquinaria/' ? 'active' : ''}`}>Maquinaria</a></li>
+                    <li><a href="/tienda" class={`nav-link ${Astro.url.pathname === '/tienda' || Astro.url.pathname === '/tienda/' ? 'active' : ''}`}>Tienda</a></li>
+                    <li class="mobile-only"><a href="/contacto" class="contact-btn">CONTACTO</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="/contacto" class="contact-btn">CONTACTO</a>
+            </div>
+
+            <button class="mobile-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <slot />
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col about-col">
+                    <img class="editable footer-logo" data-editable="image" data-prop="footer_logo" src="/images/Archicercle.png" alt="Archicercle">
+                    <p class="editable footer-slogan" data-editable="text" data-prop="footer_slogan">Fabricación digital y artesanal creativa.</p>
+                    <div class="footer-socials">
+                        <a href="https://www.instagram.com/archicercle/" target="_blank" aria-label="Instagram"><img class="editable" data-editable="image" src="/images/instagram.png" alt="Instagram"></a>
+                        <a href="https://it.pinterest.com/archicercle" target="_blank" aria-label="Pinterest"><img class="editable" data-editable="image" src="/images/pinterest.png" alt="Pinterest"></a>
+                        <a href="https://www.tiktok.com/@archicercle" target="_blank" aria-label="TikTok"><img class="editable" data-editable="image" src="/images/tik-tok.png" alt="TikTok"></a>
+                        <a href="https://wa.me/34649999853" target="_blank" aria-label="WhatsApp"><img class="editable" data-editable="image" src="/images/whatsapp.png" alt="WhatsApp"></a>
+                        <a href="mailto:PabloPastor@archicercle.com" aria-label="Email"><img class="editable" data-editable="image" src="/images/email.png" alt="Email"></a>
+                        <a href="https://www.linkedin.com/in/pastorpablo/" target="_blank" aria-label="LinkedIn"><img class="editable" data-editable="image" src="/images/linkedin.png" alt="LinkedIn"></a>
+                    </div>
+                </div>
+
+                <div class="footer-col contact-col">
+                    <h3 class="editable" data-editable="text">Contacto</h3>
+                    <div class="contact-item">
+                        <p class="editable" data-editable="text">- Coworking fablab Archicercle:<a href="https://www.google.com/maps/search/?api=1&query=Calle+Utiel+6+bajo+derecha+46020+Valencia" target="_blank">Calle Utiel 6 bajo derecha, 46020, Valencia</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <p class="editable" data-editable="text">- Estudio Fábrica Archicercle:<a href="https://www.google.com/maps/search/?api=1&query=Placa+Pere+Maria+Orts+i+Bosch+18+bajo+46014+Valencia" target="_blank">Plaça Pere Maria Orts i Bosch 18, bajo. 46014, Valencia</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <p class="editable" data-editable="text">Mail:<a href="mailto:PabloPastor@archicercle.com">PabloPastor@archicercle.com</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <p class="editable" data-editable="text">Móvil:<a href="https://wa.me/34649999853" target="_blank">649 999 853</a></p>
+                    </div>
+                </div>
+
+                <div class="footer-col links-col">
+                    <h3 class="editable" data-editable="text">Quick Links</h3>
+                    <ul>
+                        <li><a href="/coworking">Coworking</a></li>
+                        <li><a href="/sobre-nosotros">Sobre nosotros</a></li>
+                        <li><a href="/corte-laser-online">Corte laser online</a></li>
+                        <li><a href="/servicios-de-diseno">Servicios de diseño</a></li>
+                        <li><a href="/servicios-de-fabricacion">Servicios de fabricación</a></li>
+                        <li><a href="/materiales">Materiales</a></li>
+                        <li><a href="/maquinaria">Maquinaria</a></li>
+                        <li><a href="/tienda">Tienda</a></li>
+                        <li><a href="/contacto">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col kit-col">
+                    <h3 class="editable" data-editable="text">Kit Digital</h3>
+                    <div class="kit-logos">
+                        <img class="editable kit-img" data-editable="image" src="/images/ue-kit.png" alt="Financiado por la Unión Europea">
+                        <img class="editable kit-img" data-editable="image" src="/images/prtr-kit.png" alt="Plan de Recuperación">
+                    </div>
+                    <a href="/declaracion" class="accessibility-link">DECLARACIÓN DE ACCESIBILIDAD</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-footer">
+            <div class="container">
+                <p class="editable" data-editable="text">2025 Todos los derechos reservados | Diseño y desarrollo web por Ahmed Gomaa In Archicercle.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/" class="whatsapp-float" aria-label="WhatsApp">
+        <img class="editable" data-editable="image" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+    <script src="/js/script.js" is:inline></script>
+</body>
+</html>

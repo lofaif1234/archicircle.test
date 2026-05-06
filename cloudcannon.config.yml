@@ -1,6 +1,8 @@
-source: ""
-base_url: ""
+source: .
+output: dist
 
+# CloudCannon Configuration
+# See https://cloudcannon.com/documentation/configuration/
 _enabled_editors:
   - visual
   - content
@@ -8,13 +10,13 @@ _enabled_editors:
 collections_config:
   pages:
     name: Pages
-    path: "/"
-    parser: html
+    path: src/pages
     output: true
     filter:
       base: none
       search:
-        - "*.html"
+        - "*.astro"
 
-editor:
-  default_view: visual
+# Astro specific settings
+# CloudCannon will build the site using 'npm run build'
+ssg: astro

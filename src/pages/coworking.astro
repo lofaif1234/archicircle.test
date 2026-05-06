@@ -1,50 +1,8 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coworking - Archicercle</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <!-- Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-</head>
-<body>
-    <header class="header">
-        <div class="header-container">
-            <a href="index.html" class="logo">
-                <img data-editable="image" class="editable" src="images/Archicercle.png" alt="Archicercle Logo">
-            </a>
+---
+import Layout from '../layouts/Layout.astro';
+---
 
-            <nav class="nav-menu">
-                <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link">Inicio</a></li>
-                    <li><a href="coworking.html" class="nav-link active">Coworking</a></li>
-                    <li><a href="sobre-nosotros.html" class="nav-link">Sobre nosotros</a></li>
-                    <li><a href="corte-laser-online.html" class="nav-link">Corte Láser Online</a></li>
-                    <li><a href="servicios-de-diseno.html" class="nav-link">Servicios de diseño</a></li>
-                    <li><a href="servicios-de-fabricacion.html" class="nav-link">Servicios de Fabricación</a></li>
-                    <li><a href="materiales.html" class="nav-link">Materiales</a></li>
-                    <li><a href="maquinaria.html" class="nav-link">Maquinaria</a></li>
-                    <li><a href="tienda.html" class="nav-link">Tienda</a></li>
-                    <li class="mobile-only"><a href="contacto.html" class="contact-btn">CONTACTO</a></li>
-                </ul>
-            </nav>
-
-            <div class="header-actions">
-                <a href="contacto.html" class="contact-btn">CONTACTO</a>
-            </div>
-
-            <button class="mobile-toggle" aria-label="Abrir menú" aria-expanded="false">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-        </div>
-    </header>
-
+<Layout title="Coworking - Archicercle">
     <main>
         <!-- Combined Coworking Hero & Info Section -->
         <section class="coworking-hero-full">
@@ -52,8 +10,8 @@
             <div class="container">
                 <!-- Top Hero Content -->
                 <div class="coworking-hero-content">
-                    <h1 data-editable="text" class="editable coworking-title">Tu espacio de fabricación, sin límites</h1>
-                    <p data-editable="text" class="editable coworking-subtitle">
+                    <h1  data-editable="text" class="editable coworking-title" data-editable="text" data-prop="text_field">Tu espacio de fabricación, sin límites</h1>
+                    <p  data-editable="text" class="editable coworking-subtitle" data-editable="text" data-prop="text_field">
                         Un FabLab con todo lo que necesitas para pasar del plano a la realidad.<br>
                         Máquinas, materiales y el conocimiento de quienes las han usado al máximo.
                     </p>
@@ -72,7 +30,7 @@
                     <div class="info-col">
                         <div class="info-header">
                             <i data-lucide="box" class="check-icon"></i>
-                            <h3 data-editable="text" class="editable">¿Qué es el Archicercle FabLab?</h3>
+                            <h3  data-editable="text" class="editable" data-editable="text" data-prop="text_field">¿Qué es el Archicercle FabLab?</h3>
                         </div>
                         <ul class="info-list">
                             <li>Un taller completo, abierto para ti.</li>
@@ -87,7 +45,7 @@
                     <div class="info-col">
                         <div class="info-header">
                             <i data-lucide="zap" class="check-icon"></i>
-                            <h3 data-editable="text" class="editable">¿Por qué elegir nuestro FabLab?</h3>
+                            <h3  data-editable="text" class="editable" data-editable="text" data-prop="text_field">¿Por qué elegir nuestro FabLab?</h3>
                         </div>
                         <ul class="info-list">
                             <li>Toda la experiencia Archicercle, ahora abierta al público.</li>
@@ -105,7 +63,7 @@
                     <div class="info-col">
                         <div class="info-header">
                             <i data-lucide="cpu" class="check-icon"></i>
-                            <h3 data-editable="text" class="editable">¿Cómo funciona?</h3>
+                            <h3  data-editable="text" class="editable" data-editable="text" data-prop="text_field">¿Cómo funciona?</h3>
                         </div>
                         <ul class="info-list">
                             <li>Reserva tu acceso: elige un plan, por días, mensual, semanal o anual.</li>
@@ -142,16 +100,16 @@
                 <div class="who-layout">
                     <div class="who-image">
                         <div class="image-frame">
-                            <img data-editable="image" class="editable" src="images/ChatGPT Image 14 ago 2025 12_48_03.png" alt="FabLab Illustration">
+                            <img  data-editable="image" class="editable" src="/images/ChatGPT Image 14 ago 2025 12_48_03.png" alt="FabLab Illustration" data-editable="image" data-prop="image_field">
                         </div>
                     </div>
                     <div class="who-text">
-                        <h2 data-editable="text" class="editable who-title">¿Quien puede usarlo?</h2>
+                        <h2  data-editable="text" class="editable who-title" data-editable="text" data-prop="text_field">¿Quien puede usarlo?</h2>
                         <div class="who-content">
-                            <p data-editable="text" class="editable">Nuestro coworking es de otro mundo y ofrece posibilidades infinitas para todas aquellas personas y empresas creativas que quieran tener un espacio y un gran parque de maquinaria a su disposición sin la necesidad de invertir grandes sumas de dinero ni externalizar la fabricación de sus productos, pudiendo prototipar y realizar tantas pruebas como sean necesarias antes de pasar a la producción en serie.</p>
-                            <p data-editable="text" class="editable">Tanto si eres freelance cómo si tienes tu propio estudio, en El Coworking de Archicercle encontrarás tu socio ideal.</p>
-                            <p data-editable="text" class="editable">Además contarás con asesoramiento y experiencia, descuentos en cursos impartidos en software de diseño aplicado a los procesos de fabricación posteriores y uso de máquinas, y el apoyo de un partner altamente cualificado y tecnológico cómo es Archicercle.</p>
-                            <p data-editable="text" class="editable">Podrás acceder a mejores precios para auto-fabricar, a colaboraciones y descuentos en los servicios y nuevas máquinas que disponemos en el nuevo estudio/fabrica de Archicercle.</p>
+                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Nuestro coworking es de otro mundo y ofrece posibilidades infinitas para todas aquellas personas y empresas creativas que quieran tener un espacio y un gran parque de maquinaria a su disposición sin la necesidad de invertir grandes sumas de dinero ni externalizar la fabricación de sus productos, pudiendo prototipar y realizar tantas pruebas como sean necesarias antes de pasar a la producción en serie.</p>
+                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Tanto si eres freelance cómo si tienes tu propio estudio, en El Coworking de Archicercle encontrarás tu socio ideal.</p>
+                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Además contarás con asesoramiento y experiencia, descuentos en cursos impartidos en software de diseño aplicado a los procesos de fabricación posteriores y uso de máquinas, y el apoyo de un partner altamente cualificado y tecnológico cómo es Archicercle.</p>
+                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Podrás acceder a mejores precios para auto-fabricar, a colaboraciones y descuentos en los servicios y nuevas máquinas que disponemos en el nuevo estudio/fabrica de Archicercle.</p>
                         </div>
                         <ul class="who-list">
                             <li>- Emprendedores que quieran lanzar su primer producto</li>
@@ -170,55 +128,55 @@
                 <div class="avatars-row">
                     <div class="avatar-item">
                         <div class="avatar-img">
-                            <img data-editable="image" class="editable" src="images/test images/Screenshot 2026-05-04 115234.png" alt="El diseñador">
+                            <img  data-editable="image" class="editable" src="/images/test images/Screenshot 2026-05-04 115234.png" alt="El diseñador" data-editable="image" data-prop="image_field">
                         </div>
                         <span class="avatar-label">El diseñador</span>
                     </div>
                     <div class="avatar-item">
                         <div class="avatar-img">
-                            <img data-editable="image" class="editable" src="images/test images/Screenshot 2026-05-04 115245.png" alt="El arquitecto">
+                            <img  data-editable="image" class="editable" src="/images/test images/Screenshot 2026-05-04 115245.png" alt="El arquitecto" data-editable="image" data-prop="image_field">
                         </div>
                         <span class="avatar-label">El arquitecto</span>
                     </div>
                     <div class="avatar-item">
                         <div class="avatar-img">
-                            <img data-editable="image" class="editable" src="images/test images/Screenshot 2026-05-04 115300.png" alt="La empresa">
+                            <img  data-editable="image" class="editable" src="/images/test images/Screenshot 2026-05-04 115300.png" alt="La empresa" data-editable="image" data-prop="image_field">
                         </div>
                         <span class="avatar-label">La empresa</span>
                     </div>
                     <div class="avatar-item">
                         <div class="avatar-img">
-                            <img data-editable="image" class="editable" src="images/test images/Screenshot 2026-05-04 115306.png" alt="El emprendedor">
+                            <img  data-editable="image" class="editable" src="/images/test images/Screenshot 2026-05-04 115306.png" alt="El emprendedor" data-editable="image" data-prop="image_field">
                         </div>
                         <span class="avatar-label">El emprendedor</span>
                     </div>
                     <div class="avatar-item">
                         <div class="avatar-img">
-                            <img data-editable="image" class="editable" src="images/test images/Screenshot 2026-05-04 115313.png" alt="El maker">
+                            <img  data-editable="image" class="editable" src="/images/test images/Screenshot 2026-05-04 115313.png" alt="El maker" data-editable="image" data-prop="image_field">
                         </div>
                         <span class="avatar-label">El maker</span>
                     </div>
                     <div class="avatar-item">
                         <div class="avatar-img">
-                            <img data-editable="image" class="editable" src="images/test images/Screenshot 2026-05-04 115331.png" alt="El rotulista">
+                            <img  data-editable="image" class="editable" src="/images/test images/Screenshot 2026-05-04 115331.png" alt="El rotulista" data-editable="image" data-prop="image_field">
                         </div>
                         <span class="avatar-label">El rotulista</span>
                     </div>
                     <div class="avatar-item">
                         <div class="avatar-img">
-                            <img data-editable="image" class="editable" src="images/test images/Screenshot 2026-05-04 115339.png" alt="El fabricante">
+                            <img  data-editable="image" class="editable" src="/images/test images/Screenshot 2026-05-04 115339.png" alt="El fabricante" data-editable="image" data-prop="image_field">
                         </div>
                         <span class="avatar-label">El fabricante</span>
                     </div>
                     <div class="avatar-item">
                         <div class="avatar-img">
-                            <img data-editable="image" class="editable" src="images/test images/Screenshot 2026-05-04 115345.png" alt="El estudiante">
+                            <img  data-editable="image" class="editable" src="/images/test images/Screenshot 2026-05-04 115345.png" alt="El estudiante" data-editable="image" data-prop="image_field">
                         </div>
                         <span class="avatar-label">El estudiante</span>
                     </div>
                     <div class="avatar-item">
                         <div class="avatar-img">
-                            <img data-editable="image" class="editable" src="images/test images/Screenshot 2026-05-04 115354.png" alt="El jubilado">
+                            <img  data-editable="image" class="editable" src="/images/test images/Screenshot 2026-05-04 115354.png" alt="El jubilado" data-editable="image" data-prop="image_field">
                         </div>
                         <span class="avatar-label">El jubilado</span>
                     </div>
@@ -232,11 +190,11 @@
             <div class="container">
                 <div class="cta-card-layout">
                     <div class="cta-featured-image">
-                        <img data-editable="image" class="editable" src="images/ChatGPT Image 14 ago 2025 12_41_21.png" alt="FabLab Collaboration">
+                        <img  data-editable="image" class="editable" src="/images/ChatGPT Image 14 ago 2025 12_41_21.png" alt="FabLab Collaboration" data-editable="image" data-prop="image_field">
                     </div>
                     <div class="cta-info-card">
-                        <h4 data-editable="text" class="editable card-subtitle">Más que un espacio</h4>
-                        <p data-editable="text" class="editable card-text">
+                        <h4  data-editable="text" class="editable card-subtitle" data-editable="text" data-prop="text_field">Más que un espacio</h4>
+                        <p  data-editable="text" class="editable card-text" data-editable="text" data-prop="text_field">
                             No es solo un lugar con máquinas: Es un entorno de fabricación colaborativo, donde se comparten ideas, procesos y contactos.<br><br>
                             Donde puedes aprender, crecer y fabricar mejor.
                         </p>
@@ -249,13 +207,13 @@
         <!-- Pricing Plans Section -->
         <section class="coworking-plans-section">
             <div class="container">
-                <h2 data-editable="text" class="editable plans-main-title">NUESTROS PLANES</h2>
+                <h2  data-editable="text" class="editable plans-main-title" data-editable="text" data-prop="text_field">NUESTROS PLANES</h2>
                 
                 <div class="plans-grid">
                     <!-- Plan 1: Anual -->
                     <div class="plan-card">
                         <div class="plan-header-box">
-                            <h3 data-editable="text" class="editable plan-title">Anual</h3>
+                            <h3  data-editable="text" class="editable plan-title" data-editable="text" data-prop="text_field">Anual</h3>
                             <div class="plan-price-row">
                                 <span class="price">7900€+IVA</span>
                             </div>
@@ -279,7 +237,7 @@
                     <!-- Plan 2: Mensual -->
                     <div class="plan-card">
                         <div class="plan-header-box">
-                            <h3 data-editable="text" class="editable plan-title">Mensual</h3>
+                            <h3  data-editable="text" class="editable plan-title" data-editable="text" data-prop="text_field">Mensual</h3>
                             <div class="plan-price-row">
                                 <span class="price">1200€+IVA</span>
                             </div>
@@ -303,7 +261,7 @@
                     <!-- Plan 3: Semanal -->
                     <div class="plan-card">
                         <div class="plan-header-box">
-                            <h3 data-editable="text" class="editable plan-title">Semanal</h3>
+                            <h3  data-editable="text" class="editable plan-title" data-editable="text" data-prop="text_field">Semanal</h3>
                             <div class="plan-price-row">
                                 <span class="price">490€+IVA</span>
                             </div>
@@ -325,7 +283,7 @@
                     <!-- Plan 4: Diario -->
                     <div class="plan-card">
                         <div class="plan-header-box">
-                            <h3 data-editable="text" class="editable plan-title">Diario</h3>
+                            <h3  data-editable="text" class="editable plan-title" data-editable="text" data-prop="text_field">Diario</h3>
                             <div class="plan-price-row">
                                 <span class="price">90€ + IVA</span>
                             </div>
@@ -349,11 +307,11 @@
 
                 <!-- Conditions Box -->
                 <div class="conditions-box">
-                    <h4 data-editable="text" class="editable">CONDICIONES</h4>
+                    <h4  data-editable="text" class="editable" data-editable="text" data-prop="text_field">CONDICIONES</h4>
                     <div class="conditions-text">
-                        <p data-editable="text" class="editable">✓ El tiempo necesario en el uso de las máquinas CNC en los planes Anual, Mensual y Semanal se comunicarán previamente, para la correcta organización y funcionamiento del Coworking. En caso de solapes, se le comunicará al usuario la próxima disponibilidad inmediata. Los planes Anuales, Mensuales, Semanal y diario, tendrán preferencia en el orden mencionado.</p>
-                        <p data-editable="text" class="editable">✓ Una hora es el tiempo total durante el que la máquina está ocupada por un usuario, esté en funcionamiento o no (Esto incluye configuración de parámetros, calibración, puesta de material, retirar piezas y limpieza si es necesario). No se restará del tiempo piezas mal trabajadas o mal cortadas ya que depende de la pericia del usuario hacer las comprobaciones oportunas.</p>
-                        <p data-editable="text" class="editable">✓ Consulta el precio para incrementar el número de personas en cada plan.</p>
+                        <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">✓ El tiempo necesario en el uso de las máquinas CNC en los planes Anual, Mensual y Semanal se comunicarán previamente, para la correcta organización y funcionamiento del Coworking. En caso de solapes, se le comunicará al usuario la próxima disponibilidad inmediata. Los planes Anuales, Mensuales, Semanal y diario, tendrán preferencia en el orden mencionado.</p>
+                        <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">✓ Una hora es el tiempo total durante el que la máquina está ocupada por un usuario, esté en funcionamiento o no (Esto incluye configuración de parámetros, calibración, puesta de material, retirar piezas y limpieza si es necesario). No se restará del tiempo piezas mal trabajadas o mal cortadas ya que depende de la pericia del usuario hacer las comprobaciones oportunas.</p>
+                        <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">✓ Consulta el precio para incrementar el número de personas en cada plan.</p>
                     </div>
                 </div>
             </div>
@@ -362,15 +320,15 @@
         <!-- Machine Rental Pricing Section -->
         <section class="machine-rental-section">
             <div class="container">
-                <h2 data-editable="text" class="editable rental-title">Precio de Alquiler de máquinas por horas</h2>
+                <h2  data-editable="text" class="editable rental-title" data-editable="text" data-prop="text_field">Precio de Alquiler de máquinas por horas</h2>
                 
                 <div class="machine-grid">
                     <!-- Machine 1 -->
                     <div class="machine-card">
                         <div class="machine-info">
-                            <h5 data-editable="text" class="editable m-title">Laser Co2 150W 2,5x1,3m</h5>
+                            <h5  data-editable="text" class="editable m-title" data-editable="text" data-prop="text_field">Laser Co2 150W 2,5x1,3m</h5>
                             <div class="m-img">
-                                <img data-editable="image" class="editable" src="images/Maquina-Corte-Laser-Fibra-Metal-Gran-Formato-Archicercle.jpg" alt="Laser Co2 150W">
+                                <img  data-editable="image" class="editable" src="/images/Maquina-Corte-Laser-Fibra-Metal-Gran-Formato-Archicercle.jpg" alt="Laser Co2 150W" data-editable="image" data-prop="image_field">
                             </div>
                             <div class="m-price-tag">45 €/h</div>
                         </div>
@@ -378,9 +336,9 @@
                     <!-- Machine 2 -->
                     <div class="machine-card">
                         <div class="machine-info">
-                            <h5 data-editable="text" class="editable m-title">Laser Co2 90W/40W Doble cabezal 1,4x0,9m</h5>
+                            <h5  data-editable="text" class="editable m-title" data-editable="text" data-prop="text_field">Laser Co2 90W/40W Doble cabezal 1,4x0,9m</h5>
                             <div class="m-img">
-                                <img data-editable="image" class="editable" src="images/placeholder.png" alt="Laser Co2 Doble Cabezal">
+                                <img  data-editable="image" class="editable" src="/images/placeholder.png" alt="Laser Co2 Doble Cabezal" data-editable="image" data-prop="image_field">
                             </div>
                             <div class="m-price-tag">35 €/h</div>
                         </div>
@@ -388,9 +346,9 @@
                     <!-- Machine 3 -->
                     <div class="machine-card">
                         <div class="machine-info">
-                            <h5 data-editable="text" class="editable m-title">Laser Co2 80W 1,2x0,9m</h5>
+                            <h5  data-editable="text" class="editable m-title" data-editable="text" data-prop="text_field">Laser Co2 80W 1,2x0,9m</h5>
                             <div class="m-img">
-                                <img data-editable="image" class="editable" src="images/placeholder.png" alt="Laser Co2 80W">
+                                <img  data-editable="image" class="editable" src="/images/placeholder.png" alt="Laser Co2 80W" data-editable="image" data-prop="image_field">
                             </div>
                             <div class="m-price-tag">30 €/h</div>
                         </div>
@@ -398,9 +356,9 @@
                     <!-- Machine 4 -->
                     <div class="machine-card">
                         <div class="machine-info">
-                            <h5 data-editable="text" class="editable m-title">Laser Co2 90W 1,3x0,9m</h5>
+                            <h5  data-editable="text" class="editable m-title" data-editable="text" data-prop="text_field">Laser Co2 90W 1,3x0,9m</h5>
                             <div class="m-img">
-                                <img data-editable="image" class="editable" src="images/placeholder.png" alt="Laser Co2 90W">
+                                <img  data-editable="image" class="editable" src="/images/placeholder.png" alt="Laser Co2 90W" data-editable="image" data-prop="image_field">
                             </div>
                             <div class="m-price-tag">45 €/h</div>
                         </div>
@@ -408,9 +366,9 @@
                     <!-- Machine 5 -->
                     <div class="machine-card">
                         <div class="machine-info">
-                            <h5 data-editable="text" class="editable m-title">Laser galvanométrico Fibra 50W</h5>
+                            <h5  data-editable="text" class="editable m-title" data-editable="text" data-prop="text_field">Laser galvanométrico Fibra 50W</h5>
                             <div class="m-img">
-                                <img data-editable="image" class="editable" src="images/maquina-laser-fibra-corte-grabado-no-metales-archicercle-1200x804.jpg" alt="Laser Fibra 50W">
+                                <img  data-editable="image" class="editable" src="/images/maquina-laser-fibra-corte-grabado-no-metales-archicercle-1200x804.jpg" alt="Laser Fibra 50W" data-editable="image" data-prop="image_field">
                             </div>
                             <div class="m-price-tag">50 €/h</div>
                         </div>
@@ -418,9 +376,9 @@
                     <!-- Machine 6 -->
                     <div class="machine-card">
                         <div class="machine-info">
-                            <h5 data-editable="text" class="editable m-title">Laser galvanométrico Co2 100W 50W</h5>
+                            <h5  data-editable="text" class="editable m-title" data-editable="text" data-prop="text_field">Laser galvanométrico Co2 100W 50W</h5>
                             <div class="m-img">
-                                <img data-editable="image" class="editable" src="images/placeholder.png" alt="Laser galvanométrico Co2">
+                                <img  data-editable="image" class="editable" src="/images/placeholder.png" alt="Laser galvanométrico Co2" data-editable="image" data-prop="image_field">
                             </div>
                             <div class="m-price-tag">60 €/h</div>
                         </div>
@@ -428,9 +386,9 @@
                     <!-- Machine 7 -->
                     <div class="machine-card">
                         <div class="machine-info">
-                            <h5 data-editable="text" class="editable m-title">Termo-dobladora de plásticos en caliente</h5>
+                            <h5  data-editable="text" class="editable m-title" data-editable="text" data-prop="text_field">Termo-dobladora de plásticos en caliente</h5>
                             <div class="m-img">
-                                <img data-editable="image" class="editable" src="images/placeholder.png" alt="Termo-dobladora">
+                                <img  data-editable="image" class="editable" src="/images/placeholder.png" alt="Termo-dobladora" data-editable="image" data-prop="image_field">
                             </div>
                             <div class="m-price-tag">25 €/h</div>
                         </div>
@@ -438,9 +396,9 @@
                     <!-- Machine 8 -->
                     <div class="machine-card">
                         <div class="machine-info">
-                            <h5 data-editable="text" class="editable m-title">Fresadora CNC 1,2x1,2m 9KW</h5>
+                            <h5  data-editable="text" class="editable m-title" data-editable="text" data-prop="text_field">Fresadora CNC 1,2x1,2m 9KW</h5>
                             <div class="m-img">
-                                <img data-editable="image" class="editable" src="images/Maquina_letras_corporeas_3d_Archicercle.jpg" alt="Fresadora CNC">
+                                <img  data-editable="image" class="editable" src="/images/Maquina_letras_corporeas_3d_Archicercle.jpg" alt="Fresadora CNC" data-editable="image" data-prop="image_field">
                             </div>
                             <div class="m-price-tag">45 €/h</div>
                         </div>
@@ -449,8 +407,8 @@
 
                 <!-- Tools Box -->
                 <div class="tools-rental-box">
-                    <p data-editable="text" class="editable tools-title">Herramientas eléctricas y manuales</p>
-                    <p data-editable="text" class="editable tools-price">10€/h a 45€/h</p>
+                    <p  data-editable="text" class="editable tools-title" data-editable="text" data-prop="text_field">Herramientas eléctricas y manuales</p>
+                    <p  data-editable="text" class="editable tools-price" data-editable="text" data-prop="text_field">10€/h a 45€/h</p>
                 </div>
 
                 <!-- Central CTA -->
@@ -460,7 +418,7 @@
 
                 <!-- Training Banner -->
                 <div class="courses-banner">
-                    <img data-editable="image" class="editable" src="images/cursos-formacion-fabricacion-digital-corte-laser-cnc-archicercle-web.jpg" alt="Cursos Formativos">
+                    <img  data-editable="image" class="editable" src="/images/cursos-formacion-fabricacion-digital-corte-laser-cnc-archicercle-web.jpg" alt="Cursos Formativos" data-editable="image" data-prop="image_field">
                     <div class="banner-btn-wrapper">
                         <a href="#" class="btn-info-small">Quiero más información</a>
                     </div>
@@ -472,12 +430,12 @@
         <section class="coworking-spinoff-section">
             <div class="container">
                 <div class="spinoff-header">
-                    <h2 data-editable="text" class="editable spinoff-title">Spin-off</h2>
+                    <h2  data-editable="text" class="editable spinoff-title" data-editable="text" data-prop="text_field">Spin-off</h2>
                     <span class="spinoff-tagline">PROYECTOS SATÉLITE</span>
                     <div class="spinoff-description">
-                        <p data-editable="text" class="editable">Con los años el estudio ha ido creciendo. Hemos creado decenas proyectos, con su propio ecosistema, que necesitaban tener una identidad bien definida para convertirse en empresa.</p>
-                        <p data-editable="text" class="editable">Proyectos que ahora orbitan alrededor de nuestro sol Archicercle, y existen gracias a él.</p>
-                        <p data-editable="text" class="editable">Aquí puede estar tu empresa co-creada, asóciate con nosotros.</p>
+                        <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Con los años el estudio ha ido creciendo. Hemos creado decenas proyectos, con su propio ecosistema, que necesitaban tener una identidad bien definida para convertirse en empresa.</p>
+                        <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Proyectos que ahora orbitan alrededor de nuestro sol Archicercle, y existen gracias a él.</p>
+                        <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Aquí puede estar tu empresa co-creada, asóciate con nosotros.</p>
                     </div>
                 </div>
 
@@ -485,7 +443,7 @@
                     <!-- Featured Big Box -->
                     <div class="coworking-spinoff-featured">
                         <div class="coworking-spinoff-img-box">
-                            <img data-editable="image" class="editable" src="images/placeholder.png" alt="Tu empresa aquí">
+                            <img  data-editable="image" class="editable" src="/images/placeholder.png" alt="Tu empresa aquí" data-editable="image" data-prop="image_field">
                             <div class="coworking-spinoff-red-label">Tu empresa aquí</div>
                         </div>
                     </div>
@@ -494,55 +452,55 @@
                     <div class="coworking-spinoff-grid">
                         <div class="coworking-spinoff-item">
                             <div class="coworking-spinoff-img-box">
-                                <img data-editable="image" class="editable" src="images/placeholder.png" alt="Fotomatón">
+                                <img  data-editable="image" class="editable" src="/images/placeholder.png" alt="Fotomatón" data-editable="image" data-prop="image_field">
                                 <div class="coworking-spinoff-red-label">Fotomatón</div>
                             </div>
                         </div>
                         <div class="coworking-spinoff-item">
                             <div class="coworking-spinoff-img-box">
-                                <img data-editable="image" class="editable" src="images/placeholder.png" alt="Mirror design">
+                                <img  data-editable="image" class="editable" src="/images/placeholder.png" alt="Mirror design" data-editable="image" data-prop="image_field">
                                 <div class="coworking-spinoff-red-label">Mirror design</div>
                             </div>
                         </div>
                         <div class="coworking-spinoff-item">
                             <div class="coworking-spinoff-img-box">
-                                <img data-editable="image" class="editable" src="images/placeholder.png" alt="Ringbox">
+                                <img  data-editable="image" class="editable" src="/images/placeholder.png" alt="Ringbox" data-editable="image" data-prop="image_field">
                                 <div class="coworking-spinoff-red-label">Ringbox</div>
                             </div>
                         </div>
                         <div class="coworking-spinoff-item">
                             <div class="coworking-spinoff-img-box">
-                                <img data-editable="image" class="editable" src="images/placeholder.png" alt="Fabrica tu metacrilato">
+                                <img  data-editable="image" class="editable" src="/images/placeholder.png" alt="Fabrica tu metacrilato" data-editable="image" data-prop="image_field">
                                 <div class="coworking-spinoff-red-label">Fabrica tu metacrilato</div>
                             </div>
                         </div>
                         <div class="coworking-spinoff-item">
                             <div class="coworking-spinoff-img-box">
-                                <img data-editable="image" class="editable" src="images/placeholder.png" alt="Cursos">
+                                <img  data-editable="image" class="editable" src="/images/placeholder.png" alt="Cursos" data-editable="image" data-prop="image_field">
                                 <div class="coworking-spinoff-red-label">Cursos</div>
                             </div>
                         </div>
                         <div class="coworking-spinoff-item">
                             <div class="coworking-spinoff-img-box">
-                                <img data-editable="image" class="editable" src="images/placeholder.png" alt="Machines">
+                                <img  data-editable="image" class="editable" src="/images/placeholder.png" alt="Machines" data-editable="image" data-prop="image_field">
                                 <div class="coworking-spinoff-red-label">Machines</div>
                             </div>
                         </div>
                         <div class="coworking-spinoff-item">
                             <div class="coworking-spinoff-img-box">
-                                <img data-editable="image" class="editable" src="images/placeholder.png" alt="GR products">
+                                <img  data-editable="image" class="editable" src="/images/placeholder.png" alt="GR products" data-editable="image" data-prop="image_field">
                                 <div class="coworking-spinoff-red-label">GR products</div>
                             </div>
                         </div>
                         <div class="coworking-spinoff-item">
                             <div class="coworking-spinoff-img-box">
-                                <img data-editable="image" class="editable" src="images/placeholder.png" alt="Just lasercut">
+                                <img  data-editable="image" class="editable" src="/images/placeholder.png" alt="Just lasercut" data-editable="image" data-prop="image_field">
                                 <div class="coworking-spinoff-red-label">Just lasercut</div>
                             </div>
                         </div>
                         <div class="coworking-spinoff-item">
                             <div class="coworking-spinoff-img-box">
-                                <img data-editable="image" class="editable" src="images/placeholder.png" alt="Cosas 3d">
+                                <img  data-editable="image" class="editable" src="/images/placeholder.png" alt="Cosas 3d" data-editable="image" data-prop="image_field">
                                 <div class="coworking-spinoff-red-label">Cosas 3d</div>
                             </div>
                         </div>
@@ -557,24 +515,24 @@
                 <div class="manifesto-grid">
                     <!-- Left: Illustration -->
                     <div class="manifesto-img">
-                        <img data-editable="image" class="editable" src="images/Captura-de-pantalla-2025-11-04-a-las-12.20.46.png" alt="Archicercle FabLab Illustration">
+                        <img  data-editable="image" class="editable" src="/images/Captura-de-pantalla-2025-11-04-a-las-12.20.46.png" alt="Archicercle FabLab Illustration" data-editable="image" data-prop="image_field">
                     </div>
                     
                     <!-- Right: Text Content -->
                     <div class="manifesto-content">
-                        <h2 data-editable="text" class="editable manifesto-title">MANIFIESTO</h2>
+                        <h2  data-editable="text" class="editable manifesto-title" data-editable="text" data-prop="text_field">MANIFIESTO</h2>
                         <span class="manifesto-subtitle">DE ARCHICERCLE & CO</span>
                         
                         <div class="manifesto-text">
-                            <p data-editable="text" class="editable m-highlight">Somos más que un espacio con máquinas. Somos el puente entre la idea y la realidad.</p>
+                            <p  data-editable="text" class="editable m-highlight" data-editable="text" data-prop="text_field">Somos más que un espacio con máquinas. Somos el puente entre la idea y la realidad.</p>
                             
-                            <p data-editable="text" class="editable">Aquí no vienes solo a usar herramientas: vienes a fabricar sin límites con el respaldo de quienes han vivido cada proceso, probado cada máquina y afinado cada detalle.</p>
+                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Aquí no vienes solo a usar herramientas: vienes a fabricar sin límites con el respaldo de quienes han vivido cada proceso, probado cada máquina y afinado cada detalle.</p>
                             
-                            <p data-editable="text" class="editable">No creemos en barreras técnicas ni en excusas. Creemos en prototipos que se tocan, en piezas que funcionan y en proyectos que nacen para quedarse.</p>
+                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">No creemos en barreras técnicas ni en excusas. Creemos en prototipos que se tocan, en piezas que funcionan y en proyectos que nacen para quedarse.</p>
                             
-                            <p data-editable="text" class="editable">Cada máquina aquí tiene historia. Cada mesa ha visto ideas convertirse en productos. Y cada persona que entra, sale con algo nuevo: una pieza, un conocimiento, una conexión... o todo junto.</p>
+                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Cada máquina aquí tiene historia. Cada mesa ha visto ideas convertirse en productos. Y cada persona que entra, sale con algo nuevo: una pieza, un conocimiento, una conexión... o todo junto.</p>
                             
-                            <p data-editable="text" class="editable manifesto-footer">Esto es Archicercle FabLab. Tu espacio. Tus máquinas. Nuestra experiencia. Hagamos que tu proyecto exista.</p>
+                            <p  data-editable="text" class="editable manifesto-footer" data-editable="text" data-prop="text_field">Esto es Archicercle FabLab. Tu espacio. Tus máquinas. Nuestra experiencia. Hagamos que tu proyecto exista.</p>
                         </div>
                     </div>
                 </div>
@@ -588,13 +546,13 @@
             <div class="container">
                 <div class="contact-layout">
                     <div class="contact-info">
-                        <h2 data-editable="text" class="editable contact-title">Hablemos</h2>
+                        <h2  data-editable="text" class="editable contact-title" data-editable="text" data-prop="text_field">Hablemos</h2>
                         <div class="contact-description">
-                            <p data-editable="text" class="editable">Las marcas tienen que comunicarse con sus clientes. Y no sólo hablar, también tienen que escuchar y responder.</p>
-                            <p data-editable="text" class="editable">Hablar, dialogar, debatir, escuchar, ponerse en la piel del otro... no hemos inventado nada, es lo que siempre se ha llamado comunicación.</p>
-                            <p data-editable="text" class="editable">Y es lo que hacemos con nuestros clientes y con todo aquel que quiera conocernos y que lo conozcamos.</p>
-                            <p data-editable="text" class="editable">Aquí tiene nuestra dirección, nuestro teléfono y un correo de contacto. Le esperamos con las puertas (y las mentes) bien abiertas.</p>
-                            <p data-editable="text" class="editable"><strong>¡Nos vemos!</strong></p>
+                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Las marcas tienen que comunicarse con sus clientes. Y no sólo hablar, también tienen que escuchar y responder.</p>
+                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Hablar, dialogar, debatir, escuchar, ponerse en la piel del otro... no hemos inventado nada, es lo que siempre se ha llamado comunicación.</p>
+                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Y es lo que hacemos con nuestros clientes y con todo aquel que quiera conocernos y que lo conozcamos.</p>
+                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Aquí tiene nuestra dirección, nuestro teléfono y un correo de contacto. Le esperamos con las puertas (y las mentes) bien abiertas.</p>
+                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field"><strong>¡Nos vemos!</strong></p>
                         </div>
                         
                         <ul class="contact-meta">
@@ -660,7 +618,7 @@
         <!-- FAQ Section -->
         <section class="faq-section">
             <div class="container">
-                <h2 data-editable="text" class="editable faq-main-title">Preguntas frecuentes</h2>
+                <h2  data-editable="text" class="editable faq-main-title" data-editable="text" data-prop="text_field">Preguntas frecuentes</h2>
                 <div class="faq-list">
                     <div class="faq-item">
                         <button class="faq-question">
@@ -720,38 +678,38 @@
                 <div class="footer-grid">
                     <!-- Column 1: Logo & Social -->
                     <div class="footer-col about-col">
-                        <img data-editable="image" src="images/Archicercle.png" alt="Archicercle" class="editable footer-logo">
-                        <p data-editable="text" class="editable footer-slogan">Fabricación digital y artesanal creativa.</p>
+                        <img  data-editable="image" src="/images/Archicercle.png" alt="Archicercle" class="editable footer-logo" data-editable="image" data-prop="image_field">
+                        <p  data-editable="text" class="editable footer-slogan" data-editable="text" data-prop="text_field">Fabricación digital y artesanal creativa.</p>
                                                                                                                         <div class="footer-socials">
-                            <a href="https://www.instagram.com/archicercle/" target="_blank" aria-label="Instagram"><img data-editable="image" class="editable" src="images/instagram.png" alt="Instagram"></a>
-                            <a href="https://it.pinterest.com/archicercle" target="_blank" aria-label="Pinterest"><img data-editable="image" class="editable" src="images/pinterest.png" alt="Pinterest"></a>
-                            <a href="https://www.tiktok.com/@archicercle" target="_blank" aria-label="TikTok"><img data-editable="image" class="editable" src="images/tik-tok.png" alt="TikTok"></a>
-                            <a href="https://wa.me/34649999853" target="_blank" aria-label="WhatsApp"><img data-editable="image" class="editable" src="images/whatsapp.png" alt="WhatsApp"></a>
-                            <a href="mailto:PabloPastor@archicercle.com" aria-label="Email"><img data-editable="image" class="editable" src="images/email.png" alt="Email"></a>
-                            <a href="https://www.linkedin.com/in/pastorpablo/" target="_blank" aria-label="LinkedIn"><img data-editable="image" class="editable" src="images/linkedin.png" alt="LinkedIn"></a>
+                            <a href="https://www.instagram.com/archicercle/" target="_blank" aria-label="Instagram"><img  data-editable="image" class="editable" src="/images/instagram.png" alt="Instagram" data-editable="image" data-prop="image_field"></a>
+                            <a href="https://it.pinterest.com/archicercle" target="_blank" aria-label="Pinterest"><img  data-editable="image" class="editable" src="/images/pinterest.png" alt="Pinterest" data-editable="image" data-prop="image_field"></a>
+                            <a href="https://www.tiktok.com/@archicercle" target="_blank" aria-label="TikTok"><img  data-editable="image" class="editable" src="/images/tik-tok.png" alt="TikTok" data-editable="image" data-prop="image_field"></a>
+                            <a href="https://wa.me/34649999853" target="_blank" aria-label="WhatsApp"><img  data-editable="image" class="editable" src="/images/whatsapp.png" alt="WhatsApp" data-editable="image" data-prop="image_field"></a>
+                            <a href="mailto:PabloPastor@archicercle.com" aria-label="Email"><img  data-editable="image" class="editable" src="/images/email.png" alt="Email" data-editable="image" data-prop="image_field"></a>
+                            <a href="https://www.linkedin.com/in/pastorpablo/" target="_blank" aria-label="LinkedIn"><img  data-editable="image" class="editable" src="/images/linkedin.png" alt="LinkedIn" data-editable="image" data-prop="image_field"></a>
                         </div>
                     </div>
 
                     <!-- Column 2: Contact -->
                     <div class="footer-col contact-col">
-                        <h3 data-editable="text" class="editable">Contacto</h3>
+                        <h3  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Contacto</h3>
                         <div class="contact-item">
-                            <p data-editable="text" class="editable">- Coworking fablab Archicercle: <a href="https://www.google.com/maps/search/?api=1&query=Calle+Utiel+6+bajo+derecha+46020+Valencia" target="_blank">Calle Utiel 6 bajo derecha, 46020, Valencia</a></p>
+                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">- Coworking fablab Archicercle: <a href="https://www.google.com/maps/search/?api=1&query=Calle+Utiel+6+bajo+derecha+46020+Valencia" target="_blank">Calle Utiel 6 bajo derecha, 46020, Valencia</a></p>
                         </div>
                         <div class="contact-item">
-                            <p data-editable="text" class="editable">- Estudio Fábrica Archicercle: <a href="https://www.google.com/maps/search/?api=1&query=Placa+Pere+Maria+Orts+i+Bosch+18+bajo+46014+Valencia" target="_blank">Plaça Pere Maria Orts i Bosch 18, bajo. 46014, Valencia</a></p>
+                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">- Estudio Fábrica Archicercle: <a href="https://www.google.com/maps/search/?api=1&query=Placa+Pere+Maria+Orts+i+Bosch+18+bajo+46014+Valencia" target="_blank">Plaça Pere Maria Orts i Bosch 18, bajo. 46014, Valencia</a></p>
                         </div>
                         <div class="contact-item">
-                            <p data-editable="text" class="editable">Mail: <a href="mailto:PabloPastor@archicercle.com">PabloPastor@archicercle.com</a></p>
+                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Mail: <a href="mailto:PabloPastor@archicercle.com">PabloPastor@archicercle.com</a></p>
                         </div>
                         <div class="contact-item">
-                            <p data-editable="text" class="editable">Móvil: <a href="https://wa.me/34649999853" target="_blank">649 999 853</a></p>
+                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Móvil: <a href="https://wa.me/34649999853" target="_blank">649 999 853</a></p>
                         </div>
                     </div>
 
                     <!-- Column 3: Quick Links -->
                     <div class="footer-col links-col">
-                        <h3 data-editable="text" class="editable">Quick Links</h3>
+                        <h3  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Quick Links</h3>
                         <ul>
                             <li><a href="coworking.html">Coworking</a></li>
                             <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
@@ -767,10 +725,10 @@
 
                     <!-- Column 4: Kit Digital -->
                     <div class="footer-col kit-col">
-                        <h3 data-editable="text" class="editable">Kit Digital</h3>
+                        <h3  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Kit Digital</h3>
                         <div class="kit-logos">
-                            <img data-editable="image" src="images/ue-kit.png" alt="Financiado por la Unión Europea" class="editable kit-img">
-                            <img data-editable="image" src="images/prtr-kit.png" alt="Plan de Recuperación" class="editable kit-img">
+                            <img  data-editable="image" src="/images/ue-kit.png" alt="Financiado por la Unión Europea" class="editable kit-img" data-editable="image" data-prop="image_field">
+                            <img  data-editable="image" src="/images/prtr-kit.png" alt="Plan de Recuperación" class="editable kit-img" data-editable="image" data-prop="image_field">
                         </div>
                         <a href="declaracion.html" class="accessibility-link">DECLARACIÓN DE ACCESIBILIDAD</a>
                     </div>
@@ -780,20 +738,9 @@
             <!-- Sub Footer -->
             <div class="sub-footer">
                 <div class="container">
-                    <p data-editable="text" class="editable">2025 Todos los derechos reservados | Diseño y desarrollo web por Ahmed Gomaa In Archicercle.</p>
+                    <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">2025 Todos los derechos reservados | Diseño y desarrollo web por Ahmed Gomaa In Archicercle.</p>
                 </div>
             </div>
         </footer>
     </main>
-
-    <a href="https://wa.me/" class="whatsapp-float" aria-label="WhatsApp">
-        <img data-editable="image" class="editable" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-    </a>
-
-    <script src="script.js"></script>
-    <script>
-        lucide.createIcons();
-    </script>
-</body>
-</html>
-
+</Layout>

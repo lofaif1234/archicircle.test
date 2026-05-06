@@ -1,57 +1,15 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios de Fabricación - Archicercle</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <!-- Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-</head>
-<body class="fabrication-page">
-    <header class="header">
-        <div class="header-container">
-            <a href="index.html" class="logo">
-                <img data-editable="image" class="editable" src="images/Archicercle.png" alt="Archicercle Logo">
-            </a>
+---
+import Layout from '../layouts/Layout.astro';
+---
 
-            <nav class="nav-menu">
-                <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link">Inicio</a></li>
-                    <li><a href="coworking.html" class="nav-link">Coworking</a></li>
-                    <li><a href="sobre-nosotros.html" class="nav-link">Sobre nosotros</a></li>
-                    <li><a href="corte-laser-online.html" class="nav-link">Corte Láser Online</a></li>
-                    <li><a href="servicios-de-diseno.html" class="nav-link">Servicios de diseño</a></li>
-                    <li><a href="servicios-de-fabricacion.html" class="nav-link active">Servicios de Fabricación</a></li>
-                    <li><a href="materiales.html" class="nav-link">Materiales</a></li>
-                    <li><a href="maquinaria.html" class="nav-link">Maquinaria</a></li>
-                    <li><a href="tienda.html" class="nav-link">Tienda</a></li>
-                    <li class="mobile-only"><a href="contacto.html" class="contact-btn">CONTACTO</a></li>
-                </ul>
-            </nav>
-
-            <div class="header-actions">
-                <a href="contacto.html" class="contact-btn">CONTACTO</a>
-            </div>
-
-            <button class="mobile-toggle" aria-label="Abrir menú" aria-expanded="false">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-        </div>
-    </header>
-
+<Layout title="Servicios de Fabricación - Archicercle">
     <main>
         <section class="fabrication-hero">
             <div class="hero-overlay"></div>
             <div class="container">
                 <div class="fabrication-top">
-                    <h1 data-editable="text" class="editable">Fabricación digital CNC, artesanal y creativa.</h1>
-                    <p data-editable="text" class="editable">Ponemos nuestros recursos, máquinas y más de 100 máquinas, +10.000 productos fabricados y una filosofía productiva única cuando hace falta. Rápido, preciso y sin depender de terceros.</p>
+                    <h1  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Fabricación digital CNC, artesanal y creativa.</h1>
+                    <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Ponemos nuestros recursos, máquinas y más de 100 máquinas, +10.000 productos fabricados y una filosofía productiva única cuando hace falta. Rápido, preciso y sin depender de terceros.</p>
                     <a href="#" class="btn-link-red">Proyectos a fabricar hoy</a>
                 </div>
 
@@ -59,51 +17,51 @@
 
                 <div class="fabrication-grid">
                     <div class="fab-grid-item">
-                        <h3 data-editable="text" class="editable">Fabricamos para pensar mejor proyectos, para fabricar mejor.</h3>
-                        <p data-editable="text" class="editable">En Archicercle no hemos montado una nave llena de máquinas para fabricar de pedidos. Las tenemos para poder responder con precisión y libertad. Porque cuando una idea merece hacerse realidad no hay tiempo que perder en buscar quién, dónde.</p>
+                        <h3  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Fabricamos para pensar mejor proyectos, para fabricar mejor.</h3>
+                        <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">En Archicercle no hemos montado una nave llena de máquinas para fabricar de pedidos. Las tenemos para poder responder con precisión y libertad. Porque cuando una idea merece hacerse realidad no hay tiempo que perder en buscar quién, dónde.</p>
                     </div>
                     <div class="fab-grid-item">
-                        <h3 data-editable="text" class="editable">Entender el material implica no tener límites, es para llevarlo de trabajo.</h3>
-                        <p data-editable="text" class="editable">Contamos con un departamento de I+D real en el que desarrollamos y usamos cada día para fabricar de serie. Pero solo los encendemos cuando lo mejor se diseña en un material con una técnica puntual. Buscamos las máquinas, las rompemos, les buscamos los límites... y luego las integramos en nuestra metodología. A veces incluso para cosas individuales que han sido diseñadas.</p>
+                        <h3  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Entender el material implica no tener límites, es para llevarlo de trabajo.</h3>
+                        <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Contamos con un departamento de I+D real en el que desarrollamos y usamos cada día para fabricar de serie. Pero solo los encendemos cuando lo mejor se diseña en un material con una técnica puntual. Buscamos las máquinas, las rompemos, les buscamos los límites... y luego las integramos en nuestra metodología. A veces incluso para cosas individuales que han sido diseñadas.</p>
                     </div>
                     <div class="fab-grid-item">
-                        <h3 data-editable="text" class="editable">Experimentamos, siempre.</h3>
-                        <p data-editable="text" class="editable">Realizamos pruebas internas continuamente, testamos materiales, combinaciones, acabados y procesos. Así aprendemos. Así podemos fabricar mejor. Y así asesoramos con pruebas reales los +10.000 productos fabricados. Nuestra experiencia es algo real. Esa cifra no se traduce en eficiencia.</p>
+                        <h3  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Experimentamos, siempre.</h3>
+                        <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Realizamos pruebas internas continuamente, testamos materiales, combinaciones, acabados y procesos. Así aprendemos. Así podemos fabricar mejor. Y así asesoramos con pruebas reales los +10.000 productos fabricados. Nuestra experiencia es algo real. Esa cifra no se traduce en eficiencia.</p>
                     </div>
                     <div class="fab-grid-item">
-                        <h3 data-editable="text" class="editable">Capacidad de respuesta, sin excusas.</h3>
-                        <p data-editable="text" class="editable">Prototipos, piezas únicas, pequeñas producciones o escalas largas. Al hacer de todo en casa, los controles son el resultado, los tiempos, y sobre todo... la calidad. ¿Tienes una necesidad algo muy específico? Solo la fabricamos de saber las máquinas como nosotros. Y sí, solo trabajamos con los mejores.</p>
+                        <h3  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Capacidad de respuesta, sin excusas.</h3>
+                        <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Prototipos, piezas únicas, pequeñas producciones o escalas largas. Al hacer de todo en casa, los controles son el resultado, los tiempos, y sobre todo... la calidad. ¿Tienes una necesidad algo muy específico? Solo la fabricamos de saber las máquinas como nosotros. Y sí, solo trabajamos con los mejores.</p>
                     </div>
                     <div class="fab-grid-item">
-                        <h3 data-editable="text" class="editable">Fabricamos para empresas grandes, pequeñas y particulares.</h3>
-                        <p data-editable="text" class="editable">Atendemos a marcas que necesitan desarrollar productos complejos. Agencias y estudios que quieren que sus ideas se materialicen sin fisuras. Y también a creadores individuales, que buscan un sitio de confianza donde no ser una idea pero necesitan un lugar donde las cosas pasen. Aquí las puertas están abiertas. Las ideas se convierten en objetos por manos de personas.</p>
+                        <h3  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Fabricamos para empresas grandes, pequeñas y particulares.</h3>
+                        <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Atendemos a marcas que necesitan desarrollar productos complejos. Agencias y estudios que quieren que sus ideas se materialicen sin fisuras. Y también a creadores individuales, que buscan un sitio de confianza donde no ser una idea pero necesitan un lugar donde las cosas pasen. Aquí las puertas están abiertas. Las ideas se convierten en objetos por manos de personas.</p>
                     </div>
                     <div class="fab-grid-item">
-                        <h3 data-editable="text" class="editable">Integramos la fabricación digital y las personas de forma real.</h3>
-                        <p data-editable="text" class="editable">Combinamos fabricación digital y procesos artesanales. Manejamos lásers, CNCs, impresoras 3D... Pero también cortamos, lijamos, ensamblamos y ajustamos a mano. Lo que los robots no saben hacer, lo hacemos nosotros.</p>
+                        <h3  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Integramos la fabricación digital y las personas de forma real.</h3>
+                        <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Combinamos fabricación digital y procesos artesanales. Manejamos lásers, CNCs, impresoras 3D... Pero también cortamos, lijamos, ensamblamos y ajustamos a mano. Lo que los robots no saben hacer, lo hacemos nosotros.</p>
                     </div>
                 </div>
 
                 <hr class="fab-divider">
 
                 <div class="experience-section">
-                    <h2 data-editable="text" class="editable experience-title">Nuestra experiencia; tu tranquilidad y confianza.</h2>
+                    <h2  data-editable="text" class="editable experience-title" data-editable="text" data-prop="text_field">Nuestra experiencia; tu tranquilidad y confianza.</h2>
                     <div class="experience-grid">
                         <div class="exp-item">
                             <i data-lucide="layers" class="exp-icon"></i>
-                            <p data-editable="text" class="editable">Sabemos qué procesos funcionan y exactamente en qué.</p>
+                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Sabemos qué procesos funcionan y exactamente en qué.</p>
                         </div>
                         <div class="exp-item">
                             <i data-lucide="shield-check" class="exp-icon"></i>
-                            <p data-editable="text" class="editable">Sabemos cómo evitar errores antes de fabricar en serie.</p>
+                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Sabemos cómo evitar errores antes de fabricar en serie.</p>
                         </div>
                         <div class="exp-item">
                             <i data-lucide="award" class="exp-icon"></i>
-                            <p data-editable="text" class="editable">Sabemos cómo fabricar algo de la mejor calidad.</p>
+                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Sabemos cómo fabricar algo de la mejor calidad.</p>
                         </div>
                         <div class="exp-item">
                             <i data-lucide="calculator" class="exp-icon"></i>
-                            <p data-editable="text" class="editable">Sabemos cuánto cuesta cada parte de fabricar.</p>
+                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Sabemos cuánto cuesta cada parte de fabricar.</p>
                         </div>
                     </div>
                 </div>
@@ -112,8 +70,8 @@
 
                 <div class="work-layout">
                     <div class="work-content">
-                        <h2 data-editable="text" class="editable work-title">¿Cómo trabajamos?</h2>
-                        <p data-editable="text" class="editable work-desc">Aunque cada proyecto es un mundo, en todos nuestros proyectos solemos trabajar, de manera resumida, siguiendo los siguientes 4 puntos.</p>
+                        <h2  data-editable="text" class="editable work-title" data-editable="text" data-prop="text_field">¿Cómo trabajamos?</h2>
+                        <p  data-editable="text" class="editable work-desc" data-editable="text" data-prop="text_field">Aunque cada proyecto es un mundo, en todos nuestros proyectos solemos trabajar, de manera resumida, siguiendo los siguientes 4 puntos.</p>
                         <div class="work-steps">
                             <div class="work-box">1. Nos cuentas la idea</div>
                             <div class="work-box">2. La diseñamos contigo</div>
@@ -122,8 +80,8 @@
                         </div>
                     </div>
                     <div class="cta-card">
-                        <h3 data-editable="text" class="editable">¿Un prototipo? ¿Una edición limitada? ¿Una producción en cadena?</h3>
-                        <p data-editable="text" class="editable">Ponemos máquinas, nuestro expertise y nuestro criterio técnico preparados para producir lo que necesites, desde una unidad hasta miles...</p>
+                        <h3  data-editable="text" class="editable" data-editable="text" data-prop="text_field">¿Un prototipo? ¿Una edición limitada? ¿Una producción en cadena?</h3>
+                        <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Ponemos máquinas, nuestro expertise y nuestro criterio técnico preparados para producir lo que necesites, desde una unidad hasta miles...</p>
                         <a href="#" class="btn-black">Quiero fabricar un producto</a>
                     </div>
                 </div>
@@ -133,8 +91,8 @@
         <!-- Demanded Services Section -->
         <section class="demanded-services-section">
             <div class="container">
-                <h2 data-editable="text" class="editable demanded-title">Los servicios de fabricación más demandados.</h2>
-                <p data-editable="text" class="editable demanded-subtitle">Aunque disponemos de muchos más procesos de fabricación, estos 3 suelen estar presentes en gran parte de los proyectos que realizamos.</p>
+                <h2  data-editable="text" class="editable demanded-title" data-editable="text" data-prop="text_field">Los servicios de fabricación más demandados.</h2>
+                <p  data-editable="text" class="editable demanded-subtitle" data-editable="text" data-prop="text_field">Aunque disponemos de muchos más procesos de fabricación, estos 3 suelen estar presentes en gran parte de los proyectos que realizamos.</p>
                 
                 <div class="demanded-grid">
                     <div class="demanded-card">
@@ -151,7 +109,7 @@
                     </div>
                 </div>
 
-                <h2 data-editable="text" class="editable all-processes-title">TODOS NUESTROS PROCESOS DE FABRICACIÓN</h2>
+                <h2  data-editable="text" class="editable all-processes-title" data-editable="text" data-prop="text_field">TODOS NUESTROS PROCESOS DE FABRICACIÓN</h2>
                 
                 <div class="all-processes-grid">
                     <!-- 1 -->
@@ -162,7 +120,7 @@
                             </div>
                         </div>
                         <div class="service-bottom">
-                            <h3 data-editable="text" class="editable">Diseño y desarrollo de productos y proyectos.</h3>
+                            <h3  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Diseño y desarrollo de productos y proyectos.</h3>
                             <a href="#" class="btn-info">+ INFO</a>
                         </div>
                     </div>
@@ -174,7 +132,7 @@
                             </div>
                         </div>
                         <div class="service-bottom">
-                            <h3 data-editable="text" class="editable">Branding y diseño gráfico aplicado a producto.</h3>
+                            <h3  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Branding y diseño gráfico aplicado a producto.</h3>
                             <a href="#" class="btn-info">+ INFO</a>
                         </div>
                     </div>
@@ -186,7 +144,7 @@
                             </div>
                         </div>
                         <div class="service-bottom">
-                            <h3 data-editable="text" class="editable">Diseño de interiores, decoración y mobiliario.</h3>
+                            <h3  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Diseño de interiores, decoración y mobiliario.</h3>
                             <a href="#" class="btn-info">+ INFO</a>
                         </div>
                     </div>
@@ -198,7 +156,7 @@
                             </div>
                         </div>
                         <div class="service-bottom">
-                            <h3 data-editable="text" class="editable">Diseño retail, escaparates y rotulación.</h3>
+                            <h3  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Diseño retail, escaparates y rotulación.</h3>
                             <a href="#" class="btn-info">+ INFO</a>
                         </div>
                     </div>
@@ -210,7 +168,7 @@
                             </div>
                         </div>
                         <div class="service-bottom">
-                            <h3 data-editable="text" class="editable">Diseño de productos y proyectos para el sector hospitality.</h3>
+                            <h3  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Diseño de productos y proyectos para el sector hospitality.</h3>
                             <a href="#" class="btn-info">+ INFO</a>
                         </div>
                     </div>
@@ -222,7 +180,7 @@
                             </div>
                         </div>
                         <div class="service-bottom">
-                            <h3 data-editable="text" class="editable">Diseño de productos y proyectos para el sector horeca.</h3>
+                            <h3  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Diseño de productos y proyectos para el sector horeca.</h3>
                             <a href="#" class="btn-info">+ INFO</a>
                         </div>
                     </div>
@@ -234,7 +192,7 @@
                             </div>
                         </div>
                         <div class="service-bottom">
-                            <h3 data-editable="text" class="editable">Diseño de productos y proyectos para el sector residencial.</h3>
+                            <h3  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Diseño de productos y proyectos para el sector residencial.</h3>
                             <a href="#" class="btn-info">+ INFO</a>
                         </div>
                     </div>
@@ -246,7 +204,7 @@
                             </div>
                         </div>
                         <div class="service-bottom">
-                            <h3 data-editable="text" class="editable">Diseño de maquetas de arquitectura e ingeniería.</h3>
+                            <h3  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Diseño de maquetas de arquitectura e ingeniería.</h3>
                             <a href="#" class="btn-info">+ INFO</a>
                         </div>
                     </div>
@@ -258,7 +216,7 @@
                             </div>
                         </div>
                         <div class="service-bottom">
-                            <h3 data-editable="text" class="editable">Diseño de prototipos en fase inicial funcionales.</h3>
+                            <h3  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Diseño de prototipos en fase inicial funcionales.</h3>
                             <a href="#" class="btn-info">+ INFO</a>
                         </div>
                     </div>
@@ -270,7 +228,7 @@
                             </div>
                         </div>
                         <div class="service-bottom">
-                            <h3 data-editable="text" class="editable">Diseño de productos y proyectos para el sector hospitality.</h3>
+                            <h3  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Diseño de productos y proyectos para el sector hospitality.</h3>
                             <a href="#" class="btn-info">+ INFO</a>
                         </div>
                     </div>
@@ -281,41 +239,41 @@
         <!-- Who are you Section porco dio  -->
         <section class="who-are-you-section">
             <div class="container">
-                <h2 data-editable="text" class="editable who-title">Y tú, ¿quién eres?</h2>
-                <p data-editable="text" class="editable who-subtitle">Todos nuestros servicios reunidos por sector para cubrir necesidades 360°.</p>
+                <h2  data-editable="text" class="editable who-title" data-editable="text" data-prop="text_field">Y tú, ¿quién eres?</h2>
+                <p  data-editable="text" class="editable who-subtitle" data-editable="text" data-prop="text_field">Todos nuestros servicios reunidos por sector para cubrir necesidades 360°.</p>
                 
                 <div class="who-grid">
                     <!-- Banner 1 -->
                     <div class="who-banner banner-life">
-                        <img data-editable="image" class="editable" src="images/life-design-banner-archicercle-800x800-1.jpg" alt="Life Design">
+                        <img  data-editable="image" class="editable" src="/images/life-design-banner-archicercle-800x800-1.jpg" alt="Life Design" data-editable="image" data-prop="image_field">
                     </div>
                     <!-- Banner 2 -->
                     <div class="who-banner banner-arch">
-                        <img data-editable="image" class="editable" src="images/architecture-service-banner-archicercle-800x800-1.jpg" alt="Architecture">
+                        <img  data-editable="image" class="editable" src="/images/architecture-service-banner-archicercle-800x800-1.jpg" alt="Architecture" data-editable="image" data-prop="image_field">
                     </div>
                     <!-- Banner 3 -->
                     <div class="who-banner banner-foody">
-                        <img data-editable="image" class="editable" src="images/foody-design-banner-archicercle-800x800-1.jpg" alt="Foody">
+                        <img  data-editable="image" class="editable" src="/images/foody-design-banner-archicercle-800x800-1.jpg" alt="Foody" data-editable="image" data-prop="image_field">
                     </div>
                     <!-- Banner 4 -->
                     <div class="who-banner banner-agencies">
-                        <img data-editable="image" class="editable" src="images/agencies-studios-services-banner-archicercle-800x800-1.jpg" alt="Agencies">
+                        <img  data-editable="image" class="editable" src="/images/agencies-studios-services-banner-archicercle-800x800-1.jpg" alt="Agencies" data-editable="image" data-prop="image_field">
                     </div>
                     <!-- Banner 5 -->
                     <div class="who-banner banner-lovely">
-                        <img data-editable="image" class="editable" src="images/lovely-design-banner-archicercle-800x800-1.jpg" alt="Lovely">
+                        <img  data-editable="image" class="editable" src="/images/lovely-design-banner-archicercle-800x800-1.jpg" alt="Lovely" data-editable="image" data-prop="image_field">
                     </div>
                     <!-- Banner 6 -->
                     <div class="who-banner banner-diy">
-                        <img data-editable="image" class="editable" src="images/do-it-yourself-craft-service-banner-archicercle-800x800-1.jpg" alt="DIY">
+                        <img  data-editable="image" class="editable" src="/images/do-it-yourself-craft-service-banner-archicercle-800x800-1.jpg" alt="DIY" data-editable="image" data-prop="image_field">
                     </div>
                     <!-- Banner 7 -->
                     <div class="who-banner banner-event">
-                        <img data-editable="image" class="editable" src="images/event-design-banner-archicercle-800x800-1.jpg" alt="Event">
+                        <img  data-editable="image" class="editable" src="/images/event-design-banner-archicercle-800x800-1.jpg" alt="Event" data-editable="image" data-prop="image_field">
                     </div>
                     <!-- Banner 8 -->
                     <div class="who-banner banner-display">
-                        <img data-editable="image" class="editable" src="images/display-design-banner-archicercle-800x800-1.jpg" alt="Display">
+                        <img  data-editable="image" class="editable" src="/images/display-design-banner-archicercle-800x800-1.jpg" alt="Display" data-editable="image" data-prop="image_field">
                     </div>
                 </div>
             </div>
@@ -325,57 +283,57 @@
         <section class="instagram-section">
             <div class="container">
                 <div class="instagram-header">
-                    <h2 data-editable="text" class="editable title-white">Nuestros último proyectos</h2>
-                    <p data-editable="text" class="editable subtitle-white">Todos nuestros servicios reunidos por sector para cubrir necesidades 360°.</p>
+                    <h2  data-editable="text" class="editable title-white" data-editable="text" data-prop="text_field">Nuestros último proyectos</h2>
+                    <p  data-editable="text" class="editable subtitle-white" data-editable="text" data-prop="text_field">Todos nuestros servicios reunidos por sector para cubrir necesidades 360°.</p>
                 </div>
 
                 <div class="instagram-grid">
                     <!-- 3x3 Grid of Instagram Posts -->
                     <a href="https://www.instagram.com/archicercle/" target="_blank" class="insta-post">
-                        <img data-editable="image" class="editable" src="images/placeholder.png" alt="Instagram Post">
+                        <img  data-editable="image" class="editable" src="/images/placeholder.png" alt="Instagram Post" data-editable="image" data-prop="image_field">
                     </a>
                     <a href="https://www.instagram.com/archicercle/" target="_blank" class="insta-post">
-                        <img data-editable="image" class="editable" src="images/placeholder.png" alt="Instagram Post">
+                        <img  data-editable="image" class="editable" src="/images/placeholder.png" alt="Instagram Post" data-editable="image" data-prop="image_field">
                     </a>
                     <a href="https://www.instagram.com/archicercle/" target="_blank" class="insta-post">
-                        <img data-editable="image" class="editable" src="images/placeholder.png" alt="Instagram Post">
+                        <img  data-editable="image" class="editable" src="/images/placeholder.png" alt="Instagram Post" data-editable="image" data-prop="image_field">
                     </a>
                     <a href="https://www.instagram.com/archicercle/" target="_blank" class="insta-post">
-                        <img data-editable="image" class="editable" src="images/placeholder.png" alt="Instagram Post">
+                        <img  data-editable="image" class="editable" src="/images/placeholder.png" alt="Instagram Post" data-editable="image" data-prop="image_field">
                     </a>
                     <a href="https://www.instagram.com/archicercle/" target="_blank" class="insta-post">
-                        <img data-editable="image" class="editable" src="images/placeholder.png" alt="Instagram Post">
+                        <img  data-editable="image" class="editable" src="/images/placeholder.png" alt="Instagram Post" data-editable="image" data-prop="image_field">
                     </a>
                     <a href="https://www.instagram.com/archicercle/" target="_blank" class="insta-post">
-                        <img data-editable="image" class="editable" src="images/placeholder.png" alt="Instagram Post">
+                        <img  data-editable="image" class="editable" src="/images/placeholder.png" alt="Instagram Post" data-editable="image" data-prop="image_field">
                     </a>
                     <a href="https://www.instagram.com/archicercle/" target="_blank" class="insta-post">
-                        <img data-editable="image" class="editable" src="images/placeholder.png" alt="Instagram Post">
+                        <img  data-editable="image" class="editable" src="/images/placeholder.png" alt="Instagram Post" data-editable="image" data-prop="image_field">
                     </a>
                     <a href="https://www.instagram.com/archicercle/" target="_blank" class="insta-post">
-                        <img data-editable="image" class="editable" src="images/placeholder.png" alt="Instagram Post">
+                        <img  data-editable="image" class="editable" src="/images/placeholder.png" alt="Instagram Post" data-editable="image" data-prop="image_field">
                     </a>
                     <a href="https://www.instagram.com/archicercle/" target="_blank" class="insta-post">
-                        <img data-editable="image" class="editable" src="images/placeholder.png" alt="Instagram Post">
+                        <img  data-editable="image" class="editable" src="/images/placeholder.png" alt="Instagram Post" data-editable="image" data-prop="image_field">
                     </a>
                 </div>
 
                 <div class="social-links-area">
                     <div class="social-icons-row">
                         <div class="social-link-item">
-                            <img data-editable="image" src="images/video-editing.png" alt="Portfolio" class="editable social-icon">
+                            <img  data-editable="image" src="/images/video-editing.png" alt="Portfolio" class="editable social-icon" data-editable="image" data-prop="image_field">
                             <a href="#" class="social-btn">Portfolio</a>
                         </div>
                         <div class="social-link-item">
-                            <img data-editable="image" src="images/instagram.png" alt="Instagram" class="editable social-icon">
+                            <img  data-editable="image" src="/images/instagram.png" alt="Instagram" class="editable social-icon" data-editable="image" data-prop="image_field">
                             <a href="https://www.instagram.com/archicercle/" target="_blank" class="social-btn">Instagram</a>
                         </div>
                         <div class="social-link-item">
-                            <img data-editable="image" src="images/google.png" alt="Google Business" class="editable social-icon">
+                            <img  data-editable="image" src="/images/google.png" alt="Google Business" class="editable social-icon" data-editable="image" data-prop="image_field">
                             <a href="#" class="social-btn">Google Business</a>
                         </div>
                         <div class="social-link-item">
-                            <img data-editable="image" src="images/tik-tok.png" alt="Tik-Tok" class="editable social-icon">
+                            <img  data-editable="image" src="/images/tik-tok.png" alt="Tik-Tok" class="editable social-icon" data-editable="image" data-prop="image_field">
                             <a href="#" class="social-btn">Tik-Tok</a>
                         </div>
                     </div>
@@ -387,13 +345,13 @@
             <div class="container">
                 <div class="contact-layout">
                     <div class="contact-info">
-                        <h2 data-editable="text" class="editable contact-title">Hablemos</h2>
+                        <h2  data-editable="text" class="editable contact-title" data-editable="text" data-prop="text_field">Hablemos</h2>
                         <div class="contact-description">
-                            <p data-editable="text" class="editable">Las marcas tienen que comunicarse con sus clientes. Y no sólo hablar, también tienen que escuchar y responder.</p>
-                            <p data-editable="text" class="editable">Hablar, dialogar, debatir, escuchar, ponerse en la piel del otro... no hemos inventado nada, es lo que siempre se ha llamado comunicación.</p>
-                            <p data-editable="text" class="editable">Y es lo que hacemos con nuestros clientes y con todo aquel que quiera conocernos y que lo conozcamos.</p>
-                            <p data-editable="text" class="editable">Aquí tiene nuestra dirección, nuestro teléfono y un correo de contacto. Le esperamos con las puertas (y las mentes) bien abiertas.</p>
-                            <p data-editable="text" class="editable"><strong>¡Nos vemos!</strong></p>
+                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Las marcas tienen que comunicarse con sus clientes. Y no sólo hablar, también tienen que escuchar y responder.</p>
+                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Hablar, dialogar, debatir, escuchar, ponerse en la piel del otro... no hemos inventado nada, es lo que siempre se ha llamado comunicación.</p>
+                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Y es lo que hacemos con nuestros clientes y con todo aquel que quiera conocernos y que lo conozcamos.</p>
+                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Aquí tiene nuestra dirección, nuestro teléfono y un correo de contacto. Le esperamos con las puertas (y las mentes) bien abiertas.</p>
+                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field"><strong>¡Nos vemos!</strong></p>
                         </div>
                         
                         <ul class="contact-meta">
@@ -459,7 +417,7 @@
         <!-- FAQ Section -->
         <section class="faq-section-boxed">
             <div class="container">
-                <h2 data-editable="text" class="editable faq-title">Preguntas frecuentes</h2>
+                <h2  data-editable="text" class="editable faq-title" data-editable="text" data-prop="text_field">Preguntas frecuentes</h2>
                 
                 <div class="faq-accordion-boxed">
                     <div class="philosophy-container">
@@ -516,64 +474,4 @@
             </div>
         </section>
     </main>
-
-    <footer class="main-footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col about-col">
-                    <img data-editable="image" src="images/Archicercle.png" alt="Archicercle" class="editable footer-logo">
-                    <p data-editable="text" class="editable footer-slogan">Fabricación digital y artesanal creativa.</p>
-                                                                                                                    <div class="footer-socials">
-                            <a href="https://www.instagram.com/archicercle/" target="_blank" aria-label="Instagram"><img data-editable="image" class="editable" src="images/instagram.png" alt="Instagram"></a>
-                            <a href="https://it.pinterest.com/archicercle" target="_blank" aria-label="Pinterest"><img data-editable="image" class="editable" src="images/pinterest.png" alt="Pinterest"></a>
-                            <a href="https://www.tiktok.com/@archicercle" target="_blank" aria-label="TikTok"><img data-editable="image" class="editable" src="images/tik-tok.png" alt="TikTok"></a>
-                            <a href="https://wa.me/34649999853" target="_blank" aria-label="WhatsApp"><img data-editable="image" class="editable" src="images/whatsapp.png" alt="WhatsApp"></a>
-                            <a href="mailto:PabloPastor@archicercle.com" aria-label="Email"><img data-editable="image" class="editable" src="images/email.png" alt="Email"></a>
-                            <a href="https://www.linkedin.com/in/pastorpablo/" target="_blank" aria-label="LinkedIn"><img data-editable="image" class="editable" src="images/linkedin.png" alt="LinkedIn"></a>
-                        </div>
-                </div>
-                <div class="footer-col contact-col">
-                    <h3 data-editable="text" class="editable">Contacto</h3>
-                    <div class="contact-item"><p data-editable="text" class="editable">- Coworking fablab Archicercle: <a href="https://www.google.com/maps/search/?api=1&query=Calle+Utiel+6+bajo+derecha+46020+Valencia" target="_blank">Calle Utiel 6 bajo derecha, 46020, Valencia</a></p></div>
-                    <div class="contact-item"><p data-editable="text" class="editable">- Estudio Fábrica Archicercle: <a href="https://www.google.com/maps/search/?api=1&query=Placa+Pere+Maria+Orts+i+Bosch+18+bajo+46014+Valencia" target="_blank">Plaça Pere Maria Orts i Bosch 18, bajo. 46014, Valencia</a></p></div>
-                    <div class="contact-item"><p data-editable="text" class="editable">Mail: <a href="mailto:PabloPastor@archicercle.com">PabloPastor@archicercle.com</a></p></div>
-                    <div class="contact-item"><p data-editable="text" class="editable">Móvil: <a href="https://wa.me/34649999853" target="_blank">649 999 853</a></p></div>
-                </div>
-                <div class="footer-col links-col">
-                    <h3 data-editable="text" class="editable">Quick Links</h3>
-                    <ul>
-                        <li><a href="coworking.html">Coworking</a></li>
-                        <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
-                        <li><a href="corte-laser-online.html">Corte laser online</a></li>
-                        <li><a href="servicios-de-diseno.html">Servicios de diseño</a></li>
-                        <li><a href="servicios-de-fabricacion.html">Servicios de fabricación</a></li>
-                        <li><a href="materiales.html">Materiales</a></li>
-                        <li><a href="maquinaria.html">Maquinaria</a></li>
-                        <li><a href="tienda.html">Tienda</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col kit-col">
-                    <h3 data-editable="text" class="editable">Kit Digital</h3>
-                    <div class="kit-logos">
-                        <img data-editable="image" src="images/ue-kit.png" alt="Financiado por la Unión Europea" class="editable kit-img">
-                        <img data-editable="image" src="images/prtr-kit.png" alt="Plan de Recuperación" class="editable kit-img">
-                    </div>
-                    <a href="declaracion.html" class="accessibility-link">DECLARACIÓN DE ACCESIBILIDAD</a>
-                </div>
-            </div>
-        </div>
-        <div class="sub-footer">
-            <div class="container">
-                <p data-editable="text" class="editable">2025 Todos los derechos reservados | Diseño y desarrollo web por Ahmed Gomaa In Archicercle.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-    <script>
-        lucide.createIcons();
-    </script>
-</body>
-</html>
-
+</Layout>
