@@ -1,788 +1,789 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Archicercle - Estudio Creativo</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <!-- Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <!-- Netlify Identity -->
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Archicercle - Estudio Creativo</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+   <!-- Icons -->
+   <script src="https://unpkg.com/lucide@latest"></script>
+   <!-- Netlify Identity -->
+   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-    <header class="header">
-        <div class="header-container">
-            <a href="index.html" class="logo">
-                <img src="images/Archicercle.png" alt="Archicercle Logo">
-            </a>
+   <header class="header">
+       <div class="header-container">
+           <a href="index.html" class="logo">
+               <img class="editable" data-editable="image" src="images/Archicercle.png" alt="Archicercle Logo">
+           </a>
 
-            <nav class="nav-menu">
-                <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link active">Inicio</a></li>
-                    <li><a href="coworking.html" class="nav-link">Coworking</a></li>
-                    <li><a href="sobre-nosotros.html" class="nav-link">Sobre nosotros</a></li>
-                    <li><a href="corte-laser-online.html" class="nav-link">Corte Láser Online</a></li>
-                    <li><a href="servicios-de-diseno.html" class="nav-link">Servicios de diseño</a></li>
-                    <li><a href="servicios-de-fabricacion.html" class="nav-link">Servicios de Fabricación</a></li>
-                    <li><a href="materiales.html" class="nav-link">Materiales</a></li>
-                    <li><a href="maquinaria.html" class="nav-link">Maquinaria</a></li>
-                    <li><a href="tienda.html" class="nav-link">Tienda</a></li>
-                    <li class="mobile-only"><a href="contacto.html" class="contact-btn">CONTACTO</a></li>
-                </ul>
-            </nav>
+           <nav class="nav-menu">
+               <ul class="nav-list">
+                   <li><a href="index.html" class="nav-link active">Inicio</a></li>
+                   <li><a href="coworking.html" class="nav-link">Coworking</a></li>
+                   <li><a href="sobre-nosotros.html" class="nav-link">Sobre nosotros</a></li>
+                   <li><a href="corte-laser-online.html" class="nav-link">Corte Láser Online</a></li>
+                   <li><a href="servicios-de-diseno.html" class="nav-link">Servicios de diseño</a></li>
+                   <li><a href="servicios-de-fabricacion.html" class="nav-link">Servicios de Fabricación</a></li>
+                   <li><a href="materiales.html" class="nav-link">Materiales</a></li>
+                   <li><a href="maquinaria.html" class="nav-link">Maquinaria</a></li>
+                   <li><a href="tienda.html" class="nav-link">Tienda</a></li>
+                   <li class="mobile-only"><a href="contacto.html" class="contact-btn">CONTACTO</a></li>
+               </ul>
+           </nav>
 
-            <div class="header-actions">
-                <a href="contacto.html" class="contact-btn">CONTACTO</a>
-            </div>
+           <div class="header-actions">
+               <a href="contacto.html" class="contact-btn">CONTACTO</a>
+           </div>
 
-            <button class="mobile-toggle" aria-label="Abrir menú" aria-expanded="false">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-        </div>
-    </header>
+           <button class="mobile-toggle" aria-label="Abrir menú" aria-expanded="false">
+               <span class="bar"></span>
+               <span class="bar"></span>
+               <span class="bar"></span>
+           </button>
+       </div>
+   </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="intro-bg" class="hero">
-            <div class="hero-overlay"></div>
-            <div class="container">
-                <div class="hero-top">
-                    <h1 id="hero_title">El lugar dónde incluso sin una idea,<br>haremos tu proyecto realidad.</h1>
-                    <p id="hero_description" class="subtitle">
+   <main>
+       <!-- Hero Section -->
+       <section  class="hero">
+           <div class="hero-overlay"></div>
+           <div class="container">
+               <div class="hero-top">
+                   <h1 class="editable" data-editable="text">El lugar dónde incluso sin una idea,<br>haremos tu proyecto realidad.</h1>
+                   <p class="editable subtitle" data-editable="text">
                         Diseño + fabricación, todo en uno. Somos Archicercle: un estudio de fabricación.<br>
                         Diseñamos productos que funcionan. Fabricamos ideas que se pueden tocar.<br>
                         Y cuando algo no existe, lo inventamos.
-                    </p>
-                    <div class="hero-ctas">
-                        <a href="#" class="btn-main">Empieza tu proyecto hoy</a>
-                        <a href="#" class="btn-main">Conoce nuestros servicios</a>
-                    </div>
-                </div>
+                   </p>
+                   <div class="hero-ctas">
+                       <a href="#" class="btn-main">Empieza tu proyecto hoy</a>
+                       <a href="#" class="btn-main">Conoce nuestros servicios</a>
+                   </div>
+               </div>
 
-                <div class="hero-divider"></div>
+               <div class="hero-divider"></div>
 
-                <div class="features-layout">
-                    <div class="feature-card">
-                        <div class="feature-header">
-                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="10" width="20" height="12" rx="2"/><path d="M6 10V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v4"/></svg>
-                            <h3 id="features_title_1">Somos un estudio de fabricación.</h3>
-                        </div>
-                        <p id="features_desc_1">Ni solo diseñamos. Ni solo fabricamos. Hacemos que las ideas se conviertan en objetos reales, bien pensados y bien hechos. Un estudio multidispl...</p>
-                    </div>
+               <div class="features-layout">
+                   <div class="feature-card">
+                       <div class="feature-header">
+                           <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="10" width="20" height="12" rx="2"/><p class="editable" data-editable="text"ath d="M6 10V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v4"/></svg>
+                           <h3 class="editable" data-editable="text">Somos un estudio de fabricación.</h3>
+                       </div>
+                       <p class="editable" data-editable="text">Ni solo diseñamos. Ni solo fabricamos. Hacemos que las ideas se conviertan en objetos reales, bien pensados y bien hechos. Un estudio multidispl...</p>
+                   </div>
 
-                    <div class="feature-card">
-                        <div class="feature-header">
-                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.5 1.5"/><path d="M7 11l5-5"/></svg>
-                            <h3 id="features_title_2">Diseño con criterio.</h3>
-                        </div>
-                        <p id="features_desc_2">Creamos productos y soluciones que se pueden fabricar desde el primer minuto. Diseñamos conociendo los materiales, los procesos y las limitaciones reales de producción. Nada teórico. Nada que se rompa al salir del render.</p>
-                    </div>
+                   <div class="feature-card">
+                       <div class="feature-header">
+                           <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><p class="editable" data-editable="text"ath d="M12 19l7-7 3 3-7 7-3-3z"/><p class="editable" data-editable="text"ath d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><p class="editable" data-editable="text"ath d="M2 2l7.5 1.5"/><p class="editable" data-editable="text"ath d="M7 11l5-5"/></svg>
+                           <h3 class="editable" data-editable="text">Diseño con criterio.</h3>
+                       </div>
+                       <p class="editable" data-editable="text">Creamos productos y soluciones que se pueden fabricar desde el primer minuto. Diseñamos conociendo los materiales, los procesos y las limitaciones reales de producción. Nada teórico. Nada que se rompa al salir del render.</p>
+                   </div>
 
-                    <div class="feature-card">
-                        <div class="feature-header">
-                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
-                            <h3 id="features_title_3">Fabricación con inteligencia.</h3>
-                        </div>
-                        <p id="features_desc_3">Tenemos más de 100 máquinas a nuestro alcance. Algunas las usamos cada día. Otras, solo cuando el proyecto lo exige. Porque no solo fabricamos por volumen. Fabricamos con intención. Y si hay que adaptar una máquina, la adaptamos. Y si no existe, la creamos.</p>
-                    </div>
+                   <div class="feature-card">
+                       <div class="feature-header">
+                           <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><p class="editable" data-editable="text"ath d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+                           <h3 class="editable" data-editable="text">Fabricación con inteligencia.</h3>
+                       </div>
+                       <p class="editable" data-editable="text">Tenemos más de 100 máquinas a nuestro alcance. Algunas las usamos cada día. Otras, solo cuando el proyecto lo exige. Porque no solo fabricamos por volumen. Fabricamos con intención. Y si hay que adaptar una máquina, la adaptamos. Y si no existe, la creamos.</p>
+                   </div>
 
-                    <div class="feature-card">
-                        <div class="feature-header">
-                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>
-                            <h3>Materiales que conocemos de verdad</h3>
-                        </div>
-                        <p>No solo los usamos. Los estudiamos, los mezclamos, los fabricamos si hace falta. Tenemos un gran stock de materiales especiales y una red de proveedores de...</p>
-                    </div>
+                   <div class="feature-card">
+                       <div class="feature-header">
+                           <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>
+                           <h3 class="editable" data-editable="text">Materiales que conocemos de verdad</h3>
+                       </div>
+                       <p class="editable" data-editable="text">No solo los usamos. Los estudiamos, los mezclamos, los fabricamos si hace falta. Tenemos un gran stock de materiales especiales y una red de proveedores de...</p>
+                   </div>
 
-                    <div class="feature-card">
-                        <div class="feature-header">
-                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.5-.3-.7-.3s-.5.1-.7.3c-.2.2-.3.5-.3.7s.1.5.3.7c.2.2.5.3.7.3z"/><path d="M12.5 19c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.5-.3-.7-.3s-.5.1-.7.3c-.2.2-.3.5-.3.7s.1.5.3.7c.2.2.5.3.7.3z"/><path d="M7.5 19c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.5-.3-.7-.3s-.5.1-.7.3c-.2.2-.3.5-.3.7s.1.5.3.7c.2.2.5.3.7.3z"/><path d="M20 12.5V11a8 8 0 0 0-16 0v1.5"/><path d="M3 12.5h18"/></svg>
-                            <h3>Tecnología propia para ir más rápido</h3>
-                        </div>
-                        <p>Creamos JustLaserCut, un software para presupuestar y fabricar por corte láser sin esperas. Subes tu archivo. Eliges material. Y listo: precio inmediato, fabricación automática. Lo usamos nosotros. Y también lo ofrecemos a...</p>
-                    </div>
+                   <div class="feature-card">
+                       <div class="feature-header">
+                           <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><p class="editable" data-editable="text"ath d="M17.5 19c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.5-.3-.7-.3s-.5.1-.7.3c-.2.2-.3.5-.3.7s.1.5.3.7c.2.2.5.3.7.3z"/><p class="editable" data-editable="text"ath d="M12.5 19c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.5-.3-.7-.3s-.5.1-.7.3c-.2.2-.3.5-.3.7s.1.5.3.7c.2.2.5.3.7.3z"/><p class="editable" data-editable="text"ath d="M7.5 19c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.5-.3-.7-.3s-.5.1-.7.3c-.2.2-.3.5-.3.7s.1.5.3.7c.2.2.5.3.7.3z"/><p class="editable" data-editable="text"ath d="M20 12.5V11a8 8 0 0 0-16 0v1.5"/><p class="editable" data-editable="text"ath d="M3 12.5h18"/></svg>
+                           <h3 class="editable" data-editable="text">Tecnología propia para ir más rápido</h3>
+                       </div>
+                       <p class="editable" data-editable="text">Creamos JustLaserCut, un software para presupuestar y fabricar por corte láser sin esperas. Subes tu archivo. Eliges material. Y listo: precio inmediato, fabricación automática. Lo usamos nosotros. Y también lo ofrecemos a...</p>
+                   </div>
 
-                    <div class="feature-action">
-                        <a href="#" class="btn-project">Cuéntanos tu proyecto</a>
-                    </div>
-                </div>
+                   <div class="feature-action">
+                       <a href="#" class="btn-project">Cuéntanos tu proyecto</a>
+                   </div>
+               </div>
 
-                <div class="hero-divider"></div>
+               <div class="hero-divider"></div>
 
-                <div class="why-us">
-                    <h2 id="why_us_title" class="section-title">¿Por qué elegirnos?</h2>
-                    <p id="why_us_subtitle" class="section-subtitle">Porque no tendrás que elegir entre un diseñador o un fabricante. Con Archicercle tienes todo en uno:</p>
+               <div class="why-us">
+                   <h2 class="editable section-title" data-editable="text">¿Por qué elegirnos?</h2>
+                   <p class="editable section-subtitle" data-editable="text">Porque no tendrás que elegir entre un diseñador o un fabricante. Con Archicercle tienes todo en uno:</p>
                     
-                    <div class="why-grid">
-                        <div class="why-item">
-                            <svg class="why-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
-                            <span>Diseño funcional y estético</span>
-                        </div>
-                        <div class="why-item">
-                            <svg class="why-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-                            <span>Conocimiento técnico real</span>
-                        </div>
-                        <div class="why-item">
-                            <svg class="why-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v3m18 8v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-3m18-8l-2 8H5l-2-8h18z"/><line x1="12" y1="12" x2="12" y2="12"/></svg>
-                            <span>Producción ágil y de calidad</span>
-                        </div>
-                        <div class="why-item">
-                            <svg class="why-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                            <span>Materiales y acabados</span>
-                        </div>
-                        <div class="why-item">
-                            <svg class="why-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                            <span>Tecnología propia y control total</span>
-                        </div>
-                    </div>
-                </div>
+                   <div class="why-grid">
+                       <div class="why-item">
+                           <svg class="why-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><p class="editable" data-editable="text"ath d="M12 20h9"/><p class="editable" data-editable="text"ath d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                           <span>Diseño funcional y estético</span>
+                       </div>
+                       <div class="why-item">
+                           <svg class="why-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                           <span>Conocimiento técnico real</span>
+                       </div>
+                       <div class="why-item">
+                           <svg class="why-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><p class="editable" data-editable="text"ath d="M21 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v3m18 8v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-3m18-8l-2 8H5l-2-8h18z"/><line x1="12" y1="12" x2="12" y2="12"/></svg>
+                           <span>Producción ágil y de calidad</span>
+                       </div>
+                       <div class="why-item">
+                           <svg class="why-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><p class="editable" data-editable="text"ath d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><p class="editable" data-editable="text"olyline points="22 4 12 14.01 9 11.01"/></svg>
+                           <span>Materiales y acabados</span>
+                       </div>
+                       <div class="why-item">
+                           <svg class="why-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><p class="editable" data-editable="text"ath d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                           <span>Tecnología propia y control total</span>
+                       </div>
+                   </div>
+               </div>
 
-                <div class="hero-divider"></div>
+               <div class="hero-divider"></div>
 
-                <div class="workflow-section">
-                    <div class="workflow-content">
-                        <h2 class="section-title">Nuestra forma de trabajar</h2>
-                        <p class="section-subtitle">Aunque cada proyecto es un mundo, en todos nuestros proyectos solemos trabajar, de manera resumida, siguiendo los siguientes 4 puntos.</p>
+               <div class="workflow-section">
+                   <div class="workflow-content">
+                       <h2 class="editable section-title" data-editable="text">Nuestra forma de trabajar</h2>
+                       <p class="editable section-subtitle" data-editable="text">Aunque cada proyecto es un mundo, en todos nuestros proyectos solemos trabajar, de manera resumida, siguiendo los siguientes 4 puntos.</p>
                         
-                        <div class="workflow-grid">
-                            <div class="workflow-step">
-                                <span class="step-num">1</span>
-                                <div class="workflow-box">Nos cuentas tu idea</div>
-                            </div>
-                            <div class="workflow-step">
-                                <span class="step-num">2</span>
-                                <div class="workflow-box">La diseñamos contigo</div>
-                            </div>
-                            <div class="workflow-step">
-                                <span class="step-num">3</span>
-                                <div class="workflow-box">Prototipamos y verificamos</div>
-                            </div>
-                            <div class="workflow-step">
-                                <span class="step-num">4</span>
-                                <div class="workflow-box">Fabricamos y entregamos</div>
-                            </div>
-                        </div>
-                    </div>
+                       <div class="workflow-grid">
+                           <div class="workflow-step">
+                               <span class="step-num">1</span>
+                               <div class="workflow-box">Nos cuentas tu idea</div>
+                           </div>
+                           <div class="workflow-step">
+                               <span class="step-num">2</span>
+                               <div class="workflow-box">La diseñamos contigo</div>
+                           </div>
+                           <div class="workflow-step">
+                               <span class="step-num">3</span>
+                               <div class="workflow-box">Prototipamos y verificamos</div>
+                           </div>
+                           <div class="workflow-step">
+                               <span class="step-num">4</span>
+                               <div class="workflow-box">Fabricamos y entregamos</div>
+                           </div>
+                       </div>
+                   </div>
 
-                    <div class="idea-card">
-                        <h3>¿Tienes una idea? ¿Un archivo o un reto entre manos?</h3>
-                        <p>Nos encanta cuando alguien viene con algo que parece complicado. Eso es lo que nos mueve.</p>
-                        <a href="#" class="btn-card">Quiero fabricar un producto</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+                   <div class="idea-card">
+                       <h3 class="editable" data-editable="text">¿Tienes una idea? ¿Un archivo o un reto entre manos?</h3>
+                       <p class="editable" data-editable="text">Nos encanta cuando alguien viene con algo que parece complicado. Eso es lo que nos mueve.</p>
+                       <a href="#" class="btn-card">Quiero fabricar un producto</a>
+                   </div>
+               </div>
+           </div>
+       </section>
 
-        <!-- Services -->
-        <section class="services-section">
-            <div class="container">
-                <h2 id="services_main_title" class="services-main-title">NUESTROS SERVICIOS</h2>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="service-top">
-                            <i data-lucide="pen-tool" class="service-icon"></i>
-                        </div>
-                        <div class="service-bottom">
-                            <h3 id="service_1_title">DISEÑO</h3>
-                            <p id="service_1_desc">Diseño y desarrollo de productos y proyectos. 3D Y 2D listo para fabricar.</p>
-                            <a href="#" class="btn-info">+ INFO</a>
-                        </div>
-                    </div>
+       <!-- Services -->
+       <section class="services-section">
+           <div class="container">
+               <h2 class="editable services-main-title" data-editable="text" >NUESTROS SERVICIOS</h2>
+               <div class="services-grid">
+                   <div class="service-card">
+                       <div class="service-top">
+                           <i data-lucide="pen-tool" class="service-icon"></i>
+                       </div>
+                       <div class="service-bottom">
+                           <h3 class="editable" data-editable="text">DISEÑO</h3>
+                           <p class="editable" data-editable="text">Diseño y desarrollo de productos y proyectos. 3D Y 2D listo para fabricar.</p>
+                           <a href="#" class="btn-info">+ INFO</a>
+                       </div>
+                   </div>
 
-                    <div class="service-card">
-                        <div class="service-top">
-                            <i data-lucide="hammer" class="service-icon"></i>
-                        </div>
-                        <div class="service-bottom">
-                            <h3 id="service_2_title">FABRICACIÓN</h3>
-                            <p id="service_2_desc">Fabricación digital, artesanal y creativa. con máquinaria CNC, semiautomáticas y manuales. Ensamblajes y montajes.</p>
-                            <a href="#" class="btn-info">+ INFO</a>
-                        </div>
-                    </div>
+                   <div class="service-card">
+                       <div class="service-top">
+                           <i data-lucide="hammer" class="service-icon"></i>
+                       </div>
+                       <div class="service-bottom">
+                           <h3 class="editable" data-editable="text">FABRICACIÓN</h3>
+                           <p class="editable" data-editable="text">Fabricación digital, artesanal y creativa. con máquinaria CNC, semiautomáticas y manuales. Ensamblajes y montajes.</p>
+                           <a href="#" class="btn-info">+ INFO</a>
+                       </div>
+                   </div>
 
-                    <div class="service-card">
-                        <div class="service-top">
-                            <i data-lucide="award" class="service-icon"></i>
-                        </div>
-                        <div class="service-bottom">
-                            <h3>BRANDING</h3>
-                            <p>Diseño gráfico de imagen corporativa. Diseñamos pensando en las aplicaciones reales finales.</p>
-                            <a href="#" class="btn-info">+ INFO</a>
-                        </div>
-                    </div>
+                   <div class="service-card">
+                       <div class="service-top">
+                           <i data-lucide="award" class="service-icon"></i>
+                       </div>
+                       <div class="service-bottom">
+                           <h3 class="editable" data-editable="text">BRANDING</h3>
+                           <p class="editable" data-editable="text">Diseño gráfico de imagen corporativa. Diseñamos pensando en las aplicaciones reales finales.</p>
+                           <a href="#" class="btn-info">+ INFO</a>
+                       </div>
+                   </div>
 
-                    <div class="service-card">
-                        <div class="service-top">
-                            <i data-lucide="users" class="service-icon"></i>
-                        </div>
-                        <div class="service-bottom">
-                            <h3 id="service_3_title">COWORKING</h3>
-                            <p id="service_3_desc">Un espacio de fabricación compartido para creadores, profesionales y makers.</p>
-                            <a href="coworking.html" class="btn-info">+ INFO</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                   <div class="service-card">
+                       <div class="service-top">
+                           <i data-lucide="users" class="service-icon"></i>
+                       </div>
+                       <div class="service-bottom">
+                           <h3 class="editable" data-editable="text">COWORKING</h3>
+                           <p class="editable" data-editable="text">Un espacio de fabricación compartido para creadores, profesionales y makers.</p>
+                           <a href="coworking.html" class="btn-info">+ INFO</a>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
 
-        <!-- Studio -->
-        <section class="studio-section">
-            <div class="container">
-                <div class="studio-layout">
-                    <div class="studio-text">
-                        <h2 class="studio-title">El estudio</h2>
-                        <h4 class="studio-subtitle">ARCHICERCLE ESTUDIO CREATIVO</h4>
-                        <p>Archicercle es un estudio de <strong>diseño multidisciplinar</strong> donde abarcamos, <strong>diseño de producto, imagen/branding y espacios</strong>.</p>
-                        <p>Nuestro fuerte el el la consultoría, el diseño y desarrollo de productos y su posterior materialización mediante distintos procesos.</p>
-                        <p>Trabajamos para grandes empresas diseñando y desarrollando productos para cualquier ámbito. Pero también asesoramos y cocreamos junto con agencias, estudios de diseño y de arquitectura e incluso particulares o pequeñas empresas o emprendedores que desean crear cosas únicas para comercializar o para crear un producto único con una utilidad concreta para su marca, espacio, local o negocio.</p>
-                    </div>
-                    <div class="studio-image">
-                        <img src="images/esta-imagen-es-la-que-tiene-el-icono-de-servicios-de-diseno-encima.png" alt="El estudio Archicercle">
-                        <a href="servicios-de-diseno.html" class="image-btn">Servicios de diseño</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+       <!-- Studio -->
+       <section class="studio-section">
+           <div class="container">
+               <div class="studio-layout">
+                   <div class="studio-text">
+                       <h2 class="editable studio-title" data-editable="text">El estudio</h2>
+                       <h4 class="editable studio-subtitle" data-editable="text">ARCHICERCLE ESTUDIO CREATIVO</h4>
+                       <p class="editable" data-editable="text">Archicercle es un estudio de<strong>diseño multidisciplinar</strong>donde abarcamos,<strong>diseño de producto, imagen/branding y espacios</strong>.</p>
+                       <p class="editable" data-editable="text">Nuestro fuerte el el la consultoría, el diseño y desarrollo de productos y su posterior materialización mediante distintos procesos.</p>
+                       <p class="editable" data-editable="text">Trabajamos para grandes empresas diseñando y desarrollando productos para cualquier ámbito. Pero también asesoramos y cocreamos junto con agencias, estudios de diseño y de arquitectura e incluso particulares o pequeñas empresas o emprendedores que desean crear cosas únicas para comercializar o para crear un producto único con una utilidad concreta para su marca, espacio, local o negocio.</p>
+                   </div>
+                   <div class="studio-image">
+                       <img class="editable" data-editable="image" src="images/esta-imagen-es-la-que-tiene-el-icono-de-servicios-de-diseno-encima.png" alt="El estudio Archicercle">
+                       <a href="servicios-de-diseno.html" class="image-btn">Servicios de diseño</a>
+                   </div>
+               </div>
+           </div>
+       </section>
 
-        <!-- Factory -->
-        <section class="factory-section">
-            <div class="container">
-                <div class="factory-layout">
-                    <div class="factory-image">
-                        <img src="images/Captura-de-pantalla-2025-11-04-a-las-9.49.57.png" alt="La fabrica Archicercle">
-                    </div>
-                    <div class="factory-text">
-                        <h2 class="factory-title">La fabrica, el taller y las máquinas</h2>
-                        <h4 class="factory-subtitle">ARCHICERCLE FACTORY</h4>
-                        <p><strong>fabricación digital y artesanal</strong> creativa. Somos conscientes de lo importante que es diseñar y desarrollar desde el conocimiento de las técnicas y procesos de producción, o incluso adaptar diseño de otros profesionales, para que the producto físico coincida exactamente, con el diseño digital, e incluso supere las expectativas</p>
-                        <div class="factory-ctas">
-                            <a href="maquinaria.html" class="btn-factory">Nuestras Máquinas</a>
-                            <a href="servicios-de-fabricacion.html" class="btn-factory">Servicios de Fabricación</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+       <!-- Factory -->
+       <section class="factory-section">
+           <div class="container">
+               <div class="factory-layout">
+                   <div class="factory-image">
+                       <img class="editable" data-editable="image" src="images/Captura-de-pantalla-2025-11-04-a-las-9.49.57.png" alt="La fabrica Archicercle">
+                   </div>
+                   <div class="factory-text">
+                       <h2 class="editable factory-title" data-editable="text">La fabrica, el taller y las máquinas</h2>
+                       <h4 class="editable factory-subtitle" data-editable="text">ARCHICERCLE FACTORY</h4>
+                       <p class="editable" data-editable="text"><strong>fabricación digital y artesanal</strong>creativa. Somos conscientes de lo importante que es diseñar y desarrollar desde el conocimiento de las técnicas y procesos de producción, o incluso adaptar diseño de otros profesionales, para que the producto físico coincida exactamente, con el diseño digital, e incluso supere las expectativas</p>
+                       <div class="factory-ctas">
+                           <a href="maquinaria.html" class="btn-factory">Nuestras Máquinas</a>
+                           <a href="servicios-de-fabricacion.html" class="btn-factory">Servicios de Fabricación</a>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
 
-        <!-- Justlasercut -->
-        <section class="justlasercut-section">
-            <div class="container">
-                <div class="justlasercut-layout">
-                    <div class="justlasercut-text">
-                        <h2 class="studio-title">JUSTLASERCUT</h2>
-                        <h4 class="studio-subtitle" style="color: black; margin-top: -10px; margin-bottom: 32px;">CORTE LÁSER ONLINE</h4>
-                        <p>Justlasercut es la evolución digital del servicio más demandado en Archicercle, el corte por láser. Después de más de 15 años de experiencia, decidimos digitalizar todo el proceso para agilizar el proceso con nuestros clientes. Ahora nuestro software online es utilizado por miles de proveedores en todo el mundo.</p>
-                        <div class="justlasercut-ctas">
-                            <a href="corte-laser-online.html" class="btn-factory">Presupuesto online</a>
-                        </div>
-                    </div>
-                    <div class="justlasercut-image">
-                        <img src="images/Captura-de-pantalla-2025-11-04-a-las-9.53.09.png" alt="Justlasercut Online">
-                    </div>
-                </div>
-            </div>
-        </section>
+       <!-- Justlasercut -->
+       <section class="justlasercut-section">
+           <div class="container">
+               <div class="justlasercut-layout">
+                   <div class="justlasercut-text">
+                       <h2 class="editable studio-title" data-editable="text">JUSTLASERCUT</h2>
+                       <h4 class="editable studio-subtitle" data-editable="text" style="color: black; margin-top: -10px; margin-bottom: 32px;">CORTE LÁSER ONLINE</h4>
+                       <p class="editable" data-editable="text">Justlasercut es la evolución digital del servicio más demandado en Archicercle, el corte por láser. Después de más de 15 años de experiencia, decidimos digitalizar todo el proceso para agilizar el proceso con nuestros clientes. Ahora nuestro software online es utilizado por miles de proveedores en todo el mundo.</p>
+                       <div class="justlasercut-ctas">
+                           <a href="corte-laser-online.html" class="btn-factory">Presupuesto online</a>
+                       </div>
+                   </div>
+                   <div class="justlasercut-image">
+                       <img class="editable" data-editable="image" src="images/Captura-de-pantalla-2025-11-04-a-las-9.53.09.png" alt="Justlasercut Online">
+                   </div>
+               </div>
+           </div>
+       </section>
 
-        <!-- Founder -->
-        <section class="founder-section">
-            <div class="container">
-                <h2 class="founder-title">El fundador</h2>
-                <h4 class="founder-subtitle">Pablo Pastor</h4>
-                <div class="founder-content">
-                    <p>Si algo me define, es la palabra pasión, suelo confundir el trabajo con mi vida diaria y solo una delgada línea, que he logrado crear con los años, los separa debilmente.</p>
-                    <p>Como leí una vez, “Las personas más felices del mundo no tienen una profesión, lo que tienen es una vocación'' Y que cierto!</p>
-                    <p>Empezar no fue fácil y el proceso hasta percibir un crecimiento exponencial, fue un camino de perseverancia</p>
-                </div>
-                <div class="founder-image-wrapper">
-                    <img src="images/foto fundador.png" alt="Pablo Pastor - Fundador">
-                    <a href="sobre-nosotros.html" class="image-btn founder-btn">Mis compañeros</a>
-                </div>
-            </div>
-        </section>
+       <!-- Founder -->
+       <section class="founder-section">
+           <div class="container">
+               <h2 class="editable founder-title" data-editable="text">El fundador</h2>
+               <h4 class="editable founder-subtitle" data-editable="text">Pablo Pastor</h4>
+               <div class="founder-content">
+                   <p class="editable" data-editable="text">Si algo me define, es la palabra pasión, suelo confundir el trabajo con mi vida diaria y solo una delgada línea, que he logrado crear con los años, los separa debilmente.</p>
+                   <p class="editable" data-editable="text">Como leí una vez, “Las personas más felices del mundo no tienen una profesión, lo que tienen es una vocación'' Y que cierto!</p>
+                   <p class="editable" data-editable="text">Empezar no fue fácil y el proceso hasta percibir un crecimiento exponencial, fue un camino de perseverancia</p>
+               </div>
+               <div class="founder-image-wrapper">
+                   <img class="editable" data-editable="image" src="images/foto fundador.png" alt="Pablo Pastor - Fundador">
+                   <a href="sobre-nosotros.html" class="image-btn founder-btn">Mis compañeros</a>
+               </div>
+           </div>
+       </section>
 
-        <!-- Clients & Reviews -->
-        <section class="clients-reviews-section">
-            <div class="container">
-                <div class="clients-header">
-                    <h2 class="clients-title">Clientes que confían en nosotros...</h2>
-                    <h4 class="clients-subtitle">Grandes soluciones incluso para pequeños proyectos</h4>
-                </div>
+       <!-- Clients & Reviews -->
+       <section class="clients-reviews-section">
+           <div class="container">
+               <div class="clients-header">
+                   <h2 class="editable clients-title" data-editable="text">Clientes que confían en nosotros...</h2>
+                   <h4 class="editable clients-subtitle" data-editable="text">Grandes soluciones incluso para pequeños proyectos</h4>
+               </div>
                 
-                <div class="clients-grid">
-                    <div class="client-box"><img src="images/placeholder.png" alt="Cliente"></div>
-                    <div class="client-box"><img src="images/placeholder.png" alt="Cliente"></div>
-                    <div class="client-box"><img src="images/placeholder.png" alt="Cliente"></div>
-                    <div class="client-box"><img src="images/placeholder.png" alt="Cliente"></div>
-                    <div class="client-box"><img src="images/placeholder.png" alt="Cliente"></div>
-                    <div class="client-box"><img src="images/placeholder.png" alt="Cliente"></div>
-                    <div class="client-box"><img src="images/placeholder.png" alt="Cliente"></div>
-                    <div class="client-box"><img src="images/placeholder.png" alt="Cliente"></div>
-                    <div class="client-box"><img src="images/placeholder.png" alt="Cliente"></div>
-                    <div class="client-box"><img src="images/placeholder.png" alt="Cliente"></div>
-                </div>
+               <div class="clients-grid">
+                   <div class="client-box"><img class="editable" data-editable="image" src="images/placeholder.png" alt="Cliente"></div>
+                   <div class="client-box"><img class="editable" data-editable="image" src="images/placeholder.png" alt="Cliente"></div>
+                   <div class="client-box"><img class="editable" data-editable="image" src="images/placeholder.png" alt="Cliente"></div>
+                   <div class="client-box"><img class="editable" data-editable="image" src="images/placeholder.png" alt="Cliente"></div>
+                   <div class="client-box"><img class="editable" data-editable="image" src="images/placeholder.png" alt="Cliente"></div>
+                   <div class="client-box"><img class="editable" data-editable="image" src="images/placeholder.png" alt="Cliente"></div>
+                   <div class="client-box"><img class="editable" data-editable="image" src="images/placeholder.png" alt="Cliente"></div>
+                   <div class="client-box"><img class="editable" data-editable="image" src="images/placeholder.png" alt="Cliente"></div>
+                   <div class="client-box"><img class="editable" data-editable="image" src="images/placeholder.png" alt="Cliente"></div>
+                   <div class="client-box"><img class="editable" data-editable="image" src="images/placeholder.png" alt="Cliente"></div>
+               </div>
 
-                <div class="reviews-header">
-                    <h2 class="clients-title">...y sus reseñas en google</h2>
-                    <h4 class="clients-subtitle">Sin edulcolorantes, sin modificar, completamente real</h4>
-                </div>
+               <div class="reviews-header">
+                   <h2 class="editable clients-title" data-editable="text">...y sus reseñas en google</h2>
+                   <h4 class="editable clients-subtitle" data-editable="text">Sin edulcolorantes, sin modificar, completamente real</h4>
+               </div>
 
-                <div class="reviews-slider">
-                    <button class="slider-arrow prev" aria-label="Anterior">&lt;</button>
-                    <div class="reviews-container">
-                        <div class="review-card">
-                            <div class="review-user">
-                                <div class="user-img">
-                                    <img src="images/foto fundador.png" alt="Pablo Pastor">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" class="google-badge" alt="Google">
-                                </div>
-                                <div class="user-info">
-                                    <p class="user-name">Pablo Pastor</p>
-                                    <p class="review-date">2023-08-10</p>
-                                </div>
-                            </div>
-                            <div class="review-rating">
-                                <span class="stars">★★★★★</span>
-                                <svg class="verified-icon" viewBox="0 0 512 512" style="width: 14px; height: 14px;" fill="#4285F4"><path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256 256-114.6 256-256S397.4 0 256 0zM371.8 211.8L233.1 350.5c-4.7 4.7-12.3 4.7-17 0l-76-76c-4.7-4.7-4.7-12.3 0-17l17-17c4.7-4.7 12.3-4.7 17 0l50.5 50.5 121.7-121.7c4.7-4.7 12.3-4.7 17 0l17 17c4.7 4.7 4.7 12.3 0 17.1z"/></svg>
-                            </div>
-                            <p class="review-text">Buen trabajo y a tiempo. Repetiremos</p>
-                        </div>
-                    </div>
-                    <button class="slider-arrow next" aria-label="Siguiente">&gt;</button>
-                </div>
-            </div>
-        </section>
+               <div class="reviews-slider">
+                   <button class="slider-arrow prev" aria-label="Anterior">&lt;</button>
+                   <div class="reviews-container">
+                       <div class="review-card">
+                           <div class="review-user">
+                               <div class="user-img">
+                                   <img class="editable" data-editable="image" src="images/foto fundador.png" alt="Pablo Pastor">
+                                   <img class="editable google-badge" data-editable="image" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google">
+                               </div>
+                               <div class="user-info">
+                                   <p class="editable user-name" data-editable="text">Pablo Pastor</p>
+                                   <p class="editable review-date" data-editable="text">2023-08-10</p>
+                               </div>
+                           </div>
+                           <div class="review-rating">
+                               <span class="stars">★★★★★</span>
+                               <svg class="verified-icon" viewBox="0 0 512 512" style="width: 14px; height: 14px;" fill="#4285F4"><p class="editable" data-editable="text"ath d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256 256-114.6 256-256S397.4 0 256 0zM371.8 211.8L233.1 350.5c-4.7 4.7-12.3 4.7-17 0l-76-76c-4.7-4.7-4.7-12.3 0-17l17-17c4.7-4.7 12.3-4.7 17 0l50.5 50.5 121.7-121.7c4.7-4.7 12.3-4.7 17 0l17 17c4.7 4.7 4.7 12.3 0 17.1z"/></svg>
+                           </div>
+                           <p class="editable review-text" data-editable="text">Buen trabajo y a tiempo. Repetiremos</p>
+                       </div>
+                   </div>
+                   <button class="slider-arrow next" aria-label="Siguiente">&gt;</button>
+               </div>
+           </div>
+       </section>
 
-        <!-- New Materials Section (Black Background) -->
-        <section class="section-black">
-            <div class="container">
-                <div class="header-left">
-                    <h2 class="title-white">LOS MATERIALES</h2>
-                    <h4 class="subtitle-red">Materiales creativos para proyectos únicos</h4>
-                    <p class="text-white">Los materiales que has estado buscando incansablemente y que no encontrabas en ningún sitio.</p>
-                </div>
-                <div class="full-width-banner">
-                    <img src="images/banner-materiales-2.png" alt="Los Materiales">
-                    <div class="centered-btn-wrapper">
-                        <a href="materiales.html" class="btn-factory">Ver materiales</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+       <!-- New Materials Section (Black Background) -->
+       <section class="section-black">
+           <div class="container">
+               <div class="header-left">
+                   <h2 class="editable title-white" data-editable="text">LOS MATERIALES</h2>
+                   <h4 class="editable subtitle-red" data-editable="text">Materiales creativos para proyectos únicos</h4>
+                   <p class="editable text-white" data-editable="text">Los materiales que has estado buscando incansablemente y que no encontrabas en ningún sitio.</p>
+               </div>
+               <div class="full-width-banner">
+                   <img class="editable" data-editable="image" src="images/banner-materiales-2.png" alt="Los Materiales">
+                   <div class="centered-btn-wrapper">
+                       <a href="materiales.html" class="btn-factory">Ver materiales</a>
+                   </div>
+               </div>
+           </div>
+       </section>
 
-        <!-- New Shop Section (Black Background) -->
-        <section class="section-black">
-            <div class="container">
-                <div class="header-right">
-                    <h2 class="title-white">LA TIENDA ONLINE</h2>
-                    <h4 class="subtitle-red">CosaStudio shop</h4>
-                    <p class="text-white">Una cuidada selección hecha por Pablo, de nuestros productos de diseño más solicitados, fabricados bajo demanda, combinando tecnología y artesanía, y con posibilidad de ser adaptados y personalizados a lo que necesitas</p>
-                </div>
-                <div class="full-width-banner">
-                    <img src="images/placeholder.png" alt="La Tienda Online">
-                    <div class="centered-btn-wrapper">
-                        <a href="tienda.html" class="btn-factory">Ir a la tienda</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+       <!-- New Shop Section (Black Background) -->
+       <section class="section-black">
+           <div class="container">
+               <div class="header-right">
+                   <h2 class="editable title-white" data-editable="text">LA TIENDA ONLINE</h2>
+                   <h4 class="editable subtitle-red" data-editable="text">CosaStudio shop</h4>
+                   <p class="editable text-white" data-editable="text">Una cuidada selección hecha por Pablo, de nuestros productos de diseño más solicitados, fabricados bajo demanda, combinando tecnología y artesanía, y con posibilidad de ser adaptados y personalizados a lo que necesitas</p>
+               </div>
+               <div class="full-width-banner">
+                   <img class="editable" data-editable="image" src="images/placeholder.png" alt="La Tienda Online">
+                   <div class="centered-btn-wrapper">
+                       <a href="tienda.html" class="btn-factory">Ir a la tienda</a>
+                   </div>
+               </div>
+           </div>
+       </section>
 
-        <!-- Coworking Fablab Section -->
-        <section class="fablab-section">
-            <div class="container">
-                <div class="fablab-layout">
-                    <div class="fablab-image">
-                        <div class="image-wrapper">
-                            <img src="images/esta-imagen-es-la-que-tiene-el-icono-de-servicios-de-diseno-encima.png" alt="Coworking Fablab">
-                            <a href="#" class="service-overlay-btn">Servicios de diseño</a>
-                        </div>
-                    </div>
-                    <div class="fablab-text">
-                        <h2 class="fablab-title">EL COWORKING FABLAB</h2>
-                        <p class="fablab-subtitle">DE ARCHICERCLE & CO</p>
-                        <div class="fablab-description">
-                            <p>Empezar no fue fácil y el proceso hasta percibir un crecimiento exponencial fue un camino de perseverancia, obstáculos, implicación y mucho tiempo invertido, aprendizajes, experiencias e inversión.</p>
-                            <p>Recursos, que ahora ponemos a disposición de nuevos emprendedores, con ideas brillantes, personas todoterreno con un gran potencial, pero sin el capital y los recursos y la experiencia necesaria, para co-crear juntos productos únicos, con nichos de mercado concretos, ofreciendo nuestra infraestructura, herramientas y máquinas de última generación, así como conocimientos y experiencia en la creación de empresas para que juntos convirtamos tu pasión en una fuente de ingresos.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+       <!-- Coworking Fablab Section -->
+       <section class="fablab-section">
+           <div class="container">
+               <div class="fablab-layout">
+                   <div class="fablab-image">
+                       <div class="image-wrapper">
+                           <img class="editable" data-editable="image" src="images/esta-imagen-es-la-que-tiene-el-icono-de-servicios-de-diseno-encima.png" alt="Coworking Fablab">
+                           <a href="#" class="service-overlay-btn">Servicios de diseño</a>
+                       </div>
+                   </div>
+                   <div class="fablab-text">
+                       <h2 class="editable fablab-title" data-editable="text">EL COWORKING FABLAB</h2>
+                       <p class="editable fablab-subtitle" data-editable="text">DE ARCHICERCLE & CO</p>
+                       <div class="fablab-description">
+                           <p class="editable" data-editable="text">Empezar no fue fácil y el proceso hasta percibir un crecimiento exponencial fue un camino de perseverancia, obstáculos, implicación y mucho tiempo invertido, aprendizajes, experiencias e inversión.</p>
+                           <p class="editable" data-editable="text">Recursos, que ahora ponemos a disposición de nuevos emprendedores, con ideas brillantes, personas todoterreno con un gran potencial, pero sin el capital y los recursos y la experiencia necesaria, para co-crear juntos productos únicos, con nichos de mercado concretos, ofreciendo nuestra infraestructura, herramientas y máquinas de última generación, así como conocimientos y experiencia en la creación de empresas para que juntos convirtamos tu pasión en una fuente de ingresos.</p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
 
-        <!-- Spin-off Section -->
-        <section class="spinoff-section">
-            <div class="container">
-                <div class="spinoff-header">
-                    <h2 class="spinoff-title">Spin-off</h2>
-                    <p class="spinoff-subtitle">PROYECTOS SATÉLITE</p>
-                    <p class="spinoff-description">
+       <!-- Spin-off Section -->
+       <section class="spinoff-section">
+           <div class="container">
+               <div class="spinoff-header">
+                   <h2 class="editable spinoff-title" data-editable="text">Spin-off</h2>
+                   <p class="editable spinoff-subtitle" data-editable="text">PROYECTOS SATÉLITE</p>
+                   <p class="editable spinoff-description" data-editable="text">
                         Con los años el estudio ha ido creciendo. Hemos creado decenas de proyectos, con su propio ecosistema, que necesitaban tener una identidad bien definida para convertirse en empresas. Proyectos que ahora orbitan alrededor de nuestro sol Archicercle, y existen gracias a él. Aquí puede estar tu empresa co-creada, asóciate con nosotros.
-                    </p>
-                </div>
+                   </p>
+               </div>
 
-                <div class="spinoff-grid">
-                    <!-- Main Banner -->
-                    <div class="spinoff-banner">
-                        <div class="grid-item-wrapper">
-                            <img src="images/placeholder.png" alt="Tu empresa aquí">
-                            <a href="#" class="grid-btn">Tu empresa aquí</a>
-                        </div>
-                    </div>
+               <div class="spinoff-grid">
+                   <!-- Main Banner -->
+                   <div class="spinoff-banner">
+                       <div class="grid-item-wrapper">
+                           <img class="editable" data-editable="image" src="images/placeholder.png" alt="Tu empresa aquí">
+                           <a href="#" class="grid-btn">Tu empresa aquí</a>
+                       </div>
+                   </div>
 
-                    <!-- Row 1 -->
-                    <div class="spinoff-row">
-                        <div class="grid-item">
-                            <div class="grid-item-wrapper">
-                                <img src="images/placeholder.png" alt="Fotomatón">
-                                <a href="#" class="grid-btn">Fotomatón</a>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="grid-item-wrapper">
-                                <img src="images/placeholder.png" alt="Nhiza design">
-                                <a href="#" class="grid-btn">Nhiza design</a>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="grid-item-wrapper">
-                                <img src="images/placeholder.png" alt="Ringbox">
-                                <a href="#" class="grid-btn">Ringbox</a>
-                            </div>
-                        </div>
-                    </div>
+                   <!-- Row 1 -->
+                   <div class="spinoff-row">
+                       <div class="grid-item">
+                           <div class="grid-item-wrapper">
+                               <img class="editable" data-editable="image" src="images/placeholder.png" alt="Fotomatón">
+                               <a href="#" class="grid-btn">Fotomatón</a>
+                           </div>
+                       </div>
+                       <div class="grid-item">
+                           <div class="grid-item-wrapper">
+                               <img class="editable" data-editable="image" src="images/placeholder.png" alt="Nhiza design">
+                               <a href="#" class="grid-btn">Nhiza design</a>
+                           </div>
+                       </div>
+                       <div class="grid-item">
+                           <div class="grid-item-wrapper">
+                               <img class="editable" data-editable="image" src="images/placeholder.png" alt="Ringbox">
+                               <a href="#" class="grid-btn">Ringbox</a>
+                           </div>
+                       </div>
+                   </div>
 
-                    <!-- Row 2 -->
-                    <div class="spinoff-row">
-                        <div class="grid-item">
-                            <div class="grid-item-wrapper">
-                                <img src="images/placeholder.png" alt="Fabrica tu metacrilato">
-                                <a href="#" class="grid-btn">Fabrica tu metacrilato</a>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="grid-item-wrapper">
-                                <img src="images/placeholder.png" alt="Cursos">
-                                <a href="#" class="grid-btn">Cursos</a>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="grid-item-wrapper">
-                                <img src="images/placeholder.png" alt="Machines">
-                                <a href="#" class="grid-btn">Machines</a>
-                            </div>
-                        </div>
-                    </div>
+                   <!-- Row 2 -->
+                   <div class="spinoff-row">
+                       <div class="grid-item">
+                           <div class="grid-item-wrapper">
+                               <img class="editable" data-editable="image" src="images/placeholder.png" alt="Fabrica tu metacrilato">
+                               <a href="#" class="grid-btn">Fabrica tu metacrilato</a>
+                           </div>
+                       </div>
+                       <div class="grid-item">
+                           <div class="grid-item-wrapper">
+                               <img class="editable" data-editable="image" src="images/placeholder.png" alt="Cursos">
+                               <a href="#" class="grid-btn">Cursos</a>
+                           </div>
+                       </div>
+                       <div class="grid-item">
+                           <div class="grid-item-wrapper">
+                               <img class="editable" data-editable="image" src="images/placeholder.png" alt="Machines">
+                               <a href="#" class="grid-btn">Machines</a>
+                           </div>
+                       </div>
+                   </div>
 
-                    <!-- Row 3 -->
-                    <div class="spinoff-row">
-                        <div class="grid-item">
-                            <div class="grid-item-wrapper">
-                                <img src="images/placeholder.png" alt="QR products">
-                                <a href="#" class="grid-btn">QR products</a>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="grid-item-wrapper">
-                                <img src="images/placeholder.png" alt="Justlasercut">
-                                <a href="#" class="grid-btn">Justlasercut</a>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="grid-item-wrapper">
-                                <img src="images/placeholder.png" alt="Cosastudio">
-                                <a href="#" class="grid-btn">Cosastudio</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                   <!-- Row 3 -->
+                   <div class="spinoff-row">
+                       <div class="grid-item">
+                           <div class="grid-item-wrapper">
+                               <img class="editable" data-editable="image" src="images/placeholder.png" alt="QR products">
+                               <a href="#" class="grid-btn">QR products</a>
+                           </div>
+                       </div>
+                       <div class="grid-item">
+                           <div class="grid-item-wrapper">
+                               <img class="editable" data-editable="image" src="images/placeholder.png" alt="Justlasercut">
+                               <a href="#" class="grid-btn">Justlasercut</a>
+                           </div>
+                       </div>
+                       <div class="grid-item">
+                           <div class="grid-item-wrapper">
+                               <img class="editable" data-editable="image" src="images/placeholder.png" alt="Cosastudio">
+                               <a href="#" class="grid-btn">Cosastudio</a>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
 
-        <!-- Instagram Feed Section (Nuestro Trabajo) -->
-        <section class="instagram-section">
-            <div class="container">
-                <div class="instagram-header">
-                    <h2 class="title-white">NUESTRO TRABAJO</h2>
-                    <p class="subtitle-red">grandes proyectos para grandes clientes</p>
-                </div>
+       <!-- Instagram Feed Section (Nuestro Trabajo) -->
+       <section class="instagram-section">
+           <div class="container">
+               <div class="instagram-header">
+                   <h2 class="editable title-white" data-editable="text">NUESTRO TRABAJO</h2>
+                   <p class="editable subtitle-red" data-editable="text">grandes proyectos para grandes clientes</p>
+               </div>
 
-                <div class="instagram-grid">
-                    <!-- 3x3 Grid of Instagram Posts -->
-                    <a href="https://www.instagram.com/archicercle/" target="_blank" class="insta-post">
-                        <img src="images/placeholder.png" alt="Instagram Post">
-                    </a>
-                    <a href="https://www.instagram.com/archicercle/" target="_blank" class="insta-post">
-                        <img src="images/placeholder.png" alt="Instagram Post">
-                    </a>
-                    <a href="https://www.instagram.com/archicercle/" target="_blank" class="insta-post">
-                        <img src="images/placeholder.png" alt="Instagram Post">
-                    </a>
-                    <a href="https://www.instagram.com/archicercle/" target="_blank" class="insta-post">
-                        <img src="images/placeholder.png" alt="Instagram Post">
-                    </a>
-                    <a href="https://www.instagram.com/archicercle/" target="_blank" class="insta-post">
-                        <img src="images/placeholder.png" alt="Instagram Post">
-                    </a>
-                    <a href="https://www.instagram.com/archicercle/" target="_blank" class="insta-post">
-                        <img src="images/placeholder.png" alt="Instagram Post">
-                    </a>
-                    <a href="https://www.instagram.com/archicercle/" target="_blank" class="insta-post">
-                        <img src="images/placeholder.png" alt="Instagram Post">
-                    </a>
-                    <a href="https://www.instagram.com/archicercle/" target="_blank" class="insta-post">
-                        <img src="images/placeholder.png" alt="Instagram Post">
-                    </a>
-                    <a href="https://www.instagram.com/archicercle/" target="_blank" class="insta-post">
-                        <img src="images/placeholder.png" alt="Instagram Post">
-                    </a>
-                </div>
+               <div class="instagram-grid">
+                   <!-- 3x3 Grid of Instagram Posts -->
+                   <a href="https://www.instagram.com/archicercle/" target="_blank" class="insta-post">
+                       <img class="editable" data-editable="image" src="images/placeholder.png" alt="Instagram Post">
+                   </a>
+                   <a href="https://www.instagram.com/archicercle/" target="_blank" class="insta-post">
+                       <img class="editable" data-editable="image" src="images/placeholder.png" alt="Instagram Post">
+                   </a>
+                   <a href="https://www.instagram.com/archicercle/" target="_blank" class="insta-post">
+                       <img class="editable" data-editable="image" src="images/placeholder.png" alt="Instagram Post">
+                   </a>
+                   <a href="https://www.instagram.com/archicercle/" target="_blank" class="insta-post">
+                       <img class="editable" data-editable="image" src="images/placeholder.png" alt="Instagram Post">
+                   </a>
+                   <a href="https://www.instagram.com/archicercle/" target="_blank" class="insta-post">
+                       <img class="editable" data-editable="image" src="images/placeholder.png" alt="Instagram Post">
+                   </a>
+                   <a href="https://www.instagram.com/archicercle/" target="_blank" class="insta-post">
+                       <img class="editable" data-editable="image" src="images/placeholder.png" alt="Instagram Post">
+                   </a>
+                   <a href="https://www.instagram.com/archicercle/" target="_blank" class="insta-post">
+                       <img class="editable" data-editable="image" src="images/placeholder.png" alt="Instagram Post">
+                   </a>
+                   <a href="https://www.instagram.com/archicercle/" target="_blank" class="insta-post">
+                       <img class="editable" data-editable="image" src="images/placeholder.png" alt="Instagram Post">
+                   </a>
+                   <a href="https://www.instagram.com/archicercle/" target="_blank" class="insta-post">
+                       <img class="editable" data-editable="image" src="images/placeholder.png" alt="Instagram Post">
+                   </a>
+               </div>
 
-                <div class="social-links-area">
-                    <div class="social-icons-row">
-                        <div class="social-link-item">
-                            <!-- Portfolio Icon -->
-                            <img src="images/video-editing.png" alt="Portfolio" class="social-icon">
-                            <a href="#" class="social-btn">Portfolio</a>
-                        </div>
-                        <div class="social-link-item">
-                            <!-- Instagram Icon -->
-                            <img src="images/instagram.png" alt="Instagram" class="social-icon">
-                            <a href="https://www.instagram.com/archicercle/" target="_blank" class="social-btn">Instagram</a>
-                        </div>
-                        <div class="social-link-item">
-                            <!-- TikTok Icon -->
-                            <img src="images/tik-tok.png" alt="Tik-Tok" class="social-icon">
-                            <a href="https://www.tiktok.com/@archicercle" target="_blank" class="social-btn">Tik-Tok</a>
-                        </div>
-                        <div class="social-link-item">
-                            <!-- Google G Icon -->
-                            <img src="images/google.png" alt="Google Business" class="social-icon">
-                            <a href="#" class="social-btn">Google Business</a>
-                        </div>
+               <div class="social-links-area">
+                   <div class="social-icons-row">
+                       <div class="social-link-item">
+                           <!-- Portfolio Icon -->
+                           <img class="editable social-icon" data-editable="image" src="images/video-editing.png" alt="Portfolio">
+                           <a href="#" class="social-btn">Portfolio</a>
+                       </div>
+                       <div class="social-link-item">
+                           <!-- Instagram Icon -->
+                           <img class="editable social-icon" data-editable="image" src="images/instagram.png" alt="Instagram">
+                           <a href="https://www.instagram.com/archicercle/" target="_blank" class="social-btn">Instagram</a>
+                       </div>
+                       <div class="social-link-item">
+                           <!-- TikTok Icon -->
+                           <img class="editable social-icon" data-editable="image" src="images/tik-tok.png" alt="Tik-Tok">
+                           <a href="https://www.tiktok.com/@archicercle" target="_blank" class="social-btn">Tik-Tok</a>
+                       </div>
+                       <div class="social-link-item">
+                           <!-- Google G Icon -->
+                           <img class="editable social-icon" data-editable="image" src="images/google.png" alt="Google Business">
+                           <a href="#" class="social-btn">Google Business</a>
+                       </div>
 
-                    </div>
-                </div>
-                </div>
-            </div>
-        </section>
+                   </div>
+               </div>
+               </div>
+           </div>
+       </section>
 
-        <!-- Contact Section -->
-        <section class="contact-section">
-            <div class="container">
-                <div class="contact-layout">
-                    <div class="contact-info">
-                        <h2 class="contact-title">Hablemos</h2>
-                        <div class="contact-description">
-                            <p>Las marcas tienen que comunicarse con sus clientes. Y no sólo hablar, también tienen que escuchar y responder.</p>
-                            <p>Hablar, dialogar, debatir, escuchar, ponerse en la piel del otro... no hemos inventado nada, es lo que siempre se ha llamado comunicación.</p>
-                            <p>Y es lo que hacemos con nuestros clientes y con todo aquel que quiera conocernos y que lo conozcamos.</p>
-                            <p>Aquí tiene nuestra dirección, nuestro teléfono y un correo de contacto. Le esperamos con las puertas (y las mentes) bien abiertas.</p>
-                            <p><strong>¡Nos vemos!</strong></p>
-                        </div>
+       <!-- Contact Section -->
+       <section class="contact-section">
+           <div class="container">
+               <div class="contact-layout">
+                   <div class="contact-info">
+                       <h2 class="editable contact-title" data-editable="text">Hablemos</h2>
+                       <div class="contact-description">
+                           <p class="editable" data-editable="text">Las marcas tienen que comunicarse con sus clientes. Y no sólo hablar, también tienen que escuchar y responder.</p>
+                           <p class="editable" data-editable="text">Hablar, dialogar, debatir, escuchar, ponerse en la piel del otro... no hemos inventado nada, es lo que siempre se ha llamado comunicación.</p>
+                           <p class="editable" data-editable="text">Y es lo que hacemos con nuestros clientes y con todo aquel que quiera conocernos y que lo conozcamos.</p>
+                           <p class="editable" data-editable="text">Aquí tiene nuestra dirección, nuestro teléfono y un correo de contacto. Le esperamos con las puertas (y las mentes) bien abiertas.</p>
+                           <p class="editable" data-editable="text"><strong>¡Nos vemos!</strong></p>
+                       </div>
                         
-                        <ul class="contact-meta">
-                            <li>
-                                <i data-lucide="map-pin"></i>
-                                <span>Calle Utiel nº 6, CP 46021 (Cerca de la parada de metro de Benimaclet)</span>
-                            </li>
-                            <li>
-                                <i data-lucide="mail"></i>
-                                <span>archicercle@archicercle.com</span>
-                            </li>
-                            <li>
-                                <i data-lucide="phone"></i>
-                                <span>649 999 853</span>
-                            </li>
-                        </ul>
-                    </div>
+                       <ul class="contact-meta">
+                           <li>
+                               <i data-lucide="map-pin"></i>
+                               <span>Calle Utiel nº 6, CP 46021 (Cerca de la parada de metro de Benimaclet)</span>
+                           </li>
+                           <li>
+                               <i data-lucide="mail"></i>
+                               <span>archicercle@archicercle.com</span>
+                           </li>
+                           <li>
+                               <i data-lucide="phone"></i>
+                               <span>649 999 853</span>
+                           </li>
+                       </ul>
+                   </div>
 
-                    <div class="contact-form-wrapper">
-                        <form class="contact-form">
-                            <div class="form-group">
-                                <label for="consulta">Consulta</label>
-                                <select id="consulta" name="consulta">
-                                    <option value="diseno">Servicios de Diseño</option>
-                                    <option value="fabricacion">Servicios de Fabricación</option>
-                                    <option value="coworking">Coworking</option>
-                                    <option value="otros">Otros</option>
-                                </select>
-                            </div>
+                   <div class="contact-form-wrapper">
+                       <form class="contact-form">
+                           <div class="form-group">
+                               <label for="consulta">Consulta</label>
+                               <select id="consulta" name="consulta">
+                                   <option value="diseno">Servicios de Diseño</option>
+                                   <option value="fabricacion">Servicios de Fabricación</option>
+                                   <option value="coworking">Coworking</option>
+                                   <option value="otros">Otros</option>
+                               </select>
+                           </div>
                             
-                            <div class="form-group">
-                                <label for="nombre">Nombre</label>
-                                <input type="text" id="nombre" name="nombre" placeholder="Nombre">
-                            </div>
+                           <div class="form-group">
+                               <label for="nombre">Nombre</label>
+                               <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                           </div>
 
-                            <div class="form-group">
-                                <label for="email">Correo electrónico</label>
-                                <input type="email" id="email" name="email" placeholder="Correo electrónico">
-                            </div>
+                           <div class="form-group">
+                               <label for="email">Correo electrónico</label>
+                               <input type="email" id="email" name="email" placeholder="Correo electrónico">
+                           </div>
 
-                            <div class="form-group">
-                                <label for="telefono">Teléfono</label>
-                                <input type="tel" id="telefono" name="telefono" placeholder="Teléfono">
-                            </div>
+                           <div class="form-group">
+                               <label for="telefono">Teléfono</label>
+                               <input type="tel" id="telefono" name="telefono" placeholder="Teléfono">
+                           </div>
 
-                            <div class="form-group">
-                                <label for="mensaje">Mensaje</label>
-                                <textarea id="mensaje" name="mensaje" placeholder="Mensaje" rows="5"></textarea>
-                            </div>
+                           <div class="form-group">
+                               <label for="mensaje">Mensaje</label>
+                               <textarea id="mensaje" name="mensaje" placeholder="Mensaje" rows="5"></textarea>
+                           </div>
 
-                            <div class="form-privacy">
-                                <input type="checkbox" id="privacy" name="privacy" required>
-                                <label for="privacy">He leído y acepto el aviso legal y la política de privacidad.</label>
-                            </div>
+                           <div class="form-privacy">
+                               <input type="checkbox" id="privacy" name="privacy" required>
+                               <label for="privacy">He leído y acepto el aviso legal y la política de privacidad.</label>
+                           </div>
 
-                            <button type="submit" class="btn-submit">Enviar</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
+                           <button type="submit" class="btn-submit">Enviar</button>
+                       </form>
+                   </div>
+               </div>
+           </div>
+       </section>
 
-        <!-- FAQ Section -->
-        <section class="faq-section">
-            <div class="container">
-                <h2 class="faq-main-title">Preguntas frecuentes</h2>
-                <div class="faq-list">
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            <span class="faq-plus">+</span>
-                            <span>¿Qué es Archicercle y qué servicios de diseño y fabricación digital ofrece?</span>
-                        </button>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            <span class="faq-plus">+</span>
-                            <span>¿Cuál es la diferencia entre Archicercle y una fábrica tradicional?</span>
-                        </button>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            <span class="faq-plus">+</span>
-                            <span>¿Qué tipo de clientes pueden trabajar con Archicercle?</span>
-                        </button>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            <span class="faq-plus">+</span>
-                            <span>¿Dónde se encuentra Archicercle y se puede visitar el estudio?</span>
-                        </button>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            <span class="faq-plus">+</span>
-                            <span>¿Qué ventajas tiene fabricar en Archicercle frente a buscar un proveedor externo?</span>
-                        </button>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            <span class="faq-plus">+</span>
-                            <span>¿Archicercle trabaja solo a nivel local o también a nivel nacional e internacional?</span>
-                        </button>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            <span class="faq-plus">+</span>
-                            <span>¿Puedo traer mi propio diseño para fabricarlo en Archicercle?</span>
-                        </button>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            <span class="faq-plus">+</span>
-                            <span>¿Qué significa que Archicercle combina artesanía y tecnología?</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
+       <!-- FAQ Section -->
+       <section class="faq-section">
+           <div class="container">
+               <h2 class="editable faq-main-title" data-editable="text">Preguntas frecuentes</h2>
+               <div class="faq-list">
+                   <div class="faq-item">
+                       <button class="faq-question">
+                           <span class="faq-plus">+</span>
+                           <span>¿Qué es Archicercle y qué servicios de diseño y fabricación digital ofrece?</span>
+                       </button>
+                   </div>
+                   <div class="faq-item">
+                       <button class="faq-question">
+                           <span class="faq-plus">+</span>
+                           <span>¿Cuál es la diferencia entre Archicercle y una fábrica tradicional?</span>
+                       </button>
+                   </div>
+                   <div class="faq-item">
+                       <button class="faq-question">
+                           <span class="faq-plus">+</span>
+                           <span>¿Qué tipo de clientes pueden trabajar con Archicercle?</span>
+                       </button>
+                   </div>
+                   <div class="faq-item">
+                       <button class="faq-question">
+                           <span class="faq-plus">+</span>
+                           <span>¿Dónde se encuentra Archicercle y se puede visitar el estudio?</span>
+                       </button>
+                   </div>
+                   <div class="faq-item">
+                       <button class="faq-question">
+                           <span class="faq-plus">+</span>
+                           <span>¿Qué ventajas tiene fabricar en Archicercle frente a buscar un proveedor externo?</span>
+                       </button>
+                   </div>
+                   <div class="faq-item">
+                       <button class="faq-question">
+                           <span class="faq-plus">+</span>
+                           <span>¿Archicercle trabaja solo a nivel local o también a nivel nacional e internacional?</span>
+                       </button>
+                   </div>
+                   <div class="faq-item">
+                       <button class="faq-question">
+                           <span class="faq-plus">+</span>
+                           <span>¿Puedo traer mi propio diseño para fabricarlo en Archicercle?</span>
+                       </button>
+                   </div>
+                   <div class="faq-item">
+                       <button class="faq-question">
+                           <span class="faq-plus">+</span>
+                           <span>¿Qué significa que Archicercle combina artesanía y tecnología?</span>
+                       </button>
+                   </div>
+               </div>
+           </div>
+       </section>
 
-        <!-- Footer Section -->
-        <footer class="main-footer">
-            <div class="container">
-                <div class="footer-grid">
-                    <!-- Column 1: Logo & Social -->
-                    <div class="footer-col about-col">
-                        <img src="images/Archicercle.png" alt="Archicercle" class="footer-logo">
-                        <p class="footer-slogan">Fabricación digital y artesanal creativa.</p>
-                                                                                                                        <div class="footer-socials">
-                            <a href="https://www.instagram.com/archicercle/" target="_blank" aria-label="Instagram"><img src="images/instagram.png" alt="Instagram"></a>
-                            <a href="https://it.pinterest.com/archicercle" target="_blank" aria-label="Pinterest"><img src="images/pinterest.png" alt="Pinterest"></a>
-                            <a href="https://www.tiktok.com/@archicercle" target="_blank" aria-label="TikTok"><img src="images/tik-tok.png" alt="TikTok"></a>
-                            <a href="https://wa.me/34649999853" target="_blank" aria-label="WhatsApp"><img src="images/whatsapp.png" alt="WhatsApp"></a>
-                            <a href="mailto:PabloPastor@archicercle.com" aria-label="Email"><img src="images/email.png" alt="Email"></a>
-                            <a href="https://www.linkedin.com/in/pastorpablo/" target="_blank" aria-label="LinkedIn"><img src="images/linkedin.png" alt="LinkedIn"></a>
-                        </div>
-                    </div>
+       <!-- Footer Section -->
+       <footer class="main-footer">
+           <div class="container">
+               <div class="footer-grid">
+                   <!-- Column 1: Logo & Social -->
+                   <div class="footer-col about-col">
+                       <img class="editable footer-logo" data-editable="image" src="images/Archicercle.png" alt="Archicercle">
+                       <p class="editable footer-slogan" data-editable="text">Fabricación digital y artesanal creativa.</p>
+                                                                                                                       <div class="footer-socials">
+                           <a href="https://www.instagram.com/archicercle/" target="_blank" aria-label="Instagram"><img class="editable" data-editable="image" src="images/instagram.png" alt="Instagram"></a>
+                           <a href="https://it.pinterest.com/archicercle" target="_blank" aria-label="Pinterest"><img class="editable" data-editable="image" src="images/pinterest.png" alt="Pinterest"></a>
+                           <a href="https://www.tiktok.com/@archicercle" target="_blank" aria-label="TikTok"><img class="editable" data-editable="image" src="images/tik-tok.png" alt="TikTok"></a>
+                           <a href="https://wa.me/34649999853" target="_blank" aria-label="WhatsApp"><img class="editable" data-editable="image" src="images/whatsapp.png" alt="WhatsApp"></a>
+                           <a href="mailto:PabloPastor@archicercle.com" aria-label="Email"><img class="editable" data-editable="image" src="images/email.png" alt="Email"></a>
+                           <a href="https://www.linkedin.com/in/pastorpablo/" target="_blank" aria-label="LinkedIn"><img class="editable" data-editable="image" src="images/linkedin.png" alt="LinkedIn"></a>
+                       </div>
+                   </div>
 
-                    <!-- Column 2: Contact -->
-                    <div class="footer-col contact-col">
-                        <h3>Contacto</h3>
-                        <div class="contact-item">
-                            <p>- Coworking fablab Archicercle: <a href="https://www.google.com/maps/search/?api=1&query=Calle+Utiel+6+bajo+derecha+46020+Valencia" target="_blank">Calle Utiel 6 bajo derecha, 46020, Valencia</a></p>
-                        </div>
-                        <div class="contact-item">
-                            <p>- Estudio Fábrica Archicercle: <a href="https://www.google.com/maps/search/?api=1&query=Placa+Pere+Maria+Orts+i+Bosch+18+bajo+46014+Valencia" target="_blank">Plaça Pere Maria Orts i Bosch 18, bajo. 46014, Valencia</a></p>
-                        </div>
-                        <div class="contact-item">
-                            <p>Mail: <a href="mailto:PabloPastor@archicercle.com">PabloPastor@archicercle.com</a></p>
-                        </div>
-                        <div class="contact-item">
-                            <p>Móvil: <a href="https://wa.me/34649999853" target="_blank">649 999 853</a></p>
-                        </div>
-                    </div>
+                   <!-- Column 2: Contact -->
+                   <div class="footer-col contact-col">
+                       <h3 class="editable" data-editable="text">Contacto</h3>
+                       <div class="contact-item">
+                           <p class="editable" data-editable="text">- Coworking fablab Archicercle:<a href="https://www.google.com/maps/search/?api=1&query=Calle+Utiel+6+bajo+derecha+46020+Valencia" target="_blank">Calle Utiel 6 bajo derecha, 46020, Valencia</a></p>
+                       </div>
+                       <div class="contact-item">
+                           <p class="editable" data-editable="text">- Estudio Fábrica Archicercle:<a href="https://www.google.com/maps/search/?api=1&query=Placa+Pere+Maria+Orts+i+Bosch+18+bajo+46014+Valencia" target="_blank">Plaça Pere Maria Orts i Bosch 18, bajo. 46014, Valencia</a></p>
+                       </div>
+                       <div class="contact-item">
+                           <p class="editable" data-editable="text">Mail:<a href="mailto:PabloPastor@archicercle.com">PabloPastor@archicercle.com</a></p>
+                       </div>
+                       <div class="contact-item">
+                           <p class="editable" data-editable="text">Móvil:<a href="https://wa.me/34649999853" target="_blank">649 999 853</a></p>
+                       </div>
+                   </div>
 
-                    <!-- Column 3: Quick Links -->
-                    <div class="footer-col links-col">
-                        <h3>Quick Links</h3>
-                        <ul>
-                            <li><a href="coworking.html">Coworking</a></li>
-                            <li><a href="#">Sobre nosotros</a></li>
-                            <li><a href="corte-laser-online.html">Corte laser online</a></li>
-                            <li><a href="servicios-de-diseno.html">Servicios de diseño</a></li>
-                            <li><a href="#">Servicios de fabricación</a></li>
-                            <li><a href="#">Materiales</a></li>
-                            <li><a href="#">Maquinaria</a></li>
-                            <li><a href="#">Tienda</a></li>
-                            <li><a href="#">Contacto</a></li>
-                        </ul>
-                    </div>
+                   <!-- Column 3: Quick Links -->
+                   <div class="footer-col links-col">
+                       <h3 class="editable" data-editable="text">Quick Links</h3>
+                       <ul>
+                           <li><a href="coworking.html">Coworking</a></li>
+                           <li><a href="#">Sobre nosotros</a></li>
+                           <li><a href="corte-laser-online.html">Corte laser online</a></li>
+                           <li><a href="servicios-de-diseno.html">Servicios de diseño</a></li>
+                           <li><a href="#">Servicios de fabricación</a></li>
+                           <li><a href="#">Materiales</a></li>
+                           <li><a href="#">Maquinaria</a></li>
+                           <li><a href="#">Tienda</a></li>
+                           <li><a href="#">Contacto</a></li>
+                       </ul>
+                   </div>
 
-                    <!-- Column 4: Kit Digital -->
-                    <div class="footer-col kit-col">
-                        <h3>Kit Digital</h3>
-                        <div class="kit-logos">
-                            <img src="images/ue-kit.png" alt="Financiado por la Unión Europea" class="kit-img">
-                            <img src="images/prtr-kit.png" alt="Plan de Recuperación" class="kit-img">
-                        </div>
-                        <a href="declaracion.html" class="accessibility-link">DECLARACIÓN DE ACCESIBILIDAD</a>
-                    </div>
-                </div>
-            </div>
+                   <!-- Column 4: Kit Digital -->
+                   <div class="footer-col kit-col">
+                       <h3 class="editable" data-editable="text">Kit Digital</h3>
+                       <div class="kit-logos">
+                           <img class="editable kit-img" data-editable="image" src="images/ue-kit.png" alt="Financiado por la Unión Europea">
+                           <img class="editable kit-img" data-editable="image" src="images/prtr-kit.png" alt="Plan de Recuperación">
+                       </div>
+                       <a href="declaracion.html" class="accessibility-link">DECLARACIÓN DE ACCESIBILIDAD</a>
+                   </div>
+               </div>
+           </div>
 
-            <!-- Sub Footer -->
-            <div class="sub-footer">
-                <div class="container">
-                    <p>2025 Todos los derechos reservados | Diseño y desarrollo web por Ahmed Gomaa In Archicercle.</p>
-                </div>
-            </div>
-        </footer>
-    </main>
+           <!-- Sub Footer -->
+           <div class="sub-footer">
+               <div class="container">
+                   <p class="editable" data-editable="text">2025 Todos los derechos reservados | Diseño y desarrollo web por Ahmed Gomaa In Archicercle.</p>
+               </div>
+           </div>
+       </footer>
+   </main>
 
 
-    <a href="https://wa.me/" class="whatsapp-float" aria-label="WhatsApp">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-    </a>
+   <a href="https://wa.me/" class="whatsapp-float" aria-label="WhatsApp">
+       <img class="editable" data-editable="image" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+   </a>
 
-    <script src="script.js"></script>
-    <script>
-        lucide.createIcons();
-        // The loadPageContent() is automatically called by the DOMContentLoaded event in script.js
-    </script>
+   <script src="script.js"></script>
+    
 </body>
 </html>
+
+
+
+
