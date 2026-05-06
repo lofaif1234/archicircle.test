@@ -54,6 +54,14 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Hero Image", name: "hero_image", widget: "image" }
           - { label: "Description", name: "description", widget: "text" }
+          - { label: "Col 1 Title", name: "mat_col_1_title", widget: "string" }
+          - { label: "Col 1 Content", name: "mat_col_1_content", widget: "markdown" }
+          - { label: "Col 2 Title", name: "mat_col_2_title", widget: "string" }
+          - { label: "Col 2 Content", name: "mat_col_2_content", widget: "markdown" }
+          - { label: "Col 3 Title", name: "mat_col_3_title", widget: "string" }
+          - { label: "Col 3 Content", name: "mat_col_3_content", widget: "markdown" }
+          - { label: "Stock Title", name: "stock_title", widget: "string" }
+          - { label: "Stock Description", name: "stock_desc", widget: "text" }
 
       - label: "Maquinaria"
         name: "machines"
@@ -61,7 +69,15 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Hero Image", name: "hero_image", widget: "image" }
-          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Description", name: "description", widget: "markdown" }
+          - { label: "Col 1 Title", name: "mach_col_1_title", widget: "string" }
+          - { label: "Col 1 Content", name: "mach_col_1_content", widget: "markdown" }
+          - { label: "Col 2 Title", name: "mach_col_2_title", widget: "string" }
+          - { label: "Col 2 Content", name: "mach_col_2_content", widget: "markdown" }
+          - { label: "Col 3 Title", name: "mach_col_3_title", widget: "string" }
+          - { label: "Col 3 Content", name: "mach_col_3_content", widget: "markdown" }
+          - { label: "Stock Title", name: "mach_stock_title", widget: "string" }
+          - { label: "Stock Description", name: "mach_stock_desc", widget: "text" }
 
       - label: "Contacto"
         name: "contact"
