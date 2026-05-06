@@ -1,10 +1,10 @@
 backend:
   name: git-gateway
   repo: lofaif1234/archicircle.test
-  branch: master # Ensure this matches your repository branch
+  branch: master
 
 media_folder: "images"
-public_folder: "/images"
+public_folder: "images"
 
 collections:
   - name: "pages"
@@ -14,10 +14,30 @@ collections:
         name: "home"
         file: "data/home.json"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Hero Image", name: "hero_image", widget: "image" }
-          - { label: "Description", name: "description", widget: "text" }
-      
+          - { label: "Hero Title", name: "hero_title", widget: "string" }
+          - { label: "Hero Description", name: "hero_description", widget: "text" }
+          - { label: "Hero Background Image", name: "intro-bg", widget: "image" }
+          
+          - { label: "Feature 1 Title", name: "features_title_1", widget: "string" }
+          - { label: "Feature 1 Description", name: "features_desc_1", widget: "text" }
+          
+          - { label: "Feature 2 Title", name: "features_title_2", widget: "string" }
+          - { label: "Feature 2 Description", name: "features_desc_2", widget: "text" }
+          
+          - { label: "Feature 3 Title", name: "features_title_3", widget: "string" }
+          - { label: "Feature 3 Description", name: "features_desc_3", widget: "text" }
+          
+          - { label: "Why Us Title", name: "why_us_title", widget: "string" }
+          - { label: "Why Us Subtitle", name: "why_us_subtitle", widget: "text" }
+          
+          - { label: "Services Title", name: "services_main_title", widget: "string" }
+          - { label: "Service 1 Title", name: "service_1_title", widget: "string" }
+          - { label: "Service 1 Description", name: "service_1_desc", widget: "text" }
+          - { label: "Service 2 Title", name: "service_2_title", widget: "string" }
+          - { label: "Service 2 Description", name: "service_2_desc", widget: "text" }
+          - { label: "Service 3 Title", name: "service_3_title", widget: "string" }
+          - { label: "Service 3 Description", name: "service_3_desc", widget: "text" }
+
       - label: "Sobre Nosotros"
         name: "about"
         file: "data/about.json"

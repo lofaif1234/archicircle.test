@@ -87,13 +87,12 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /**
- * loadPageContent - Detects the page and loads JSON data.
+ * loadPageContent - Detects the page and loads JSON data dynamically.
  */
 async function loadPageContent() {
     const path = window.location.pathname;
     let jsonFile = '';
 
-    // Relative paths are safer for subfolder hosting (e.g. GitHub Pages)
     if (path === '/' || path.endsWith('index.html') || path.endsWith('/')) {
         jsonFile = 'data/home.json';
     } else if (path.endsWith('sobre-nosotros.html')) {
@@ -114,24 +113,19 @@ async function loadPageContent() {
         if (!response.ok) throw new Error('Could not find ' + jsonFile);
         const data = await response.json();
 
-        // Update Text
-        if (data.title && document.getElementById('intro-title')) {
-            document.getElementById('intro-title').innerHTML = data.title;
-        }
-        if (data.description && document.getElementById('intro-description')) {
-            document.getElementById('intro-description').innerHTML = data.description;
-        }
-
-        // Update Images (handles both <img> tags and background images)
-        if (data.hero_image) {
-            const imgElement = document.getElementById('intro-img');
-            const bgElement = document.getElementById('intro-bg');
-
-            if (imgElement) {
-                imgElement.src = data.hero_image;
-            }
-            if (bgElement) {
-                bgElement.style.backgroundImage = `url('${data.hero_image}')`;
+        // DYNAMIC MAPPING: Loops through all keys in the JSON and tries to find a matching ID in the HTML
+        for (const [key, value] of Object.entries(data)) {
+            const element = document.getElementById(key);
+            if (element && value) {
+                if (element.tagName === 'IMG') {
+                    element.src = value;
+                } else if (key === 'intro-bg') {
+                    // Special case for hero background
+                    element.style.backgroundImage = `url('${value}')`;
+                } else {
+                    // Update text/HTML
+                    element.innerHTML = value;
+                }
             }
         }
     } catch (error) {
