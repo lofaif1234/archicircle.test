@@ -51,12 +51,12 @@
         <!-- Machinery Hero Custom -->
         <section class="materials-hero-custom machinery-hero-custom">
             <div class="materials-hero-overlay"></div>
-            <img id="machines-hero-img" src="images/9C3610B3-2A76-4956-91D7-D061B1B42C9E.PNG" alt="Maquinaria Background" class="materials-hero-bg">
+            <img id="intro-img" src="images/9C3610B3-2A76-4956-91D7-D061B1B42C9E.PNG" alt="Maquinaria Background" class="materials-hero-bg">
             
             <div class="container materials-hero-content">
                 <div class="materials-top">
-                    <h1 id="machines-title" class="materials-main-title">Máquinas que Usamos, Entendemos... y a Veces construimos.</h1>
-                    <div id="machines-description" class="materials-intro-text">
+                    <h1 id="intro-title" class="materials-main-title">Máquinas que Usamos, Entendemos... y a Veces construimos.</h1>
+                    <div id="intro-description" class="materials-intro-text">
                         <p>Más que un parque de maquinaria: CNCs, láser, impresión, fresado, grabado... usamos, modificamos y también asesoramos en la adquisición de máquinas a medida para fabricar y personalizar cualquier product.</p>
                         <p class="highlight-p">No solo usamos máquinas. Las entendemos. Las mejoramos. Y las ponemos a trabajar para otros.</p>
                         <p>En Archicercle las máquinas no mandan. Mandan las ideas. Y para que una idea se haga realidad, necesita herramientas que estén a la altura. Por eso no nos limitamos a tener un parque de maquinaria potente. Lo dominamos, lo adaptamos y lo compartimos.</p>
@@ -365,12 +365,7 @@
     <script src="script.js"></script>
     <script>
         lucide.createIcons();
-        // Load CMS Content
-        loadContent('/data/machines.json', {
-            'title': 'machines-title',
-            'hero_image': 'machines-hero-img',
-            'description': 'machines-description'
-        });
+        // The loadPageContent() is automatically called by the DOMContentLoaded event in script.js
     </script>
 </body>
 </html>

@@ -51,12 +51,12 @@
         <!-- Materials Hero -->
         <section class="materials-hero-custom">
             <div class="materials-hero-overlay"></div>
-            <img id="materials-hero-img" src="images/EC925F37-A6BB-41D5-BE11-4CA99BCDF0A4.PNG" alt="Materiales Background" class="materials-hero-bg">
+            <img id="intro-img" src="images/EC925F37-A6BB-41D5-BE11-4CA99BCDF0A4.PNG" alt="Materiales Background" class="materials-hero-bg">
             
             <div class="container materials-hero-content">
                 <div class="materials-top">
-                    <h1 id="materials-title" class="materials-main-title">Materiales que Conocemos. Y que sabemos usar.</h1>
-                    <div id="materials-description" class="materials-intro-text">
+                    <h1 id="intro-title" class="materials-main-title">Materiales que Conocemos. Y que sabemos usar.</h1>
+                    <div id="intro-description" class="materials-intro-text">
                         <p>Gran conocimiento técnico de materiales y acabados. Desde papeles hasta metales, desde bicapa hasta materiales fabricados a medida. Stock propio, proveedores clave y experiencia para sacar el máximo partido a cada material.</p>
                         <p class="highlight-p">El material adecuado puede cambiarlo todo. Y nosotros lo sabemos bien.</p>
                         <p>En Archicercle no solo usamos materiales. Los estudiamos, los buscamos, los combinamos y hasta los fabricamos si hace falta. Porque muchas veces, lo que diferencia un buen proyecto de uno increíble... es la materia prima elegida.</p>
@@ -392,12 +392,7 @@
     <script src="script.js"></script>
     <script>
         lucide.createIcons();
-        // Load CMS Content
-        loadContent('/data/materials.json', {
-            'title': 'materials-title',
-            'hero_image': 'materials-hero-img',
-            'description': 'materials-description'
-        });
+        // The loadPageContent() is automatically called by the DOMContentLoaded event in script.js
     </script>
 </body>
 </html>

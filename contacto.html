@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="style.css">
     <!-- Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Netlify Identity -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
     <header class="header">
@@ -51,8 +53,8 @@
                 <div class="contact-v2-grid">
                     <!-- Left Column: Info -->
                     <div class="contact-v2-info">
-                        <h1 class="hablemos-title">Hablemos</h1>
-                        <div class="hablemos-intro">
+                        <h1 id="intro-title" class="hablemos-title">Hablemos</h1>
+                        <div id="intro-description" class="hablemos-intro">
                             <p>Las marcas tienen que comunicarse con sus clientes. Y no sólo hablar, también tienen que escuchar y responder.</p>
                             <p>Hablar, dialogar, debatir, escuchar, ponerse en la piel del otro... no hemos inventado nada, es lo que siempre se ha llamado comunicación. Y es lo que hacemos con nuestros clientes y con todo aquel que quiera conocernos y que lo conozcamos.</p>
                             <p>Aquí tiene nuestra dirección, nuestro teléfono y un correo de contacto. Le esperamos con las puertas (y las mentes) bien abiertas.</p>
@@ -195,6 +197,7 @@
     <script src="script.js"></script>
     <script>
         lucide.createIcons();
+        // The loadPageContent() is automatically called by the DOMContentLoaded event in script.js
     </script>
 </body>
 </html>

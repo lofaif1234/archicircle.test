@@ -41,3 +41,4 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Hero Image", name: "hero_image", widget: "image" }
           - { label: "Description", name: "description", widget: "text" }
+$content

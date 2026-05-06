@@ -51,11 +51,11 @@
         <!-- About Hero Section -->
         <section class="about-hero">
             <div class="about-hero-overlay"></div>
-            <img id="about-hero-img" src="images/sdfsdfsdfsdf.png" alt="Archicercle Team" class="about-hero-bg">
+            <img id="intro-img" src="images/sdfsdfsdfsdf.png" alt="Archicercle Team" class="about-hero-bg">
             <div class="container">
                 <div class="about-hero-content">
-                    <h1 id="about-title" class="about-title">Sobre nosotros.</h1>
-                    <p id="about-description" class="about-subtitle">Apasionados <span id="dynamic-text" class="text-swap">de la Vida</span></p>
+                    <h1 id="intro-title" class="about-title">Sobre nosotros.</h1>
+                    <p id="intro-description" class="about-subtitle">Apasionados <span id="dynamic-text" class="text-swap">de la Vida</span></p>
                 </div>
             </div>
         </section>
@@ -362,12 +362,7 @@
     <script src="script.js"></script>
     <script>
         lucide.createIcons();
-        // Load CMS Content
-        loadContent('/data/about.json', {
-            'title': 'about-title',
-            'hero_image': 'about-hero-img',
-            'description': 'about-description'
-        });
+        // The loadPageContent() is automatically called by the DOMContentLoaded event in script.js
     </script>
 </body>
 </html>

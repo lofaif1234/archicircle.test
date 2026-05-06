@@ -53,8 +53,8 @@
             <div class="hero-overlay"></div>
             <div class="container">
                 <div class="hero-top">
-                    <h1 id="home-title">El lugar dónde incluso sin una idea,<br>haremos tu proyecto realidad.</h1>
-                    <p id="home-description" class="subtitle">
+                    <h1 id="intro-title">El lugar dónde incluso sin una idea,<br>haremos tu proyecto realidad.</h1>
+                    <p id="intro-description" class="subtitle">
                         Diseño + fabricación, todo en uno. Somos Archicercle: un estudio de fabricación.<br>
                         Diseñamos productos que funcionan. Fabricamos ideas que se pueden tocar.<br>
                         Y cuando algo no existe, lo inventamos.
@@ -782,11 +782,7 @@
     <script src="script.js"></script>
     <script>
         lucide.createIcons();
-        // Load CMS Content
-        loadContent('/data/home.json', {
-            'title': 'home-title',
-            'description': 'home-description'
-        });
+        // The loadPageContent() is automatically called by the DOMContentLoaded event in script.js
     </script>
 </body>
 </html>

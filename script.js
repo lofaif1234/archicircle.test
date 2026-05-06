@@ -80,5 +80,68 @@ document.addEventListener('DOMContentLoaded', () => {
         Array.from(children).forEach(child => child.classList.add('reveal-item'));
         revealObserver.observe(container);
     });
+
+    // Load CMS Content if the function is called
+    if (typeof loadPageContent === 'function') {
+        loadPageContent();
+    }
 });
-$content
+
+/**
+ * loadPageContent - Automatically detects the current page and loads corresponding JSON data.
+ */
+async function loadPageContent() {
+    const path = window.location.pathname;
+    let jsonFile = '';
+
+    // Simple detection based on filename
+    if (path === '/' || path.endsWith('index.html')) {
+        jsonFile = '/data/home.json';
+    } else if (path.endsWith('sobre-nosotros.html')) {
+        jsonFile = '/data/about.json';
+    } else if (path.endsWith('materiales.html')) {
+        jsonFile = '/data/materials.json';
+    } else if (path.endsWith('maquinaria.html')) {
+        jsonFile = '/data/machines.json';
+    } else if (path.endsWith('contacto.html')) {
+        jsonFile = '/data/contact.json';
+    }
+
+    if (!jsonFile) return;
+
+    try {
+        const response = await fetch(jsonFile);
+        if (!response.ok) throw new Error('Failed to load ' + jsonFile);
+        const data = await response.json();
+
+        const mapping = {
+            'title': 'intro-title',
+            'description': 'intro-description',
+            'hero_image': 'intro-img'
+        };
+
+        for (const [key, elementId] of Object.entries(mapping)) {
+            const element = document.getElementById(elementId);
+            if (element && data[key]) {
+                if (element.tagName === 'IMG') {
+                    element.src = data[key];
+                } else {
+                    element.innerHTML = data[key];
+                }
+            }
+        }
+    } catch (error) {
+        console.error('Error loading CMS content:', error);
+    }
+}
+
+// Netlify Identity Widget handling
+if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+        if (!user) {
+            window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+            });
+        }
+    });
+}
