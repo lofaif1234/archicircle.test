@@ -2,21 +2,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileToggle = document.querySelector('.mobile-toggle');
     const navMenu = document.querySelector('.nav-menu');
 
-    mobileToggle.addEventListener('click', () => {
-        mobileToggle.classList.toggle('active');
-        navMenu.classList.toggle('active');
-        
-        const isExpanded = mobileToggle.classList.contains('active');
-        mobileToggle.setAttribute('aria-expanded', isExpanded);
-    });
-
-    document.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', () => {
-            mobileToggle.classList.remove('active');
-            navMenu.classList.remove('active');
-            mobileToggle.setAttribute('aria-expanded', 'false');
+    if (mobileToggle && navMenu) {
+        mobileToggle.addEventListener('click', () => {
+            mobileToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+            
+            const isExpanded = mobileToggle.classList.contains('active');
+            mobileToggle.setAttribute('aria-expanded', isExpanded);
         });
-    });
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+                mobileToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+    }
 
     // Dynamic Text Swapping for About Hero
     const dynamicText = document.getElementById('dynamic-text');
@@ -41,97 +43,99 @@ document.addEventListener('DOMContentLoaded', () => {
         rootMargin: "0px 0px -50px 0px"
     };
 
-    const revealObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const target = entry.target;
-                
-                // If it's a container we want to stagger, handle its children
-                if (target.classList.contains('stagger-container')) {
-                    const children = target.querySelectorAll('.reveal-item');
-                    children.forEach((child, index) => {
-                        setTimeout(() => {
-                            child.classList.add('is-visible');
-                        }, index * 150); // 150ms delay between items
-                    });
-                } else {
-                    target.classList.add('is-visible');
+    if (typeof IntersectionObserver !== 'undefined') {
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const target = entry.target;
+                    
+                    if (target.classList.contains('stagger-container')) {
+                        const children = target.querySelectorAll('.reveal-item');
+                        children.forEach((child, index) => {
+                            setTimeout(() => {
+                                child.classList.add('is-visible');
+                            }, index * 150);
+                        });
+                    } else {
+                        target.classList.add('is-visible');
+                    }
+                    
+                    revealObserver.unobserve(target);
                 }
-                
-                revealObserver.unobserve(target);
+            });
+        }, revealOptions);
+
+        const elementsToReveal = document.querySelectorAll('.reveal-on-scroll, h1, h2, h3, .footer-col, .social-link-item');
+        elementsToReveal.forEach(el => {
+            if (!el.closest('.stagger-container')) {
+                el.classList.add('reveal-item');
+                revealObserver.observe(el);
             }
         });
-    }, revealOptions);
 
-    // Initial setup for reveal elements
-    const elementsToReveal = document.querySelectorAll('.reveal-on-scroll, h1, h2, h3, .footer-col, .social-link-item');
-    elementsToReveal.forEach(el => {
-        if (!el.closest('.stagger-container')) {
-            el.classList.add('reveal-item');
-            revealObserver.observe(el);
-        }
-    });
-
-    // Special handling for grids and rows (stagger containers)
-    const containersToStagger = document.querySelectorAll('.pricing-grid, .social-icons-row, .footer-grid, .services-grid, .material-grid');
-    containersToStagger.forEach(container => {
-        container.classList.add('stagger-container');
-        const children = container.children;
-        Array.from(children).forEach(child => child.classList.add('reveal-item'));
-        revealObserver.observe(container);
-    });
-
-    // Load CMS Content if the function is called
-    if (typeof loadPageContent === 'function') {
-        loadPageContent();
+        const containersToStagger = document.querySelectorAll('.pricing-grid, .social-icons-row, .footer-grid, .services-grid, .material-grid');
+        containersToStagger.forEach(container => {
+            container.classList.add('stagger-container');
+            const children = container.children;
+            Array.from(children).forEach(child => child.classList.add('reveal-item'));
+            revealObserver.observe(container);
+        });
     }
+
+    // Auto-load CMS content
+    loadPageContent();
 });
 
 /**
- * loadPageContent - Automatically detects the current page and loads corresponding JSON data.
+ * loadPageContent - Detects the page and loads JSON data.
  */
 async function loadPageContent() {
     const path = window.location.pathname;
     let jsonFile = '';
 
-    // Simple detection based on filename
-    if (path === '/' || path.endsWith('index.html')) {
-        jsonFile = '/data/home.json';
+    // Relative paths are safer for subfolder hosting (e.g. GitHub Pages)
+    if (path === '/' || path.endsWith('index.html') || path.endsWith('/')) {
+        jsonFile = 'data/home.json';
     } else if (path.endsWith('sobre-nosotros.html')) {
-        jsonFile = '/data/about.json';
+        jsonFile = 'data/about.json';
     } else if (path.endsWith('materiales.html')) {
-        jsonFile = '/data/materials.json';
+        jsonFile = 'data/materials.json';
     } else if (path.endsWith('maquinaria.html')) {
-        jsonFile = '/data/machines.json';
+        jsonFile = 'data/machines.json';
     } else if (path.endsWith('contacto.html')) {
-        jsonFile = '/data/contact.json';
+        jsonFile = 'data/contact.json';
     }
 
     if (!jsonFile) return;
 
     try {
+        console.log('Fetching CMS data from:', jsonFile);
         const response = await fetch(jsonFile);
-        if (!response.ok) throw new Error('Failed to load ' + jsonFile);
+        if (!response.ok) throw new Error('Could not find ' + jsonFile);
         const data = await response.json();
 
-        const mapping = {
-            'title': 'intro-title',
-            'description': 'intro-description',
-            'hero_image': 'intro-img'
-        };
+        // Update Text
+        if (data.title && document.getElementById('intro-title')) {
+            document.getElementById('intro-title').innerHTML = data.title;
+        }
+        if (data.description && document.getElementById('intro-description')) {
+            document.getElementById('intro-description').innerHTML = data.description;
+        }
 
-        for (const [key, elementId] of Object.entries(mapping)) {
-            const element = document.getElementById(elementId);
-            if (element && data[key]) {
-                if (element.tagName === 'IMG') {
-                    element.src = data[key];
-                } else {
-                    element.innerHTML = data[key];
-                }
+        // Update Images (handles both <img> tags and background images)
+        if (data.hero_image) {
+            const imgElement = document.getElementById('intro-img');
+            const bgElement = document.getElementById('intro-bg');
+
+            if (imgElement) {
+                imgElement.src = data.hero_image;
+            }
+            if (bgElement) {
+                bgElement.style.backgroundImage = `url('${data.hero_image}')`;
             }
         }
     } catch (error) {
-        console.error('Error loading CMS content:', error);
+        console.warn('CMS Loader:', error.message);
     }
 }
 
