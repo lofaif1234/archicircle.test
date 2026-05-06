@@ -81,59 +81,9 @@ document.addEventListener('DOMContentLoaded', () => {
             revealObserver.observe(container);
         });
     }
-
-    // Auto-load CMS content
-    loadPageContent();
 });
 
-/**
- * loadPageContent - Detects the page and loads JSON data dynamically.
- */
-async function loadPageContent() {
-    const path = window.location.pathname;
-    let jsonFile = '';
-
-    if (path === '/' || path.endsWith('index.html') || path.endsWith('/')) {
-        jsonFile = 'data/home.json';
-    } else if (path.endsWith('sobre-nosotros.html')) {
-        jsonFile = 'data/about.json';
-    } else if (path.endsWith('materiales.html')) {
-        jsonFile = 'data/materials.json';
-    } else if (path.endsWith('maquinaria.html')) {
-        jsonFile = 'data/machines.json';
-    } else if (path.endsWith('contacto.html')) {
-        jsonFile = 'data/contact.json';
-    }
-
-    if (!jsonFile) return;
-
-    try {
-        console.log('Fetching CMS data from:', jsonFile);
-        const response = await fetch(jsonFile);
-        if (!response.ok) throw new Error('Could not find ' + jsonFile);
-        const data = await response.json();
-
-        // DYNAMIC MAPPING: Loops through all keys in the JSON and tries to find a matching ID in the HTML
-        for (const [key, value] of Object.entries(data)) {
-            const element = document.getElementById(key);
-            if (element && value) {
-                if (element.tagName === 'IMG') {
-                    element.src = value;
-                } else if (key === 'intro-bg') {
-                    // Special case for hero background
-                    element.style.backgroundImage = `url('${value}')`;
-                } else {
-                    // Update text/HTML
-                    element.innerHTML = value;
-                }
-            }
-        }
-    } catch (error) {
-        console.warn('CMS Loader:', error.message);
-    }
-}
-
-// Netlify Identity Widget handling
+// Netlify Identity Widget handling (Can be removed if no longer using Netlify Identity for CMS)
 if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {
         if (!user) {

@@ -1,0 +1,8 @@
+collections_config:
+  pages:
+    path: "/"
+    output: true
+    filter:
+      base: none
+      search:
+        - "*.html"
