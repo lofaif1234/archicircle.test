@@ -1,17 +1,12 @@
-paths:
-  static: ''
-  uploads: images
-timezone: Europe/Rome
-markdown:
-  engine: commonmark
-  options: {}
+_enabled_editors:
+  - visual
+  - content
+
 collections_config:
   pages:
-    path: ''
-    icon: wysiwyg
-  admin:
-    path: admin
-    icon: ad
-  data:
-    path: data
-    icon: data_usage
+    path: "/"
+    output: true
+    filter:
+      base: none
+      search:
+        - "*.html"
