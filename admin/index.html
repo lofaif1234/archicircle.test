@@ -11,6 +11,55 @@
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   <script>
     CMS.registerPreviewStyle("/style.css");
+
+    // Register a custom preview for the "pages" collection
+    CMS.registerPreviewTemplate("pages", createClass({
+      render: function() {
+        var entry = this.props.entry;
+        var title = entry.getIn(['data', 'title']);
+        var description = entry.getIn(['data', 'description']);
+        var image = this.props.getAsset(entry.getIn(['data', 'hero_image']));
+
+        // Return a structure that matches your website's hero sections
+        return h('div', { className: 'preview-container' },
+          h('main', {},
+            h('section', { 
+              className: 'hero about-hero materials-hero-custom',
+              style: { position: 'relative', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', color: '#fff', overflow: 'hidden' }
+            },
+              // Dark Overlay
+              h('div', { 
+                className: 'hero-overlay about-hero-overlay materials-hero-overlay',
+                style: { position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'rgba(0,0,0,0.7)', zIndex: 1 }
+              }),
+              // Background Image
+              image ? h('img', { 
+                src: image.toString(), 
+                className: 'hero-bg about-hero-bg materials-hero-bg',
+                style: { position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0 }
+              }) : null,
+              // Content Container
+              h('div', { 
+                className: 'container',
+                style: { position: 'relative', zIndex: 2, padding: '0 20px' }
+              },
+                h('div', { className: 'hero-top about-hero-content materials-hero-content' },
+                  h('h1', { 
+                    id: 'intro-title', 
+                    style: { fontSize: '3rem', fontWeight: '800', textTransform: 'uppercase', marginBottom: '20px' } 
+                  }, title),
+                  h('p', { 
+                    id: 'intro-description', 
+                    className: 'subtitle about-subtitle',
+                    style: { fontSize: '1.2rem', maxWidth: '800px', margin: '0 auto' }
+                  }, description)
+                )
+              )
+            )
+          )
+        );
+      }
+    }));
   </script>
 </body>
 </html>
