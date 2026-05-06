@@ -4,9 +4,15 @@ _enabled_editors:
 
 collections_config:
   pages:
-    path: "/"
+    path: ""
     output: true
     filter:
       base: none
       search:
         - "*.html"
+    _enabled_editors:
+      - visual
+      - content
+
+editor:
+  default_view: visual
