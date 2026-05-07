@@ -84,28 +84,28 @@ const footer_copyright = siteData?.footer_copyright ?? '2025 Todos los derechos 
                     >
                     <p class="editable footer-slogan" data-editable="text" data-prop="@data[site].footer_slogan">{footer_slogan}</p>
                     <div class="footer-socials">
-                        <a href="https://www.instagram.com/archicercle/" target="_blank" aria-label="Instagram"><img class="editable" data-editable="image" src="/images/instagram.png" alt="Instagram"></a>
-                        <a href="https://it.pinterest.com/archicercle" target="_blank" aria-label="Pinterest"><img class="editable" data-editable="image" src="/images/pinterest.png" alt="Pinterest"></a>
-                        <a href="https://www.tiktok.com/@archicercle" target="_blank" aria-label="TikTok"><img class="editable" data-editable="image" src="/images/tik-tok.png" alt="TikTok"></a>
-                        <a href="https://wa.me/34649999853" target="_blank" aria-label="WhatsApp"><img class="editable" data-editable="image" src="/images/whatsapp.png" alt="WhatsApp"></a>
-                        <a href="mailto:PabloPastor@archicercle.com" aria-label="Email"><img class="editable" data-editable="image" src="/images/email.png" alt="Email"></a>
-                        <a href="https://www.linkedin.com/in/pastorpablo/" target="_blank" aria-label="LinkedIn"><img class="editable" data-editable="image" src="/images/linkedin.png" alt="LinkedIn"></a>
+                        <a href={siteData.social_links.instagram} target="_blank" aria-label="Instagram"><img class="editable" data-editable="image" src="/images/instagram.png" alt="Instagram"></a>
+                        <a href={siteData.social_links.pinterest} target="_blank" aria-label="Pinterest"><img class="editable" data-editable="image" src="/images/pinterest.png" alt="Pinterest"></a>
+                        <a href={siteData.social_links.tiktok} target="_blank" aria-label="TikTok"><img class="editable" data-editable="image" src="/images/tik-tok.png" alt="TikTok"></a>
+                        <a href={siteData.contact_whatsapp} target="_blank" aria-label="WhatsApp"><img class="editable" data-editable="image" src="/images/whatsapp.png" alt="WhatsApp"></a>
+                        <a href={`mailto:${siteData.contact_email}`} aria-label="Email"><img class="editable" data-editable="image" src="/images/email.png" alt="Email"></a>
+                        <a href={siteData.social_links.linkedin} target="_blank" aria-label="LinkedIn"><img class="editable" data-editable="image" src="/images/linkedin.png" alt="LinkedIn"></a>
                     </div>
                 </div>
 
                 <div class="footer-col contact-col">
                     <h3 class="editable" data-editable="text">Contacto</h3>
                     <div class="contact-item">
-                        <p class="editable" data-editable="text">- Coworking fablab Archicercle:<a href="https://www.google.com/maps/search/?api=1&query=Calle+Utiel+6+bajo+derecha+46020+Valencia" target="_blank">Calle Utiel 6 bajo derecha, 46020, Valencia</a></p>
+                        <p class="editable" data-editable="text" data-prop="@data[site].contact_address_coworking">- Coworking fablab Archicercle:<a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(siteData.contact_address_coworking)}`} target="_blank">{siteData.contact_address_coworking}</a></p>
                     </div>
                     <div class="contact-item">
-                        <p class="editable" data-editable="text">- Estudio Fábrica Archicercle:<a href="https://www.google.com/maps/search/?api=1&query=Placa+Pere+Maria+Orts+i+Bosch+18+bajo+46014+Valencia" target="_blank">Plaça Pere Maria Orts i Bosch 18, bajo. 46014, Valencia</a></p>
+                        <p class="editable" data-editable="text" data-prop="@data[site].contact_address_studio">- Estudio Fábrica Archicercle:<a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(siteData.contact_address_studio)}`} target="_blank">{siteData.contact_address_studio}</a></p>
                     </div>
                     <div class="contact-item">
-                        <p class="editable" data-editable="text">Mail:<a href="mailto:PabloPastor@archicercle.com">PabloPastor@archicercle.com</a></p>
+                        <p class="editable" data-editable="text" data-prop="@data[site].contact_email">Mail:<a href={`mailto:${siteData.contact_email}`}>{siteData.contact_email}</a></p>
                     </div>
                     <div class="contact-item">
-                        <p class="editable" data-editable="text">Móvil:<a href="https://wa.me/34649999853" target="_blank">649 999 853</a></p>
+                        <p class="editable" data-editable="text" data-prop="@data[site].contact_phone">Móvil:<a href={`https://wa.me/34${siteData.contact_phone.replace(/\s/g, '')}`} target="_blank">{siteData.contact_phone}</a></p>
                     </div>
                 </div>
 
@@ -142,7 +142,7 @@ const footer_copyright = siteData?.footer_copyright ?? '2025 Todos los derechos 
         </div>
     </footer>
 
-    <a href="https://wa.me/" class="whatsapp-float" aria-label="WhatsApp">
+    <a href={siteData.contact_whatsapp} class="whatsapp-float" aria-label="WhatsApp" target="_blank">
         <img class="editable" data-editable="image" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
     </a>
 

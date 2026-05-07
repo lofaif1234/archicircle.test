@@ -13,5 +13,11 @@
   "contact_address_studio": "Plaça Pere Maria Orts i Bosch 18, bajo. 46014, Valencia",
   "contact_email": "PabloPastor@archicercle.com",
   "contact_phone": "649 999 853",
-  "contact_whatsapp": "https://wa.me/34649999853"
+  "contact_whatsapp": "https://wa.me/34649999853",
+  "social_links": {
+    "instagram": "https://www.instagram.com/archicercle/",
+    "pinterest": "https://it.pinterest.com/archicercle",
+    "tiktok": "https://www.tiktok.com/@archicercle",
+    "linkedin": "https://www.linkedin.com/in/pastorpablo/"
+  }
 }
