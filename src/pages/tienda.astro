@@ -1,5 +1,21 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const {
+  hero_title = "Nuestra Tienda Online: Productos de diseño para Todos",
+  hero_intro = "Explora nuestra tienda online Cosastudio: productos únicos que puedes personalizar sin saber de diseño o fabricación. Desde merchandising hasta mobiliario, para empresas, eventos o uso personal.",
+  info_1_title = "Pensado para los que no saben diseñar...",
+  info_1_desc = "Sabemos que no todos tienen conocimientos de diseño, de materiales o de fabricación digital. Por eso desarrollamos productos que ya están pensados, estructurados y probados.",
+  info_2_title = "¿Qué tipo de productos puedes encontrar?",
+  info_2_desc = "Una variedad enorme, todos con enfoque en el diseño y la fabricación real.",
+  info_3_title = "Fabricación con inteligencia.",
+  info_3_desc = "Cosastudio es ideal para crear ediciones limitadas para campañas, objetos personalizados y mucho más.",
+  banner_img = { src: "/images/Captura-de-pantalla-2025-11-06-a-las-8.37.28-1024x212.png", alt: "Cosastudio Shop Online Banner" },
+  inspiration_title = "Inspiración real, diseño con criterio",
+  inspiration_desc = "Cada producto en la tienda ha sido diseñado con una premisa clara: que no solo se vea bien, sino que también funcione.",
+  card_title = "¿Quieres explorar el catálogo o fabricar algo similar?",
+  card_desc = "Te esperamos en nuestra tienda online. Pero si no encuentras lo que buscas exactamente lo podemos fabricar a medida para ti."
+} = Astro.props;
 ---
 
 <Layout title="Tienda Online - Archicercle">
@@ -7,204 +23,48 @@ import Layout from '../layouts/Layout.astro';
         <section class="store-hero">
             <div class="store-hero-overlay"></div>
             <div class="container">
-                <h1  data-editable="text" class="editable store-main-title" data-editable="text" data-prop="text_field">Nuestra Tienda Online:
-                    Productos de diseño para Todos</h1>
-                <p  data-editable="text" class="editable store-intro-text" data-editable="text" data-prop="text_field">
-                    Explora nuestra tienda online Cosastudio: productos únicos que puedes personalizar sin saber de diseño o fabricación. 
-                    Desde merchandising hasta mobiliario, para empresas, eventos o uso personal. ¿No sabes diseñar? No hace falta. 
-                    Ya lo hicimos por ti. Creamos Cosastudio.com como una tienda online... pero en realidad es mucho más que eso. 
-                    Es un catálogo de ideas reales, fabricables, adaptables. Un escaparate vivo para inspirarte, explorar opciones 
-                    y comprar directamente productos únicos, funcionales y listos para personalizar.
-                </p>
+                <h1 class="editable store-main-title" data-editable="text" data-prop="hero_title">{hero_title}</h1>
+                <p class="editable store-intro-text" data-editable="text" data-prop="hero_intro">{hero_intro}</p>
                 <a href="#" class="btn-store-action">Empieza tu proyecto hoy</a>
 
                 <div class="store-divider"></div>
 
                 <div class="store-info-grid">
-                    <!-- Column 1 -->
                     <div class="store-info-col">
-                        <h3  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Pensado para los que no saben diseñar... Y para los que sí, pero no tienen tiempo.</h3>
-                        <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Sabemos que no todos tienen conocimientos de diseño, de materiales o de fabricación digital. Por eso desarrollamos productos que ya están pensados, estructurados y probados... pero que podéis personalizar fácilmente:</p>
-                        <ul>
-                            <li>Cambiar medidas</li>
-                            <li>Añadir nombres, logos, mensajes</li>
-                            <li>Seleccionar materiales, colores y acabados</li>
-                            <li>Adaptar para distintos usos o contextos</li>
-                        </ul>
-                        <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Todo sin necesidad de software ni experiencia técnica. Elegís, modificáis, y te lo fabricamos.</p>
+                        <h3 class="editable" data-editable="text" data-prop="info_1_title">{info_1_title}</h3>
+                        <p class="editable" data-editable="text" data-prop="info_1_desc">{info_1_desc}</p>
                     </div>
-
-                    <!-- Column 2 -->
                     <div class="store-info-col">
-                        <h3  data-editable="text" class="editable" data-editable="text" data-prop="text_field">¿Qué tipo de productos puedes encontrar?</h3>
-                        <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Una variedad enorme, todos con enfoque en el diseño y la fabricación real:</p>
-                        <ul>
-                            <li>Merchandising personalizado y original</li>
-                            <li>Rótulos, señalética y decoración para espacios</li>
-                            <li>Mobiliario modular y funcional</li>
-                            <li>Juegos y materiales educativos</li>
-                            <li>Objetos para restaurantes, hoteles o eventos</li>
-                            <li>Regalos corporativos con alma</li>
-                        </ul>
-                        <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Y lo mejor: todo se fabrica a pedido, con materiales reales y acabados profesionales.</p>
+                        <h3 class="editable" data-editable="text" data-prop="info_2_title">{info_2_title}</h3>
+                        <p class="editable" data-editable="text" data-prop="info_2_desc">{info_2_desc}</p>
                     </div>
-
-                    <!-- Column 3 -->
                     <div class="store-info-col">
-                        <h3  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Fabricación con inteligencia.</h3>
-                        <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Cosastudio es ideal para crear:</p>
-                        <ul>
-                            <li>Ediciones limitadas para campañas</li>
-                            <li>Objetos personalizados para clientes o equipos</li>
-                            <li>Decoraciones adaptadas al branding de una marca</li>
-                            <li>Mobiliario y señalética para ferias o presentaciones</li>
-                            <li>Soluciones para hostelería y restauración</li>
-                        </ul>
-                        <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Tanto si necesitas 1 unidad o 1.000, tenemos el equipo, la tecnología y la experiencia para hacerlo realidad.</p>
+                        <h3 class="editable" data-editable="text" data-prop="info_3_title">{info_3_title}</h3>
+                        <p class="editable" data-editable="text" data-prop="info_3_desc">{info_3_desc}</p>
                     </div>
-                </div>
-
-                <div class="store-footer-cta">
-                    <a href="#" class="btn-go-store">Ir a la tienda</a>
                 </div>
             </div>
         </section>
 
-        <!-- New Banner Section -->
         <section class="store-banner-section">
             <div class="container-fluid">
                 <div class="banner-image-wrapper">
-                    <img  data-editable="image" class="editable" src="/images/Captura-de-pantalla-2025-11-06-a-las-8.37.28-1024x212.png" alt="Cosastudio Shop Online Banner" data-editable="image" data-prop="image_field">
+                    <img class="editable" data-editable="image" data-prop="banner_img" src={banner_img.src} alt={banner_img.alt}>
                 </div>
             </div>
         </section>
 
-        <!-- Inspiration Section -->
         <section class="inspiration-section">
             <div class="container">
                 <div class="inspiration-layout">
                     <div class="inspiration-text">
-                        <h2  data-editable="text" class="editable inspiration-title" data-editable="text" data-prop="text_field">Inspiración real, diseño con criterio</h2>
-                        <div class="inspiration-content">
-                            <p  data-editable="text" class="editable inspiration-desc" data-editable="text" data-prop="text_field">Cada producto en la tienda ha sido diseñado con una premisa clara: que no solo se vea bien, sino que también funcione, se fabrique bien y se adapte a distintos contextos.</p>
-                            <p  data-editable="text" class="editable inspiration-desc" data-editable="text" data-prop="text_field">Lo usamos como catálogo vivo, para mostrar lo que podemos fabricar. Y como laboratorio creativo, para seguir desarrollando nuevas soluciones.</p>
-                        </div>
+                        <h2 class="editable inspiration-title" data-editable="text" data-prop="inspiration_title">{inspiration_title}</h2>
+                        <p class="editable inspiration-desc" data-editable="text" data-prop="inspiration_desc">{inspiration_desc}</p>
                     </div>
                     <div class="inspiration-card">
-                        <h3  data-editable="text" class="editable card-title-red" data-editable="text" data-prop="text_field">¿Quieres explorar el catálogo o fabricar algo similar?</h3>
-                        <p  data-editable="text" class="editable card-text-black" data-editable="text" data-prop="text_field">Te esperamos en nuestra tienda online. Pero si no encuentras lo que buscas exactamente lo podemos fabricar a medida para ti.</p>
+                        <h3 class="editable card-title-red" data-editable="text" data-prop="card_title">{card_title}</h3>
+                        <p class="editable card-text-black" data-editable="text" data-prop="card_desc">{card_desc}</p>
                         <a href="#" class="btn-purple">Quiero un producto a medida</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Red Contact Section -->
-        <section class="contact-section-red">
-            <div class="container">
-                <div class="contact-layout">
-                    <div class="contact-info">
-                        <h2  data-editable="text" class="editable contact-title" data-editable="text" data-prop="text_field">Hablemos</h2>
-                        <div class="contact-description">
-                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Las marcas tienen que comunicarse con sus clientes. Y no sólo hablar, también tienen que escuchar y responder.</p>
-                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Hablar, dialogar, debatir, escuchar, ponerse en la piel del otro... no hemos inventado nada, es lo que siempre se ha llamado comunicación.</p>
-                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Y es lo que hacemos con nuestros clientes y con todo aquel que quiera conocernos y que lo conozcamos.</p>
-                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Aquí tiene nuestra dirección, nuestro teléfono y un correo de contacto. Le esperamos con las puertas (y las mentes) bien abiertas.</p>
-                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field"><strong>¡Nos vemos!</strong></p>
-                        </div>
-                        
-                        <ul class="contact-meta">
-                            <li>
-                                <i data-lucide="map-pin"></i>
-                                <span>Calle Utiel nº 6, CP 46021 (Cerca de la parada de metro de Benimaclet)</span>
-                            </li>
-                            <li>
-                                <i data-lucide="mail"></i>
-                                <span>archicercle@archicercle.com</span>
-                            </li>
-                            <li>
-                                <i data-lucide="phone"></i>
-                                <span>649 999 853</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="contact-form-wrapper">
-                        <form class="contact-form">
-                            <div class="form-group">
-                                <label for="consulta">Consulta</label>
-                                <select id="consulta" name="consulta">
-                                    <option value="tienda" selected>Información de la Tienda</option>
-                                    <option value="diseno">Servicios de Diseño</option>
-                                    <option value="fabricacion">Servicios de Fabricación</option>
-                                    <option value="laser">Corte Láser Online</option>
-                                    <option value="coworking">Coworking</option>
-                                </select>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="nombre">Nombre</label>
-                                <input type="text" id="nombre" name="nombre" placeholder="Nombre">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="email">Correo electrónico</label>
-                                <input type="email" id="email" name="email" placeholder="Correo electrónico">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="telefono">Teléfono</label>
-                                <input type="tel" id="telefono" name="telefono" placeholder="Teléfono">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="mensaje">Mensaje</label>
-                                <textarea id="mensaje" name="mensaje" placeholder="Mensaje" rows="5"></textarea>
-                            </div>
-
-                            <div class="form-privacy">
-                                <input type="checkbox" id="privacy" name="privacy" required>
-                                <label for="privacy">He leído y acepto el aviso legal y la política de privacidad.</label>
-                            </div>
-
-                            <button type="submit" class="btn-submit">Enviar</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ Section -->
-        <section class="faq-section-boxed">
-            <div class="container">
-                <h2  data-editable="text" class="editable faq-title" data-editable="text" data-prop="text_field">Preguntas frecuentes</h2>
-                
-                <div class="faq-accordion-boxed">
-                    <div class="philosophy-container">
-                        <div class="philosophy-item">
-                            <button class="philosophy-btn faq-btn">
-                                <span class="plus">+</span>
-                                <span>¿Qué es Cosastudio?</span>
-                            </button>
-                        </div>
-                        <div class="philosophy-item">
-                            <button class="philosophy-btn faq-btn">
-                                <span class="plus">+</span>
-                                <span>¿Puedo personalizar cualquier producto de la tienda?</span>
-                            </button>
-                        </div>
-                        <div class="philosophy-item">
-                            <button class="philosophy-btn faq-btn">
-                                <span class="plus">+</span>
-                                <span>¿Qué plazos de entrega tienen los productos de la tienda?</span>
-                            </button>
-                        </div>
-                        <div class="philosophy-item">
-                            <button class="philosophy-btn faq-btn">
-                                <span class="plus">+</span>
-                                <span>¿Realizáis envíos a toda España?</span>
-                            </button>
-                        </div>
                     </div>
                 </div>
             </div>

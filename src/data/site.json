@@ -1,0 +1,17 @@
+{
+  "site_logo": {
+    "src": "/images/Archicercle.png",
+    "alt": "Archicercle Logo"
+  },
+  "footer_logo": {
+    "src": "/images/Archicercle.png",
+    "alt": "Archicercle"
+  },
+  "footer_slogan": "Fabricación digital y artesanal creativa.",
+  "footer_copyright": "2025 Todos los derechos reservados | Diseño y desarrollo web por Ahmed Gomaa In Archicercle.",
+  "contact_address_coworking": "Calle Utiel 6 bajo derecha, 46020, Valencia",
+  "contact_address_studio": "Plaça Pere Maria Orts i Bosch 18, bajo. 46014, Valencia",
+  "contact_email": "PabloPastor@archicercle.com",
+  "contact_phone": "649 999 853",
+  "contact_whatsapp": "https://wa.me/34649999853"
+}

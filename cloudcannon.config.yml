@@ -3,20 +3,69 @@ output: dist
 
 # CloudCannon Configuration
 # See https://cloudcannon.com/documentation/configuration/
+
 _enabled_editors:
   - visual
   - content
+  - data
 
+# ─── SSG ──────────────────────────────────────────────────────────────────────
+ssg: astro
+
+# ─── Data files ───────────────────────────────────────────────────────────────
+data_config:
+  site:
+    path: _data/site.yaml
+
+# ─── Collections ──────────────────────────────────────────────────────────────
 collections_config:
   pages:
     name: Pages
     path: src/pages
     output: true
+    url: /[slug]
     filter:
       base: none
-      search:
+      include:
         - "*.astro"
+    _enabled_editors:
+      - visual
+      - content
 
-# Astro specific settings
-# CloudCannon will build the site using 'npm run build'
-ssg: astro
+# ─── Global Editables (applies across all Visual Editor sessions) ─────────────
+_editables:
+  text:
+    italic: true
+    bold: true
+    underline: false
+    link: true
+    remove_custom_markup: false
+  block:
+    format: p h1 h2 h3 h4
+    bold: true
+    italic: true
+    link: true
+    bulletedlist: true
+    numberedlist: true
+    table: false
+  image:
+    width: true
+    height: false
+    resize_style: contain
+    mime_types:
+      - image/png
+      - image/jpeg
+      - image/webp
+      - image/gif
+      - image/svg+xml
+
+# ─── Schemas ──────────────────────────────────────────────────────────────────
+# These schemas define what fields CloudCannon shows in the sidebar editor
+# for each page collection, matching the front matter / prop keys used in components.
+
+_schemas:
+  default:
+    path: src/pages
+
+# ─── Collection-level schemas ─────────────────────────────────────────────────
+collections_config_override: false

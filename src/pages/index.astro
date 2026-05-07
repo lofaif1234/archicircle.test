@@ -1,5 +1,47 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+// Page front matter — CloudCannon reads these YAML values and injects them as props.
+// All data-prop paths in this file must match these exact keys.
+const {
+  hero_title = "El lugar dónde incluso sin una idea,<br>haremos tu proyecto realidad.",
+  hero_description = "Diseño + fabricación, todo en uno. Somos Archicercle: un estudio de fabricación.<br>Diseñamos productos que funcionan. Fabricamos ideas que se pueden tocar.<br>Y cuando algo no existe, lo inventamos.",
+  feature_1_title = "Somos un estudio de fabricación.",
+  feature_1_desc = "Ni solo diseñamos. Ni solo fabricamos. Hacemos que las ideas se conviertan en objetos reales, bien pensados y bien hechos. Un estudio multidisciplinar.",
+  feature_2_title = "Diseño con criterio.",
+  feature_2_desc = "Creamos productos y soluciones que se pueden fabricar desde el primer minuto. Diseñamos conociendo los materiales, los procesos y las limitaciones reales de producción. Nada teórico. Nada que se rompa al salir del render.",
+  feature_3_title = "Fabricación con inteligencia.",
+  feature_3_desc = "Tenemos más de 100 máquinas a nuestro alcance. Algunas las usamos cada día. Otras, solo cuando el proyecto lo exige. Porque no solo fabricamos por volumen. Fabricamos con intención. Y si hay que adaptar una máquina, la adaptamos. Y si no existe, la creamos.",
+  feature_4_title = "Materiales que conocemos de verdad",
+  feature_4_desc = "No solo los usamos. Los estudiamos, los mezclamos, los fabricamos si hace falta. Tenemos un gran stock de materiales especiales y una red de proveedores de confianza.",
+  feature_5_title = "Tecnología propia para ir más rápido",
+  feature_5_desc = "Creamos JustLaserCut, un software para presupuestar y fabricar por corte láser sin esperas. Subes tu archivo. Eliges material. Y listo: precio inmediato, fabricación automática.",
+  why_us_title = "¿Por qué elegirnos?",
+  why_us_subtitle = "Porque no tendrás que elegir entre un diseñador o un fabricante. Con Archicercle tienes todo en uno:",
+  workflow_title = "Nuestra forma de trabajar",
+  workflow_subtitle = "Aunque cada proyecto es un mundo, en todos nuestros proyectos solemos trabajar, de manera resumida, siguiendo los siguientes 4 puntos.",
+  idea_card_title = "¿Tienes una idea? ¿Un archivo o un reto entre manos?",
+  idea_card_desc = "Nos encanta cuando alguien viene con algo que parece complicado. Eso es lo que nos mueve.",
+  services_section_title = "NUESTROS SERVICIOS",
+  service_1_name = "DISEÑO",
+  service_1_desc = "Diseño y desarrollo de productos y proyectos. 3D Y 2D listo para fabricar.",
+  service_2_name = "FABRICACIÓN",
+  service_2_desc = "Fabricación digital, artesanal y creativa. con máquinaria CNC, semiautomáticas y manuales. Ensamblajes y montajes.",
+  service_3_name = "BRANDING",
+  service_3_desc = "Diseño gráfico de imagen corporativa. Diseñamos pensando en las aplicaciones reales finales.",
+  service_4_name = "COWORKING",
+  service_4_desc = "Un espacio de fabricación compartido para creadores, profesionales y makers.",
+  studio_title = "El estudio",
+  studio_name = "ARCHICERCLE ESTUDIO CREATIVO",
+  studio_desc_1 = "Archicercle es un estudio de design multidisciplinar donde abarcamos, diseño de producto, imagen/branding y espacios.",
+  studio_desc_2 = "Nuestro fuerte el el la consultoría, el diseño y desarrollo de productos and su posterior materialización mediante distintos procesos.",
+  studio_desc_3 = "Trabajamos para grandes empresas diseñando y desarrollando productos para cualquier ámbito. Pero también asesoramos y cocreamos junto con agencias, estudios de diseño y de arquitectura e incluso particulares o pequeñas empresas o emprendedores que desean crear cosas únicas para comercializar o para crear un producto único con una utilidad concreta para su marca, espacio, local o negocio.",
+  studio_img = { src: "/images/esta-imagen-es-la-que-tiene-el-icono-de-servicios-de-diseno-encima.png", alt: "El estudio Archicercle" },
+  factory_title = "La fabrica, el taller y las máquinas",
+  factory_name = "ARCHICERCLE FACTORY",
+  factory_desc = "Fabricación digital y artesanal creativa. Somos conscientes de lo importante que es diseñar y desarrollar desde el conocimiento de las técnicas y procesos de producción, o incluso adaptar diseño de otros profesionales, para que el producto físico coincida exactamente con el diseño digital, e incluso supere las expectativas.",
+  factory_img = { src: "/images/Captura-de-pantalla-2025-11-04-a-las-9.49.57.png", alt: "La fabrica Archicercle" }
+} = Astro.props;
 ---
 
 <Layout title="Archicercle - Estudio Creativo">
@@ -9,12 +51,8 @@ import Layout from '../layouts/Layout.astro';
             <div class="hero-overlay"></div>
             <div class="container">
                 <div class="hero-top">
-                    <h1 class="editable" data-editable="text" data-prop="hero_title">El lugar dónde incluso sin una idea,<br>haremos tu proyecto realidad.</h1>
-                    <p class="editable subtitle" data-editable="text" data-prop="hero_description">
-                        Diseño + fabricación, todo en uno. Somos Archicercle: un estudio de fabricación.<br>
-                        Diseñamos productos que funcionan. Fabricamos ideas que se pueden tocar.<br>
-                        Y cuando algo no existe, lo inventamos.
-                    </p>
+                    <h1 class="editable" data-editable="text" data-prop="hero_title" set:html={hero_title}></h1>
+                    <p class="editable subtitle" data-editable="text" data-prop="hero_description" set:html={hero_description}></p>
                     <div class="hero-ctas">
                         <a href="#" class="btn-main">Empieza tu proyecto hoy</a>
                         <a href="#" class="btn-main">Conoce nuestros servicios</a>
@@ -27,41 +65,41 @@ import Layout from '../layouts/Layout.astro';
                     <div class="feature-card">
                         <div class="feature-header">
                             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 10V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v4"/></svg>
-                            <h3 class="editable" data-editable="text" data-prop="feature_1_title">Somos un estudio de fabricación.</h3>
+                            <h3 class="editable" data-editable="text" data-prop="feature_1_title">{feature_1_title}</h3>
                         </div>
-                        <p class="editable" data-editable="text" data-prop="feature_1_desc">Ni solo diseñamos. Ni solo fabricamos. Hacemos que las ideas se conviertan en objetos reales, bien pensados y bien hechos. Un estudio multidispl...</p>
+                        <p class="editable" data-editable="text" data-prop="feature_1_desc">{feature_1_desc}</p>
                     </div>
 
                     <div class="feature-card">
                         <div class="feature-header">
                             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.5 1.5"/><path d="M7 11l5-5"/></svg>
-                            <h3 class="editable" data-editable="text" data-prop="feature_2_title">Diseño con criterio.</h3>
+                            <h3 class="editable" data-editable="text" data-prop="feature_2_title">{feature_2_title}</h3>
                         </div>
-                        <p class="editable" data-editable="text" data-prop="feature_2_desc">Creamos productos y soluciones que se pueden fabricar desde el primer minuto. Diseñamos conociendo los materiales, los procesos y las limitaciones reales de producción. Nada teórico. Nada que se rompa al salir del render.</p>
+                        <p class="editable" data-editable="text" data-prop="feature_2_desc">{feature_2_desc}</p>
                     </div>
 
                     <div class="feature-card">
                         <div class="feature-header">
                             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
-                            <h3 class="editable" data-editable="text" data-prop="feature_3_title">Fabricación con inteligencia.</h3>
+                            <h3 class="editable" data-editable="text" data-prop="feature_3_title">{feature_3_title}</h3>
                         </div>
-                        <p class="editable" data-editable="text" data-prop="feature_3_desc">Tenemos más de 100 máquinas a nuestro alcance. Algunas las usamos cada día. Otras, solo cuando el proyecto lo exige. Porque no solo fabricamos por volumen. Fabricamos con intención. Y si hay que adaptar una máquina, la adaptamos. Y si no existe, la creamos.</p>
+                        <p class="editable" data-editable="text" data-prop="feature_3_desc">{feature_3_desc}</p>
                     </div>
 
                     <div class="feature-card">
                         <div class="feature-header">
                             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>
-                            <h3 class="editable" data-editable="text" data-prop="feature_4_title">Materiales que conocemos de verdad</h3>
+                            <h3 class="editable" data-editable="text" data-prop="feature_4_title">{feature_4_title}</h3>
                         </div>
-                        <p class="editable" data-editable="text" data-prop="feature_4_desc">No solo los usamos. Los estudiamos, los mezclamos, los fabricamos si hace falta. Tenemos un gran stock de materiales especiales y una red de proveedores de...</p>
+                        <p class="editable" data-editable="text" data-prop="feature_4_desc">{feature_4_desc}</p>
                     </div>
 
                     <div class="feature-card">
                         <div class="feature-header">
                             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.5-.3-.7-.3s-.5.1-.7.3c-.2.2-.3.5-.3.7s.1.5.3.7c.2.2.5.3.7.3z"/><path d="M12.5 19c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.5-.3-.7-.3s-.5.1-.7.3c-.2.2-.3.5-.3.7s.1.5.3.7c.2.2.5.3.7.3z"/><path d="M7.5 19c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.5-.3-.7-.3s-.5.1-.7.3c-.2.2-.3.5-.3.7s.1.5.3.7c.2.2.5.3.7.3z"/><path d="M20 12.5V11a8 8 0 0 0-16 0v1.5"/><path d="M3 12.5h18"/></svg>
-                            <h3 class="editable" data-editable="text" data-prop="feature_5_title">Tecnología propia para ir más rápido</h3>
+                            <h3 class="editable" data-editable="text" data-prop="feature_5_title">{feature_5_title}</h3>
                         </div>
-                        <p class="editable" data-editable="text" data-prop="feature_5_desc">Creamos JustLaserCut, un software para presupuestar y fabricar por corte láser sin esperas. Subes tu archivo. Eliges material. Y listo: precio inmediato, fabricación automática. Lo usamos nosotros. Y también lo ofrecemos a...</p>
+                        <p class="editable" data-editable="text" data-prop="feature_5_desc">{feature_5_desc}</p>
                     </div>
 
                     <div class="feature-action">
@@ -72,8 +110,8 @@ import Layout from '../layouts/Layout.astro';
                 <div class="hero-divider"></div>
 
                 <div class="why-us">
-                    <h2 class="editable section-title" data-editable="text" data-prop="why_us_title">¿Por qué elegirnos?</h2>
-                    <p class="editable section-subtitle" data-editable="text" data-prop="why_us_subtitle">Porque no tendrás que elegir entre un diseñador o un fabricante. Con Archicercle tienes todo en uno:</p>
+                    <h2 class="editable section-title" data-editable="text" data-prop="why_us_title">{why_us_title}</h2>
+                    <p class="editable section-subtitle" data-editable="text" data-prop="why_us_subtitle">{why_us_subtitle}</p>
                     
                     <div class="why-grid">
                         <div class="why-item">
@@ -103,8 +141,8 @@ import Layout from '../layouts/Layout.astro';
 
                 <div class="workflow-section">
                     <div class="workflow-content">
-                        <h2 class="editable section-title" data-editable="text" data-prop="workflow_title">Nuestra forma de trabajar</h2>
-                        <p class="editable section-subtitle" data-editable="text" data-prop="workflow_subtitle">Aunque cada proyecto es un mundo, en todos nuestros proyectos solemos trabajar, de manera resumida, siguiendo los siguientes 4 puntos.</p>
+                        <h2 class="editable section-title" data-editable="text" data-prop="workflow_title">{workflow_title}</h2>
+                        <p class="editable section-subtitle" data-editable="text" data-prop="workflow_subtitle">{workflow_subtitle}</p>
                         
                         <div class="workflow-grid">
                             <div class="workflow-step">
@@ -127,8 +165,8 @@ import Layout from '../layouts/Layout.astro';
                     </div>
 
                     <div class="idea-card">
-                        <h3 class="editable" data-editable="text" data-prop="idea_card_title">¿Tienes una idea? ¿Un archivo o un reto entre manos?</h3>
-                        <p class="editable" data-editable="text" data-prop="idea_card_desc">Nos encanta cuando alguien viene con algo que parece complicado. Eso es lo que nos mueve.</p>
+                        <h3 class="editable" data-editable="text" data-prop="idea_card_title">{idea_card_title}</h3>
+                        <p class="editable" data-editable="text" data-prop="idea_card_desc">{idea_card_desc}</p>
                         <a href="#" class="btn-card">Quiero fabricar un producto</a>
                     </div>
                 </div>
@@ -138,15 +176,15 @@ import Layout from '../layouts/Layout.astro';
         <!-- Services -->
         <section class="services-section">
             <div class="container">
-                <h2 class="editable services-main-title" data-editable="text" data-prop="services_section_title">NUESTROS SERVICIOS</h2>
+                <h2 class="editable services-main-title" data-editable="text" data-prop="services_section_title">{services_section_title}</h2>
                 <div class="services-grid">
                     <div class="service-card">
                         <div class="service-top">
                             <i data-lucide="pen-tool" class="service-icon"></i>
                         </div>
                         <div class="service-bottom">
-                            <h3 class="editable" data-editable="text" data-prop="service_1_name">DISEÑO</h3>
-                            <p class="editable" data-editable="text" data-prop="service_1_desc">Diseño y desarrollo de productos y proyectos. 3D Y 2D listo para fabricar.</p>
+                            <h3 class="editable" data-editable="text" data-prop="service_1_name">{service_1_name}</h3>
+                            <p class="editable" data-editable="text" data-prop="service_1_desc">{service_1_desc}</p>
                             <a href="#" class="btn-info">+ INFO</a>
                         </div>
                     </div>
@@ -156,8 +194,8 @@ import Layout from '../layouts/Layout.astro';
                             <i data-lucide="hammer" class="service-icon"></i>
                         </div>
                         <div class="service-bottom">
-                            <h3 class="editable" data-editable="text" data-prop="service_2_name">FABRICACIÓN</h3>
-                            <p class="editable" data-editable="text" data-prop="service_2_desc">Fabricación digital, artesanal y creativa. con máquinaria CNC, semiautomáticas y manuales. Ensamblajes y montajes.</p>
+                            <h3 class="editable" data-editable="text" data-prop="service_2_name">{service_2_name}</h3>
+                            <p class="editable" data-editable="text" data-prop="service_2_desc">{service_2_desc}</p>
                             <a href="#" class="btn-info">+ INFO</a>
                         </div>
                     </div>
@@ -167,8 +205,8 @@ import Layout from '../layouts/Layout.astro';
                             <i data-lucide="award" class="service-icon"></i>
                         </div>
                         <div class="service-bottom">
-                            <h3 class="editable" data-editable="text" data-prop="service_3_name">BRANDING</h3>
-                            <p class="editable" data-editable="text" data-prop="service_3_desc">Diseño gráfico de imagen corporativa. Diseñamos pensando en las aplicaciones reales finales.</p>
+                            <h3 class="editable" data-editable="text" data-prop="service_3_name">{service_3_name}</h3>
+                            <p class="editable" data-editable="text" data-prop="service_3_desc">{service_3_desc}</p>
                             <a href="#" class="btn-info">+ INFO</a>
                         </div>
                     </div>
@@ -178,8 +216,8 @@ import Layout from '../layouts/Layout.astro';
                             <i data-lucide="users" class="service-icon"></i>
                         </div>
                         <div class="service-bottom">
-                            <h3 class="editable" data-editable="text" data-prop="service_4_name">COWORKING</h3>
-                            <p class="editable" data-editable="text" data-prop="service_4_desc">Un espacio de fabricación compartido para creadores, profesionales y makers.</p>
+                            <h3 class="editable" data-editable="text" data-prop="service_4_name">{service_4_name}</h3>
+                            <p class="editable" data-editable="text" data-prop="service_4_desc">{service_4_desc}</p>
                             <a href="/coworking" class="btn-info">+ INFO</a>
                         </div>
                     </div>
@@ -192,14 +230,14 @@ import Layout from '../layouts/Layout.astro';
             <div class="container">
                 <div class="studio-layout">
                     <div class="studio-text">
-                        <h2 class="editable studio-title" data-editable="text" data-prop="studio_title">El estudio</h2>
-                        <h4 class="editable studio-subtitle" data-editable="text" data-prop="studio_name">ARCHICERCLE ESTUDIO CREATIVO</h4>
-                        <p class="editable" data-editable="text" data-prop="studio_desc_1">Archicercle es un estudio de <strong>diseño multidisciplinar</strong> donde abarcamos, <strong>diseño de producto, imagen/branding y espacios</strong>.</p>
-                        <p class="editable" data-editable="text" data-prop="studio_desc_2">Nuestro fuerte el el la consultoría, el diseño y desarrollo de productos and su posterior materialización mediante distintos procesos.</p>
-                        <p class="editable" data-editable="text" data-prop="studio_desc_3">Trabajamos para grandes empresas diseñando y desarrollando productos para cualquier ámbito. Pero también asesoramos y cocreamos junto con agencias, estudios de diseño y de arquitectura e incluso particulares o pequeñas empresas o emprendedores que desean crear cosas únicas para comercializar o para crear un producto único con una utilidad concreta para su marca, espacio, local o negocio.</p>
+                        <h2 class="editable studio-title" data-editable="text" data-prop="studio_title">{studio_title}</h2>
+                        <h4 class="editable studio-subtitle" data-editable="text" data-prop="studio_name">{studio_name}</h4>
+                        <p class="editable" data-editable="text" data-prop="studio_desc_1">{studio_desc_1}</p>
+                        <p class="editable" data-editable="text" data-prop="studio_desc_2">{studio_desc_2}</p>
+                        <p class="editable" data-editable="text" data-prop="studio_desc_3">{studio_desc_3}</p>
                     </div>
                     <div class="studio-image">
-                        <img class="editable" data-editable="image" data-prop="studio_img" src="/images/esta-imagen-es-la-que-tiene-el-icono-de-servicios-de-diseno-encima.png" alt="El estudio Archicercle">
+                        <img class="editable" data-editable="image" data-prop="studio_img" src={studio_img.src} alt={studio_img.alt}>
                         <a href="/servicios-de-diseno" class="image-btn">Servicios de diseño</a>
                     </div>
                 </div>
@@ -211,12 +249,12 @@ import Layout from '../layouts/Layout.astro';
             <div class="container">
                 <div class="factory-layout">
                     <div class="factory-image">
-                        <img class="editable" data-editable="image" data-prop="factory_img" src="/images/Captura-de-pantalla-2025-11-04-a-las-9.49.57.png" alt="La fabrica Archicercle">
+                        <img class="editable" data-editable="image" data-prop="factory_img" src={factory_img.src} alt={factory_img.alt}>
                     </div>
                     <div class="factory-text">
-                        <h2 class="editable factory-title" data-editable="text" data-prop="factory_title">La fabrica, el taller y las máquinas</h2>
-                        <h4 class="editable factory-subtitle" data-editable="text" data-prop="factory_name">ARCHICERCLE FACTORY</h4>
-                        <p class="editable" data-editable="text" data-prop="factory_desc"><strong>fabricación digital y artesanal</strong> creativa. Somos conscientes de lo importante que es diseñar y desarrollar desde el conocimiento de las técnicas y procesos de producción, o incluso adaptar diseño de otros profesionales, para que the producto físico coincida exactamente, con el diseño digital, e incluso supere las expectativas</p>
+                        <h2 class="editable factory-title" data-editable="text" data-prop="factory_title">{factory_title}</h2>
+                        <h4 class="editable factory-subtitle" data-editable="text" data-prop="factory_name">{factory_name}</h4>
+                        <p class="editable" data-editable="text" data-prop="factory_desc">{factory_desc}</p>
                         <div class="factory-ctas">
                             <a href="/maquinaria" class="btn-factory">Nuestras Máquinas</a>
                             <a href="/servicios-de-fabricacion" class="btn-factory">Servicios de Fabricación</a>

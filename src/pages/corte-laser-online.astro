@@ -1,5 +1,22 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const {
+  hero_title = "Corte Láser Online en Segundos <br><span>\"con Tecnología Propia\"</span>",
+  hero_subtitle = "Sube tu archivo vectorial y obtén precio inmediato en cualquier material y grosor.",
+  hero_description = "Sin esperas, sin correos, sin errores. <strong>JustLaserCut:</strong> nuestro software, tu nueva forma de fabricar.",
+  hero_highlight = "Corte láser. Sin esperas. Sin rodeos.",
+  hero_img = { src: "/images/E088816E-E3D3-4FFB-A055-0A60F4349B4D.PNG", alt: "Laser Workshop Illustration" },
+  col_1_title = "Pide precio. Ya.",
+  col_1_desc = "Con JustLaserCut puedes subir cualquier archivo vectorial (.dxf, .ai, .svg, .pdf...), elegir material, grosor y acabado... y obtener precio inmediato sin tener que esperar a nadie.",
+  col_2_title = "Una herramienta pensada por fabricantes. No por tecnólogos.",
+  col_2_desc = "JustLaserCut no lo diseñó una startup sin máquinas. Lo creamos nosotros, que llevamos años fabricando miles de pedidos reales.",
+  experience_title = "Tecnología propia, pensada desde la experiencia real",
+  experience_desc = "Creamos este software porque nosotros mismos necesitábamos una solución así. Una que entienda cómo funcionan los planos de corte, que optimice materiales, que avise de errores, y que genere directamente un documento con todos los parámetros de corte definidos.",
+  experience_img = { src: "/images/corte-laser-online-archicercle-justlasercut-scaled.jpg", alt: "JustLaserCut Banner" },
+  footer_highlight_title = "Todo conectado, todo automático. Y sin tener que contratar programadores.",
+  footer_highlight_desc = "La primera plataforma de corte láser online para empresas, con autogestión gracias a un panel sencillo e intuitivo, con tu propia cartera de clientes. Tú marcas tus precios, tus máquinas y tus materiales."
+} = Astro.props;
 ---
 
 <Layout title="Corte Láser Online - Archicercle">
@@ -7,44 +24,35 @@ import Layout from '../layouts/Layout.astro';
         <!-- Laser Hero Section -->
         <section class="laser-hero">
             <div class="laser-hero-overlay"></div>
-            <img  data-editable="image" src="/images/E088816E-E3D3-4FFB-A055-0A60F4349B4D.PNG" alt="Laser Workshop Illustration" class="editable laser-hero-bg" data-editable="image" data-prop="image_field">
+            <img class="editable laser-hero-bg" data-editable="image" data-prop="hero_img" src={hero_img.src} alt={hero_img.alt}>
             
             <div class="container laser-content-wrapper">
                 <div class="laser-hero-header">
-                    <h1  data-editable="text" class="editable laser-title" data-editable="text" data-prop="text_field">Corte Láser Online en Segundos <br><span>"con Tecnología Propia"</span></h1>
+                    <h1 class="editable laser-title" data-editable="text" data-prop="hero_title" set:html={hero_title}></h1>
                     <div class="laser-intro-text">
-                        <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Sube tu archivo vectorial y obtén precio inmediato en cualquier material y grosor.</p>
-                        <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Sin esperas, sin correos, sin errores. <strong>JustLaserCut:</strong> nuestro software, tu nueva forma de fabricar.</p>
-                        <p  data-editable="text" class="editable highlight-p" data-editable="text" data-prop="text_field">Corte láser. Sin esperas. Sin rodeos.</p>
-                        <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Sabemos lo que es enviar un archivo, esperar presupuesto, discutir el material, volver a mandar el plano con ajustes... y perder media semana en algo que podría estar ya fabricado.</p>
-                        <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Por eso creamos JustLaserCut, nuestro propio software de presupuestado automático para corte láser. Y sí, lo usamos en Archicercle. Pero también lo ofrecemos a todo el mundo.</p>
+                        <p class="editable" data-editable="text" data-prop="hero_subtitle">{hero_subtitle}</p>
+                        <p class="editable" data-editable="text" data-prop="hero_description" set:html={hero_description}></p>
+                        <p class="editable highlight-p" data-editable="text" data-prop="hero_highlight">{hero_highlight}</p>
                     </div>
                     <a href="#" class="btn-justlaser">Ir a Justlasercut</a>
                 </div>
 
                 <div class="laser-columns">
                     <div class="laser-col">
-                        <h3  data-editable="text" class="editable col-title" data-editable="text" data-prop="text_field">Pide precio. Ya.</h3>
-                        <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Con JustLaserCut puedes subir cualquier archivo vectorial (.dxf, .ai, .svg, .pdf...), elegir material, grosor y acabado... y obtener precio inmediato sin tener que esperar a nadie.</p>
-                        <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Todo se calcula al instante. Y si te encaja, puedes fabricar desde tu escritorio. Así de simple.</p>
+                        <h3 class="editable col-title" data-editable="text" data-prop="col_1_title">{col_1_title}</h3>
+                        <p class="editable" data-editable="text" data-prop="col_1_desc">{col_1_desc}</p>
                         <a href="#" class="col-link">Pedir presupuesto automático.</a>
                     </div>
 
                     <div class="laser-col">
-                        <h3  data-editable="text" class="editable col-title" data-editable="text" data-prop="text_field">Una herramienta pensada por fabricantes. No por tecnólogos.</h3>
-                        <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">JustLaserCut no lo diseñó una startup sin máquinas. Lo creamos nosotros, que llevamos años fabricando miles de pedidos reales.</p>
-                        <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Por eso resuelve lo que realmente importa:</p>
+                        <h3 class="editable col-title" data-editable="text" data-prop="col_2_title">{col_2_title}</h3>
+                        <p class="editable" data-editable="text" data-prop="col_2_desc">{col_2_desc}</p>
                         <ul class="laser-bullets">
                             <li>- ¿Este archivo está bien preparado?</li>
                             <li>- ¿Cómo cambia el precio si cambio el material o el grosor?</li>
                             <li>- ¿Cuánto cuesta fabricar esto ahora mismo?</li>
                             <li>- ¿Cómo paso esto a producción sin errores?</li>
                         </ul>
-                        <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">¿Quieres cortar algo hoy? ¿O quieres vender más y mejor? <br>
-                        - Si tienes un archivo te damos precio al instante. <br>
-                        - Si tienes una empresa te damos una herramienta real para escalar. <br>
-                        Las dos opciones están abiertas.</p>
-                        <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Ni solo diseñamos. Ni solo fabricamos. Hacemos que las ideas se conviertan en objetos reales, bien pensados y bien hechos. Un estudio multidispl</p>
                     </div>
 
                     <!-- Side Actions -->
@@ -59,41 +67,28 @@ import Layout from '../layouts/Layout.astro';
                 <!-- Second Part: Software Experience -->
                 <div class="laser-experience-section">
                     <div class="laser-banner-img">
-                        <img  data-editable="image" class="editable" src="/images/corte-laser-online-archicercle-justlasercut-scaled.jpg" alt="JustLaserCut Banner" data-editable="image" data-prop="image_field">
+                        <img class="editable" data-editable="image" data-prop="experience_img" src={experience_img.src} alt={experience_img.alt}>
                     </div>
 
                     <hr class="laser-divider">
 
-                    <h2  data-editable="text" class="editable experience-title" data-editable="text" data-prop="text_field">Tecnología propia, pensada desde la experiencia real</h2>
+                    <h2 class="editable experience-title" data-editable="text" data-prop="experience_title">{experience_title}</h2>
                     <div class="experience-intro">
-                        <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Creamos este software porque nosotros mismos necesitábamos una solución así. Una que entienda cómo funcionan los planos de corte, que optimice materiales, que avise de errores, y que genere directamente un documento con todos los parámetros de corte definidos.</p>
-                        <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Y como funcionó tan bien para nosotros, ahora lo compartimos con otros. ¿Eres fabricante? ¿O ofrecer el servicio de corte láser sin perder tiempo? JustLaserCut también está pensado para ti. Lo puedes usar en tu empresa, taller o fábrica para:</p>
+                        <p class="editable" data-editable="text" data-prop="experience_desc">{experience_desc}</p>
                     </div>
 
                     <div class="experience-features">
                         <div class="feature-item">
                             <i data-lucide="shopping-cart" class="check-icon"></i>
-                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Vender online sin correos ni presupuestos manuales.</p>
+                            <p>Vender online sin correos ni presupuestos manuales.</p>
                         </div>
                         <div class="feature-item">
                             <i data-lucide="file-check" class="check-icon"></i>
-                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Revisar automáticamente los archivos de tus clientes.</p>
+                            <p>Revisar automáticamente los archivos de tus clientes.</p>
                         </div>
                         <div class="feature-item">
                             <i data-lucide="layers" class="check-icon"></i>
-                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Optimizar materiales y minimizar errores.</p>
-                        </div>
-                        <div class="feature-item">
-                            <i data-lucide="zap" class="check-icon"></i>
-                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Agilizar producción con un documento técnico listo para cortar.</p>
-                        </div>
-                        <div class="feature-item">
-                            <i data-lucide="share-2" class="check-icon"></i>
-                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Acceder a una red de colaboración que te permitirá absorber cualquier pedido que no pueda producir.</p>
-                        </div>
-                        <div class="feature-item">
-                            <i data-lucide="users" class="check-icon"></i>
-                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Tener tu propia gestión de clientes, facturas</p>
+                            <p>Optimizar materiales y minimizar errores.</p>
                         </div>
                     </div>
 
@@ -101,147 +96,13 @@ import Layout from '../layouts/Layout.astro';
 
                     <div class="experience-footer">
                         <div class="footer-left">
-                            <h3  data-editable="text" class="editable footer-highlight-title" data-editable="text" data-prop="text_field">Todo conectado, todo automático. Y sin tener que contratar programadores.</h3>
-                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">La primera plataforma de corte láser online para empresas, con autogestión gracias a un panel sencillo e intuitivo, con tu propia cartera de clientes. Tú marcas tus precios, tus máquinas y tus materiales.</p>
-                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Tus clientes no comparan con otros proveedores, acceden directamente a través de tu web a tu dominio de justlasercut y los pedidos te llegan a ti directamente.</p>
+                            <h3 class="editable footer-highlight-title" data-editable="text" data-prop="footer_highlight_title">{footer_highlight_title}</h3>
+                            <p class="editable" data-editable="text" data-prop="footer_highlight_desc">{footer_highlight_desc}</p>
                         </div>
                         <div class="footer-right-box">
-                            <h4  data-editable="text" class="editable box-title" data-editable="text" data-prop="text_field">¿Eres fabricante? ¿O ofrecer el servicio de corte láser sin perder tiempo?</h4>
-                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">JustLaserCut también está pensado para ti. Lo puedes usar en tu empresa, taller o fábrica para conseguir más clientes, optimizar tu tiempo y tus beneficios.</p>
+                            <h4 class="box-title">¿Eres fabricante?</h4>
+                            <p>JustLaserCut también está pensado para ti.</p>
                             <a href="#" class="btn-box-purple">Quiero Justlasercut para mi empresa</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Red Contact Section -->
-        <section class="contact-section-red">
-            <div class="container">
-                <div class="contact-layout">
-                    <div class="contact-info">
-                        <h2  data-editable="text" class="editable contact-title" data-editable="text" data-prop="text_field">Hablemos</h2>
-                        <div class="contact-description">
-                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Las marcas tienen que comunicarse con sus clientes. Y no sólo hablar, también tienen que escuchar y responder.</p>
-                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Hablar, dialogar, debatir, escuchar, ponerse en la piel del otro... no hemos inventado nada, es lo que siempre se ha llamado comunicación.</p>
-                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Y es lo que hacemos con nuestros clientes y con todo aquel que quiera conocernos y que lo conozcamos.</p>
-                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field">Aquí tiene nuestra dirección, nuestro teléfono y un correo de contacto. Le esperamos con las puertas (y las mentes) bien abiertas.</p>
-                            <p  data-editable="text" class="editable" data-editable="text" data-prop="text_field"><strong>¡Nos vemos!</strong></p>
-                        </div>
-                        
-                        <ul class="contact-meta">
-                            <li>
-                                <i data-lucide="map-pin"></i>
-                                <span>Calle Utiel nº 6, CP 46021 (Cerca de la parada de metro de Benimaclet)</span>
-                            </li>
-                            <li>
-                                <i data-lucide="mail"></i>
-                                <span>archicercle@archicercle.com</span>
-                            </li>
-                            <li>
-                                <i data-lucide="phone"></i>
-                                <span>649 999 853</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="contact-form-wrapper">
-                        <form class="contact-form">
-                            <div class="form-group">
-                                <label for="consulta">Consulta</label>
-                                <select id="consulta" name="consulta">
-                                    <option value="laser" selected>Corte Láser Online</option>
-                                    <option value="diseno">Servicios de Diseño</option>
-                                    <option value="fabricacion">Servicios de Fabricación</option>
-                                    <option value="coworking">Coworking</option>
-                                </select>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="nombre">Nombre</label>
-                                <input type="text" id="nombre" name="nombre" placeholder="Nombre">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="email">Correo electrónico</label>
-                                <input type="email" id="email" name="email" placeholder="Correo electrónico">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="telefono">Teléfono</label>
-                                <input type="tel" id="telefono" name="telefono" placeholder="Teléfono">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="mensaje">Mensaje</label>
-                                <textarea id="mensaje" name="mensaje" placeholder="Mensaje" rows="5"></textarea>
-                            </div>
-
-                            <div class="form-privacy">
-                                <input type="checkbox" id="privacy" name="privacy" required>
-                                <label for="privacy">He leído y acepto el aviso legal y la política de privacidad.</label>
-                            </div>
-
-                            <button type="submit" class="btn-submit">Enviar</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ Section -->
-        <section class="faq-section-boxed">
-            <div class="container">
-                <h2  data-editable="text" class="editable faq-title" data-editable="text" data-prop="text_field">Preguntas frecuentes</h2>
-                
-                <div class="faq-accordion-boxed">
-                    <div class="philosophy-container">
-                        <div class="philosophy-item">
-                            <button class="philosophy-btn faq-btn">
-                                <span class="plus">+</span>
-                                <span>¿Qué es Archicercle y qué servicios de diseño y fabricación digital ofrece?</span>
-                            </button>
-                        </div>
-                        <div class="philosophy-item">
-                            <button class="philosophy-btn faq-btn">
-                                <span class="plus">+</span>
-                                <span>¿Cuál es la diferencia entre Archicercle y una fábrica tradicional?</span>
-                            </button>
-                        </div>
-                        <div class="philosophy-item">
-                            <button class="philosophy-btn faq-btn">
-                                <span class="plus">+</span>
-                                <span>¿Qué tipo de clientes pueden trabajar con Archicercle?</span>
-                            </button>
-                        </div>
-                        <div class="philosophy-item">
-                            <button class="philosophy-btn faq-btn">
-                                <span class="plus">+</span>
-                                <span>¿Dónde se encuentra Archicercle y se puede visitar el estudio?</span>
-                            </button>
-                        </div>
-                        <div class="philosophy-item">
-                            <button class="philosophy-btn faq-btn">
-                                <span class="plus">+</span>
-                                <span>¿Qué ventajas tiene fabricar en Archicercle frente a buscar un proveedor externo?</span>
-                            </button>
-                        </div>
-                        <div class="philosophy-item">
-                            <button class="philosophy-btn faq-btn">
-                                <span class="plus">+</span>
-                                <span>¿Archicercle trabaja solo a nivel local o también a nivel nacional e internacional?</span>
-                            </button>
-                        </div>
-                        <div class="philosophy-item">
-                            <button class="philosophy-btn faq-btn">
-                                <span class="plus">+</span>
-                                <span>¿Puedo traer mi propio diseño para fabricarlo en Archicercle?</span>
-                            </button>
-                        </div>
-                        <div class="philosophy-item">
-                            <button class="philosophy-btn faq-btn">
-                                <span class="plus">+</span>
-                                <span>¿Qué significa que Archicercle combina artesanía y tecnología?</span>
-                            </button>
                         </div>
                     </div>
                 </div>
