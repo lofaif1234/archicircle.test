@@ -1,0 +1,16 @@
+{
+  "hero_title": "Corte Láser Online en Segundos <br><span>\"con Tecnología Propia\"</span>",
+  "hero_subtitle": "Sube tu archivo vectorial y obtén precio inmediato en cualquier material y grosor.",
+  "hero_description": "Sin esperas, sin correos, sin errores. <strong>JustLaserCut:</strong> nuestro software, tu nueva forma de fabricar.",
+  "hero_highlight": "Corte láser. Sin esperas. Sin rodeos.",
+  "hero_img": { "src": "/images/E088816E-E3D3-4FFB-A055-0A60F4349B4D.PNG", "alt": "Laser Workshop Illustration" },
+  "col_1_title": "Pide precio. Ya.",
+  "col_1_desc": "Con JustLaserCut puedes subir cualquier archivo vectorial (.dxf, .ai, .svg, .pdf...), elegir material, grosor y acabado... y obtener precio inmediato sin tener que esperar a nadie.",
+  "col_2_title": "Una herramienta pensada por fabricantes. No por tecnólogos.",
+  "col_2_desc": "JustLaserCut no lo diseñó una startup sin máquinas. Lo creamos nosotros, que llevamos años fabricando miles de pedidos reales.",
+  "experience_title": "Tecnología propia, pensada desde la experiencia real",
+  "experience_desc": "Creamos este software porque nosotros mismos necesitábamos una solución así. Una que entienda cómo funcionan los planos de corte, que optimice materiales, que avise de errores, y que genere directamente un documento con todos los parámetros de corte definidos.",
+  "experience_img": { "src": "/images/corte-laser-online-archicercle-justlasercut-scaled.jpg", "alt": "JustLaserCut Banner" },
+  "footer_highlight_title": "Todo conectado, todo automático. Y sin tener que contratar programadores.",
+  "footer_highlight_desc": "La primera plataforma de corte láser online para empresas, con autogestión gracias a un panel sencillo e intuitivo, con tu propia cartera de clientes. Tú marcas tus precios, tus máquinas y tus materiales."
+}

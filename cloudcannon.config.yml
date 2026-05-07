@@ -2,7 +2,7 @@ source: .
 output: dist
 
 # CloudCannon Configuration
-# See https://cloudcannon.com/documentation/configuration/
+# https://cloudcannon.com/documentation/configuration/
 
 _enabled_editors:
   - visual
@@ -13,9 +13,33 @@ _enabled_editors:
 ssg: astro
 
 # ─── Data files ───────────────────────────────────────────────────────────────
+# Each entry is a named data set CloudCannon can read/write.
+# Astro pages import the matching JSON at build time.
 data_config:
   site:
-    path: _data/site.yaml
+    path: src/data/site.json
+  page_index:
+    path: src/data/pages/index.json
+  page_contacto:
+    path: src/data/pages/contacto.json
+  page_coworking:
+    path: src/data/pages/coworking.json
+  page_corte_laser:
+    path: src/data/pages/corte-laser-online.json
+  page_declaracion:
+    path: src/data/pages/declaracion.json
+  page_maquinaria:
+    path: src/data/pages/maquinaria.json
+  page_materiales:
+    path: src/data/pages/materiales.json
+  page_servicios_diseno:
+    path: src/data/pages/servicios-de-diseno.json
+  page_servicios_fabricacion:
+    path: src/data/pages/servicios-de-fabricacion.json
+  page_sobre_nosotros:
+    path: src/data/pages/sobre-nosotros.json
+  page_tienda:
+    path: src/data/pages/tienda.json
 
 # ─── Collections ──────────────────────────────────────────────────────────────
 collections_config:
@@ -32,14 +56,13 @@ collections_config:
       - visual
       - content
 
-# ─── Global Editables (applies across all Visual Editor sessions) ─────────────
+# ─── Global Editables ─────────────────────────────────────────────────────────
 _editables:
   text:
     italic: true
     bold: true
     underline: false
     link: true
-    remove_custom_markup: false
   block:
     format: p h1 h2 h3 h4
     bold: true
@@ -47,10 +70,8 @@ _editables:
     link: true
     bulletedlist: true
     numberedlist: true
-    table: false
   image:
     width: true
-    height: false
     resize_style: contain
     mime_types:
       - image/png
@@ -58,14 +79,3 @@ _editables:
       - image/webp
       - image/gif
       - image/svg+xml
-
-# ─── Schemas ──────────────────────────────────────────────────────────────────
-# These schemas define what fields CloudCannon shows in the sidebar editor
-# for each page collection, matching the front matter / prop keys used in components.
-
-_schemas:
-  default:
-    path: src/pages
-
-# ─── Collection-level schemas ─────────────────────────────────────────────────
-collections_config_override: false

@@ -1,20 +1,21 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import pageData from '../data/pages/tienda.json';
 
 const {
-  hero_title = "Nuestra Tienda Online: Productos de diseño para Todos",
-  hero_intro = "Explora nuestra tienda online Cosastudio: productos únicos que puedes personalizar sin saber de diseño o fabricación. Desde merchandising hasta mobiliario, para empresas, eventos o uso personal.",
-  info_1_title = "Pensado para los que no saben diseñar...",
-  info_1_desc = "Sabemos que no todos tienen conocimientos de diseño, de materiales o de fabricación digital. Por eso desarrollamos productos que ya están pensados, estructurados y probados.",
-  info_2_title = "¿Qué tipo de productos puedes encontrar?",
-  info_2_desc = "Una variedad enorme, todos con enfoque en el diseño y la fabricación real.",
-  info_3_title = "Fabricación con inteligencia.",
-  info_3_desc = "Cosastudio es ideal para crear ediciones limitadas para campañas, objetos personalizados y mucho más.",
-  banner_img = { src: "/images/Captura-de-pantalla-2025-11-06-a-las-8.37.28-1024x212.png", alt: "Cosastudio Shop Online Banner" },
-  inspiration_title = "Inspiración real, diseño con criterio",
-  inspiration_desc = "Cada producto en la tienda ha sido diseñado con una premisa clara: que no solo se vea bien, sino que también funcione.",
-  card_title = "¿Quieres explorar el catálogo o fabricar algo similar?",
-  card_desc = "Te esperamos en nuestra tienda online. Pero si no encuentras lo que buscas exactamente lo podemos fabricar a medida para ti."
+  hero_title = pageData.hero_title,
+  hero_intro = pageData.hero_intro,
+  info_1_title = pageData.info_1_title,
+  info_1_desc = pageData.info_1_desc,
+  info_2_title = pageData.info_2_title,
+  info_2_desc = pageData.info_2_desc,
+  info_3_title = pageData.info_3_title,
+  info_3_desc = pageData.info_3_desc,
+  banner_img = pageData.banner_img,
+  inspiration_title = pageData.inspiration_title,
+  inspiration_desc = pageData.inspiration_desc,
+  card_title = pageData.card_title,
+  card_desc = pageData.card_desc
 } = Astro.props;
 ---
 
@@ -23,24 +24,24 @@ const {
         <section class="store-hero">
             <div class="store-hero-overlay"></div>
             <div class="container">
-                <h1 class="editable store-main-title" data-editable="text" data-prop="hero_title">{hero_title}</h1>
-                <p class="editable store-intro-text" data-editable="text" data-prop="hero_intro">{hero_intro}</p>
+                <h1 class="editable store-main-title" data-editable="text" data-prop="@data[page_tienda].hero_title">{hero_title}</h1>
+                <p class="editable store-intro-text" data-editable="text" data-prop="@data[page_tienda].hero_intro">{hero_intro}</p>
                 <a href="#" class="btn-store-action">Empieza tu proyecto hoy</a>
 
                 <div class="store-divider"></div>
 
                 <div class="store-info-grid">
                     <div class="store-info-col">
-                        <h3 class="editable" data-editable="text" data-prop="info_1_title">{info_1_title}</h3>
-                        <p class="editable" data-editable="text" data-prop="info_1_desc">{info_1_desc}</p>
+                        <h3 class="editable" data-editable="text" data-prop="@data[page_tienda].info_1_title">{info_1_title}</h3>
+                        <p class="editable" data-editable="text" data-prop="@data[page_tienda].info_1_desc">{info_1_desc}</p>
                     </div>
                     <div class="store-info-col">
-                        <h3 class="editable" data-editable="text" data-prop="info_2_title">{info_2_title}</h3>
-                        <p class="editable" data-editable="text" data-prop="info_2_desc">{info_2_desc}</p>
+                        <h3 class="editable" data-editable="text" data-prop="@data[page_tienda].info_2_title">{info_2_title}</h3>
+                        <p class="editable" data-editable="text" data-prop="@data[page_tienda].info_2_desc">{info_2_desc}</p>
                     </div>
                     <div class="store-info-col">
-                        <h3 class="editable" data-editable="text" data-prop="info_3_title">{info_3_title}</h3>
-                        <p class="editable" data-editable="text" data-prop="info_3_desc">{info_3_desc}</p>
+                        <h3 class="editable" data-editable="text" data-prop="@data[page_tienda].info_3_title">{info_3_title}</h3>
+                        <p class="editable" data-editable="text" data-prop="@data[page_tienda].info_3_desc">{info_3_desc}</p>
                     </div>
                 </div>
             </div>
@@ -49,7 +50,7 @@ const {
         <section class="store-banner-section">
             <div class="container-fluid">
                 <div class="banner-image-wrapper">
-                    <img class="editable" data-editable="image" data-prop="banner_img" src={banner_img.src} alt={banner_img.alt}>
+                    <img class="editable" data-editable="image" data-prop="@data[page_tienda].banner_img" src={banner_img.src} alt={banner_img.alt}>
                 </div>
             </div>
         </section>
@@ -58,12 +59,12 @@ const {
             <div class="container">
                 <div class="inspiration-layout">
                     <div class="inspiration-text">
-                        <h2 class="editable inspiration-title" data-editable="text" data-prop="inspiration_title">{inspiration_title}</h2>
-                        <p class="editable inspiration-desc" data-editable="text" data-prop="inspiration_desc">{inspiration_desc}</p>
+                        <h2 class="editable inspiration-title" data-editable="text" data-prop="@data[page_tienda].inspiration_title">{inspiration_title}</h2>
+                        <p class="editable inspiration-desc" data-editable="text" data-prop="@data[page_tienda].inspiration_desc">{inspiration_desc}</p>
                     </div>
                     <div class="inspiration-card">
-                        <h3 class="editable card-title-red" data-editable="text" data-prop="card_title">{card_title}</h3>
-                        <p class="editable card-text-black" data-editable="text" data-prop="card_desc">{card_desc}</p>
+                        <h3 class="editable card-title-red" data-editable="text" data-prop="@data[page_tienda].card_title">{card_title}</h3>
+                        <p class="editable card-text-black" data-editable="text" data-prop="@data[page_tienda].card_desc">{card_desc}</p>
                         <a href="#" class="btn-purple">Quiero un producto a medida</a>
                     </div>
                 </div>

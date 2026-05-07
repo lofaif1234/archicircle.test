@@ -1,16 +1,17 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import pageData from '../data/pages/servicios-de-diseno.json';
 
 const {
-  hero_title = "Servicios de diseño",
-  hero_subtitle = "Diseñamos para fabricar.",
-  intro_text = "En Archicercle entendemos el diseño como un proceso global. No solo buscamos la estética, buscamos la funcionalidad, la eficiencia y, sobre todo, que lo que diseñamos se pueda fabricar de forma real y optimizada.",
-  design_1_title = "Diseño de Producto",
-  design_1_desc = "Desde la idea inicial hasta el prototipo final. Desarrollamos productos listos para el mercado.",
-  design_2_title = "Diseño de Espacios",
-  design_2_desc = "Creamos ambientes únicos que comunican los valores de tu marca.",
-  design_3_title = "Imagen y Branding",
-  design_3_desc = "Identidad visual pensada para aplicaciones físicas y digitales."
+  hero_title = pageData.hero_title,
+  hero_subtitle = pageData.hero_subtitle,
+  intro_text = pageData.intro_text,
+  design_1_title = pageData.design_1_title,
+  design_1_desc = pageData.design_1_desc,
+  design_2_title = pageData.design_2_title,
+  design_2_desc = pageData.design_2_desc,
+  design_3_title = pageData.design_3_title,
+  design_3_desc = pageData.design_3_desc
 } = Astro.props;
 ---
 
@@ -18,9 +19,9 @@ const {
     <main>
         <section class="design-hero">
             <div class="container">
-                <h1 class="editable" data-editable="text" data-prop="hero_title">{hero_title}</h1>
-                <p class="editable" data-editable="text" data-prop="hero_subtitle">{hero_subtitle}</p>
-                <p class="editable" data-editable="text" data-prop="intro_text">{intro_text}</p>
+                <h1 class="editable" data-editable="text" data-prop="@data[page_servicios_diseno].hero_title">{hero_title}</h1>
+                <p class="editable" data-editable="text" data-prop="@data[page_servicios_diseno].hero_subtitle">{hero_subtitle}</p>
+                <p class="editable" data-editable="text" data-prop="@data[page_servicios_diseno].intro_text">{intro_text}</p>
             </div>
         </section>
 
@@ -28,16 +29,16 @@ const {
             <div class="container">
                 <div class="service-row">
                     <div class="service-item">
-                        <h3 class="editable" data-editable="text" data-prop="design_1_title">{design_1_title}</h3>
-                        <p class="editable" data-editable="text" data-prop="design_1_desc">{design_1_desc}</p>
+                        <h3 class="editable" data-editable="text" data-prop="@data[page_servicios_diseno].design_1_title">{design_1_title}</h3>
+                        <p class="editable" data-editable="text" data-prop="@data[page_servicios_diseno].design_1_desc">{design_1_desc}</p>
                     </div>
                     <div class="service-item">
-                        <h3 class="editable" data-editable="text" data-prop="design_2_title">{design_2_title}</h3>
-                        <p class="editable" data-editable="text" data-prop="design_2_desc">{design_2_desc}</p>
+                        <h3 class="editable" data-editable="text" data-prop="@data[page_servicios_diseno].design_2_title">{design_2_title}</h3>
+                        <p class="editable" data-editable="text" data-prop="@data[page_servicios_diseno].design_2_desc">{design_2_desc}</p>
                     </div>
                     <div class="service-item">
-                        <h3 class="editable" data-editable="text" data-prop="design_3_title">{design_3_title}</h3>
-                        <p class="editable" data-editable="text" data-prop="design_3_desc">{design_3_desc}</p>
+                        <h3 class="editable" data-editable="text" data-prop="@data[page_servicios_diseno].design_3_title">{design_3_title}</h3>
+                        <p class="editable" data-editable="text" data-prop="@data[page_servicios_diseno].design_3_desc">{design_3_desc}</p>
                     </div>
                 </div>
             </div>

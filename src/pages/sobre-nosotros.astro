@@ -1,34 +1,33 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import pageData from '../data/pages/sobre-nosotros.json';
 
-// All image props are objects with {src, alt} so CloudCannon image editable regions resolve correctly.
-// All text props are strings to satisfy CloudCannon text editable regions.
 const {
-  title = "Sobre nosotros.",
-  subtitle = "Apasionados de la Vida",
-  hero_bg = { src: "/images/sdfsdfsdfsdf.png", alt: "Archicercle Team" },
-  mission_title = "Esto es lo que somos.",
-  mission_text_1 = "Nos apasiona el arte, la arquitectura, el diseño entendido en todas sus vertientes, la publicidad y el marketing, los procesos industriales; aplicamos las nuevas tecnologías y todo aquello está a nuestro alcance en el proceso de creatividad. Cada proyecto es único y necesita de unas herramientas adecuadas.",
-  mission_text_2 = "Somos un estudio formado por profesionales de distinta índole, abarcamos cualquier tipo de proyecto creativo para generar interés sobre las empresas o sus marcas, lo cual se traduce en mayores beneficios económicos y sociales.",
-  mission_text_3 = "Nuestra idea es poder ofrecer un servicio integral, sin apenas intermediarios abaratando costes, consiguiendo proyectos de calidad a precios más económicos. Para conseguir este objetivo, hemos invertido en equipos de última tecnología consiguiendo controlar todo el proceso, desde la ideación, primeros bocetos y diseño, hasta el prototipado y fabricación de los productos físicos o intangibles.",
-  team_title = "Conoce a nuestro equipo",
-  team_member_1_name = "Pablo Pastor Ripoll",
-  team_member_1_role = "CEO / Director Creativo",
-  team_member_1_img = { src: "/images/Pablo-Pastor-Ripoll.jpg", alt: "Pablo Pastor Ripoll" },
-  team_member_2_name = "Sara Peris Campillo",
-  team_member_2_role = "Ingeniera en Diseño Industrial Y Desarrollo De Productos.",
-  team_member_2_img = { src: "/images/Sara-Peris-Archicercle.jpg", alt: "Sara Peris Campillo" },
-  team_member_3_name = "Victor M. Pérez Navarro",
-  team_member_3_role = "Diseñador Gráfico",
-  team_member_3_img = { src: "/images/Victor-M.Perez-Navarro-archicercle-1200x795-1-1024x678.jpg", alt: "Victor M. Pérez Navarro" },
-  philosophy_title = "Nuestra filosofía",
-  philosophy_subtitle = "Conoce un poco más sobre nuestros valores y nuestra manera de entender nuestra empresa.",
-  contact_title = "Hablemos",
-  contact_desc_1 = "Las marcas tienen que comunicarse con sus clientes. Y no sólo hablar, también tienen que escuchar y responder.",
-  contact_desc_2 = "Hablar, dialogar, debatir, escuchar, ponerse en la piel del otro... no hemos inventado nada, es lo que siempre se ha llamado comunicación.",
-  contact_desc_3 = "Y es lo que hacemos con nuestros clientes y con todo aquel que quiera conocernos y que lo conozcamos.",
-  contact_desc_4 = "Aquí tiene nuestra dirección, nuestro teléfono y un correo de contacto. Le esperamos con las puertas (y las mentes) bien abiertas.",
-  contact_desc_5 = "¡Nos vemos!"
+  title = pageData.title,
+  subtitle = pageData.subtitle,
+  hero_bg = pageData.hero_bg,
+  mission_title = pageData.mission_title,
+  mission_text_1 = pageData.mission_text_1,
+  mission_text_2 = pageData.mission_text_2,
+  mission_text_3 = pageData.mission_text_3,
+  team_title = pageData.team_title,
+  team_member_1_name = pageData.team_member_1_name,
+  team_member_1_role = pageData.team_member_1_role,
+  team_member_1_img = pageData.team_member_1_img,
+  team_member_2_name = pageData.team_member_2_name,
+  team_member_2_role = pageData.team_member_2_role,
+  team_member_2_img = pageData.team_member_2_img,
+  team_member_3_name = pageData.team_member_3_name,
+  team_member_3_role = pageData.team_member_3_role,
+  team_member_3_img = pageData.team_member_3_img,
+  philosophy_title = pageData.philosophy_title,
+  philosophy_subtitle = pageData.philosophy_subtitle,
+  contact_title = pageData.contact_title,
+  contact_desc_1 = pageData.contact_desc_1,
+  contact_desc_2 = pageData.contact_desc_2,
+  contact_desc_3 = pageData.contact_desc_3,
+  contact_desc_4 = pageData.contact_desc_4,
+  contact_desc_5 = pageData.contact_desc_5
 } = Astro.props;
 ---
 
@@ -37,11 +36,11 @@ const {
         <!-- About Hero Section -->
         <section class="about-hero">
             <div class="about-hero-overlay"></div>
-            <img class="editable about-hero-bg" data-editable="image" data-prop="hero_bg" src={hero_bg.src} alt={hero_bg.alt}>
+            <img class="editable about-hero-bg" data-editable="image" data-prop="@data[page_sobre_nosotros].hero_bg" src={hero_bg.src} alt={hero_bg.alt}>
             <div class="container">
                 <div class="about-hero-content">
-                    <h1 class="editable about-title" data-editable="text" data-prop="title">{title}</h1>
-                    <p class="editable about-subtitle" data-editable="text" data-prop="subtitle">{subtitle}</p>
+                    <h1 class="editable about-title" data-editable="text" data-prop="@data[page_sobre_nosotros].title">{title}</h1>
+                    <p class="editable about-subtitle" data-editable="text" data-prop="@data[page_sobre_nosotros].subtitle">{subtitle}</p>
                 </div>
             </div>
         </section>
@@ -50,44 +49,44 @@ const {
         <section class="about-mission">
             <div class="container">
                 <div class="mission-header">
-                    <h2 class="editable mission-title" data-editable="text" data-prop="mission_title">{mission_title}</h2>
+                    <h2 class="editable mission-title" data-editable="text" data-prop="@data[page_sobre_nosotros].mission_title">{mission_title}</h2>
                 </div>
                 <div class="mission-content">
-                    <p class="editable" data-editable="text" data-prop="mission_text_1">{mission_text_1}</p>
-                    <p class="editable" data-editable="text" data-prop="mission_text_2">{mission_text_2}</p>
-                    <p class="editable" data-editable="text" data-prop="mission_text_3">{mission_text_3}</p>
+                    <p class="editable" data-editable="text" data-prop="@data[page_sobre_nosotros].mission_text_1">{mission_text_1}</p>
+                    <p class="editable" data-editable="text" data-prop="@data[page_sobre_nosotros].mission_text_2">{mission_text_2}</p>
+                    <p class="editable" data-editable="text" data-prop="@data[page_sobre_nosotros].mission_text_3">{mission_text_3}</p>
                 </div>
 
                 <div class="team-section">
-                    <h2 class="editable team-main-title" data-editable="text" data-prop="team_title">{team_title}</h2>
+                    <h2 class="editable team-main-title" data-editable="text" data-prop="@data[page_sobre_nosotros].team_title">{team_title}</h2>
                     <div class="team-grid">
                         <div class="team-card">
                             <div class="team-img">
-                                <img class="editable" data-editable="image" data-prop="team_member_1_img" src={team_member_1_img.src} alt={team_member_1_img.alt}>
+                                <img class="editable" data-editable="image" data-prop="@data[page_sobre_nosotros].team_member_1_img" src={team_member_1_img.src} alt={team_member_1_img.alt}>
                             </div>
                             <div class="team-info">
-                                <h4 class="editable member-name" data-editable="text" data-prop="team_member_1_name">{team_member_1_name}</h4>
-                                <p class="editable member-role" data-editable="text" data-prop="team_member_1_role">{team_member_1_role}</p>
+                                <h4 class="editable member-name" data-editable="text" data-prop="@data[page_sobre_nosotros].team_member_1_name">{team_member_1_name}</h4>
+                                <p class="editable member-role" data-editable="text" data-prop="@data[page_sobre_nosotros].team_member_1_role">{team_member_1_role}</p>
                             </div>
                         </div>
 
                         <div class="team-card">
                             <div class="team-img">
-                                <img class="editable" data-editable="image" data-prop="team_member_2_img" src={team_member_2_img.src} alt={team_member_2_img.alt}>
+                                <img class="editable" data-editable="image" data-prop="@data[page_sobre_nosotros].team_member_2_img" src={team_member_2_img.src} alt={team_member_2_img.alt}>
                             </div>
                             <div class="team-info">
-                                <h4 class="editable member-name" data-editable="text" data-prop="team_member_2_name">{team_member_2_name}</h4>
-                                <p class="editable member-role" data-editable="text" data-prop="team_member_2_role">{team_member_2_role}</p>
+                                <h4 class="editable member-name" data-editable="text" data-prop="@data[page_sobre_nosotros].team_member_2_name">{team_member_2_name}</h4>
+                                <p class="editable member-role" data-editable="text" data-prop="@data[page_sobre_nosotros].team_member_2_role">{team_member_2_role}</p>
                             </div>
                         </div>
 
                         <div class="team-card">
                             <div class="team-img">
-                                <img class="editable" data-editable="image" data-prop="team_member_3_img" src={team_member_3_img.src} alt={team_member_3_img.alt}>
+                                <img class="editable" data-editable="image" data-prop="@data[page_sobre_nosotros].team_member_3_img" src={team_member_3_img.src} alt={team_member_3_img.alt}>
                             </div>
                             <div class="team-info">
-                                <h4 class="editable member-name" data-editable="text" data-prop="team_member_3_name">{team_member_3_name}</h4>
-                                <p class="editable member-role" data-editable="text" data-prop="team_member_3_role">{team_member_3_role}</p>
+                                <h4 class="editable member-name" data-editable="text" data-prop="@data[page_sobre_nosotros].team_member_3_name">{team_member_3_name}</h4>
+                                <p class="editable member-role" data-editable="text" data-prop="@data[page_sobre_nosotros].team_member_3_role">{team_member_3_role}</p>
                             </div>
                         </div>
                     </div>
@@ -98,8 +97,8 @@ const {
         <!-- Philosophy Section -->
         <section class="about-philosophy">
             <div class="container">
-                <h2 class="editable philosophy-title" data-editable="text" data-prop="philosophy_title">{philosophy_title}</h2>
-                <p class="editable philosophy-subtitle" data-editable="text" data-prop="philosophy_subtitle">{philosophy_subtitle}</p>
+                <h2 class="editable philosophy-title" data-editable="text" data-prop="@data[page_sobre_nosotros].philosophy_title">{philosophy_title}</h2>
+                <p class="editable philosophy-subtitle" data-editable="text" data-prop="@data[page_sobre_nosotros].philosophy_subtitle">{philosophy_subtitle}</p>
                 
                 <div class="philosophy-accordion">
                     <div class="philosophy-container">
@@ -137,13 +136,13 @@ const {
             <div class="container">
                 <div class="contact-layout">
                     <div class="contact-info">
-                        <h2 class="editable contact-title" data-editable="text" data-prop="contact_title">{contact_title}</h2>
+                        <h2 class="editable contact-title" data-editable="text" data-prop="@data[page_sobre_nosotros].contact_title">{contact_title}</h2>
                         <div class="contact-description">
-                            <p class="editable" data-editable="text" data-prop="contact_desc_1">{contact_desc_1}</p>
-                            <p class="editable" data-editable="text" data-prop="contact_desc_2">{contact_desc_2}</p>
-                            <p class="editable" data-editable="text" data-prop="contact_desc_3">{contact_desc_3}</p>
-                            <p class="editable" data-editable="text" data-prop="contact_desc_4">{contact_desc_4}</p>
-                            <p class="editable" data-editable="text" data-prop="contact_desc_5"><strong>{contact_desc_5}</strong></p>
+                            <p class="editable" data-editable="text" data-prop="@data[page_sobre_nosotros].contact_desc_1">{contact_desc_1}</p>
+                            <p class="editable" data-editable="text" data-prop="@data[page_sobre_nosotros].contact_desc_2">{contact_desc_2}</p>
+                            <p class="editable" data-editable="text" data-prop="@data[page_sobre_nosotros].contact_desc_3">{contact_desc_3}</p>
+                            <p class="editable" data-editable="text" data-prop="@data[page_sobre_nosotros].contact_desc_4">{contact_desc_4}</p>
+                            <p class="editable" data-editable="text" data-prop="@data[page_sobre_nosotros].contact_desc_5"><strong>{contact_desc_5}</strong></p>
                         </div>
                         
                         <ul class="contact-meta">

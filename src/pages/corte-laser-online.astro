@@ -1,52 +1,52 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import pageData from '../data/pages/corte-laser-online.json';
 
 const {
-  hero_title = "Corte Láser Online en Segundos <br><span>\"con Tecnología Propia\"</span>",
-  hero_subtitle = "Sube tu archivo vectorial y obtén precio inmediato en cualquier material y grosor.",
-  hero_description = "Sin esperas, sin correos, sin errores. <strong>JustLaserCut:</strong> nuestro software, tu nueva forma de fabricar.",
-  hero_highlight = "Corte láser. Sin esperas. Sin rodeos.",
-  hero_img = { src: "/images/E088816E-E3D3-4FFB-A055-0A60F4349B4D.PNG", alt: "Laser Workshop Illustration" },
-  col_1_title = "Pide precio. Ya.",
-  col_1_desc = "Con JustLaserCut puedes subir cualquier archivo vectorial (.dxf, .ai, .svg, .pdf...), elegir material, grosor y acabado... y obtener precio inmediato sin tener que esperar a nadie.",
-  col_2_title = "Una herramienta pensada por fabricantes. No por tecnólogos.",
-  col_2_desc = "JustLaserCut no lo diseñó una startup sin máquinas. Lo creamos nosotros, que llevamos años fabricando miles de pedidos reales.",
-  experience_title = "Tecnología propia, pensada desde la experiencia real",
-  experience_desc = "Creamos este software porque nosotros mismos necesitábamos una solución así. Una que entienda cómo funcionan los planos de corte, que optimice materiales, que avise de errores, y que genere directamente un documento con todos los parámetros de corte definidos.",
-  experience_img = { src: "/images/corte-laser-online-archicercle-justlasercut-scaled.jpg", alt: "JustLaserCut Banner" },
-  footer_highlight_title = "Todo conectado, todo automático. Y sin tener que contratar programadores.",
-  footer_highlight_desc = "La primera plataforma de corte láser online para empresas, con autogestión gracias a un panel sencillo e intuitivo, con tu propia cartera de clientes. Tú marcas tus precios, tus máquinas y tus materiales."
+  hero_title = pageData.hero_title,
+  hero_subtitle = pageData.hero_subtitle,
+  hero_description = pageData.hero_description,
+  hero_highlight = pageData.hero_highlight,
+  hero_img = pageData.hero_img,
+  col_1_title = pageData.col_1_title,
+  col_1_desc = pageData.col_1_desc,
+  col_2_title = pageData.col_2_title,
+  col_2_desc = pageData.col_2_desc,
+  experience_title = pageData.experience_title,
+  experience_desc = pageData.experience_desc,
+  experience_img = pageData.experience_img,
+  footer_highlight_title = pageData.footer_highlight_title,
+  footer_highlight_desc = pageData.footer_highlight_desc
 } = Astro.props;
 ---
 
 <Layout title="Corte Láser Online - Archicercle">
     <main>
-        <!-- Laser Hero Section -->
         <section class="laser-hero">
             <div class="laser-hero-overlay"></div>
-            <img class="editable laser-hero-bg" data-editable="image" data-prop="hero_img" src={hero_img.src} alt={hero_img.alt}>
+            <img class="editable laser-hero-bg" data-editable="image" data-prop="@data[page_corte_laser].hero_img" src={hero_img.src} alt={hero_img.alt}>
             
             <div class="container laser-content-wrapper">
                 <div class="laser-hero-header">
-                    <h1 class="editable laser-title" data-editable="text" data-prop="hero_title" set:html={hero_title}></h1>
+                    <h1 class="editable laser-title" data-editable="text" data-prop="@data[page_corte_laser].hero_title" set:html={hero_title}></h1>
                     <div class="laser-intro-text">
-                        <p class="editable" data-editable="text" data-prop="hero_subtitle">{hero_subtitle}</p>
-                        <p class="editable" data-editable="text" data-prop="hero_description" set:html={hero_description}></p>
-                        <p class="editable highlight-p" data-editable="text" data-prop="hero_highlight">{hero_highlight}</p>
+                        <p class="editable" data-editable="text" data-prop="@data[page_corte_laser].hero_subtitle">{hero_subtitle}</p>
+                        <p class="editable" data-editable="text" data-prop="@data[page_corte_laser].hero_description" set:html={hero_description}></p>
+                        <p class="editable highlight-p" data-editable="text" data-prop="@data[page_corte_laser].hero_highlight">{hero_highlight}</p>
                     </div>
                     <a href="#" class="btn-justlaser">Ir a Justlasercut</a>
                 </div>
 
                 <div class="laser-columns">
                     <div class="laser-col">
-                        <h3 class="editable col-title" data-editable="text" data-prop="col_1_title">{col_1_title}</h3>
-                        <p class="editable" data-editable="text" data-prop="col_1_desc">{col_1_desc}</p>
+                        <h3 class="editable col-title" data-editable="text" data-prop="@data[page_corte_laser].col_1_title">{col_1_title}</h3>
+                        <p class="editable" data-editable="text" data-prop="@data[page_corte_laser].col_1_desc">{col_1_desc}</p>
                         <a href="#" class="col-link">Pedir presupuesto automático.</a>
                     </div>
 
                     <div class="laser-col">
-                        <h3 class="editable col-title" data-editable="text" data-prop="col_2_title">{col_2_title}</h3>
-                        <p class="editable" data-editable="text" data-prop="col_2_desc">{col_2_desc}</p>
+                        <h3 class="editable col-title" data-editable="text" data-prop="@data[page_corte_laser].col_2_title">{col_2_title}</h3>
+                        <p class="editable" data-editable="text" data-prop="@data[page_corte_laser].col_2_desc">{col_2_desc}</p>
                         <ul class="laser-bullets">
                             <li>- ¿Este archivo está bien preparado?</li>
                             <li>- ¿Cómo cambia el precio si cambio el material o el grosor?</li>
@@ -55,7 +55,6 @@ const {
                         </ul>
                     </div>
 
-                    <!-- Side Actions -->
                     <div class="laser-side-actions">
                         <a href="#" class="side-btn red-btn">Pedir presupuesto online automático</a>
                         <a href="#" class="side-btn purple-btn">Quiero Justlasercut para mi empresa</a>
@@ -64,17 +63,16 @@ const {
 
                 <hr class="laser-divider">
 
-                <!-- Second Part: Software Experience -->
                 <div class="laser-experience-section">
                     <div class="laser-banner-img">
-                        <img class="editable" data-editable="image" data-prop="experience_img" src={experience_img.src} alt={experience_img.alt}>
+                        <img class="editable" data-editable="image" data-prop="@data[page_corte_laser].experience_img" src={experience_img.src} alt={experience_img.alt}>
                     </div>
 
                     <hr class="laser-divider">
 
-                    <h2 class="editable experience-title" data-editable="text" data-prop="experience_title">{experience_title}</h2>
+                    <h2 class="editable experience-title" data-editable="text" data-prop="@data[page_corte_laser].experience_title">{experience_title}</h2>
                     <div class="experience-intro">
-                        <p class="editable" data-editable="text" data-prop="experience_desc">{experience_desc}</p>
+                        <p class="editable" data-editable="text" data-prop="@data[page_corte_laser].experience_desc">{experience_desc}</p>
                     </div>
 
                     <div class="experience-features">
@@ -96,8 +94,8 @@ const {
 
                     <div class="experience-footer">
                         <div class="footer-left">
-                            <h3 class="editable footer-highlight-title" data-editable="text" data-prop="footer_highlight_title">{footer_highlight_title}</h3>
-                            <p class="editable" data-editable="text" data-prop="footer_highlight_desc">{footer_highlight_desc}</p>
+                            <h3 class="editable footer-highlight-title" data-editable="text" data-prop="@data[page_corte_laser].footer_highlight_title">{footer_highlight_title}</h3>
+                            <p class="editable" data-editable="text" data-prop="@data[page_corte_laser].footer_highlight_desc">{footer_highlight_desc}</p>
                         </div>
                         <div class="footer-right-box">
                             <h4 class="box-title">¿Eres fabricante?</h4>

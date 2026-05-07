@@ -1,44 +1,41 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import pageData from '../data/pages/coworking.json';
 
 const {
-  hero_title = "Tu espacio de fabricación, sin límites",
-  hero_subtitle = "Un FabLab con todo lo que necesitas para pasar del plano a la realidad.<br>Máquinas, materiales y el conocimiento de quienes las han usado al máximo.",
-  info_1_title = "¿Qué es el Archicercle FabLab?",
-  info_2_title = "¿Por qué elegir nuestro FabLab?",
-  info_3_title = "¿Cómo funciona?",
-  who_title = "¿Para quién es este espacio?",
-  who_desc = "Archicercle FabLab es un espacio abierto a cualquier persona con ganas de crear, aprender y fabricar. No importa si eres un profesional con años de experiencia o si es la primera vez que tocas una máquina.",
-  pricing_title = "Planes de Acceso",
-  pricing_subtitle = "Elige el plan que mejor se adapte a tu ritmo de trabajo. Sin permanencias, sin complicaciones."
+  hero_title = pageData.hero_title,
+  hero_subtitle = pageData.hero_subtitle,
+  info_1_title = pageData.info_1_title,
+  info_2_title = pageData.info_2_title,
+  info_3_title = pageData.info_3_title,
+  who_title = pageData.who_title,
+  who_desc = pageData.who_desc,
+  pricing_title = pageData.pricing_title,
+  pricing_subtitle = pageData.pricing_subtitle
 } = Astro.props;
 ---
 
 <Layout title="Coworking - Archicercle">
     <main>
-        <!-- Combined Coworking Hero & Info Section -->
         <section class="coworking-hero-full">
             <div class="hero-overlay"></div>
             <div class="container">
-                <!-- Top Hero Content -->
                 <div class="coworking-hero-content">
-                    <h1 class="editable coworking-title" data-editable="text" data-prop="hero_title">{hero_title}</h1>
-                    <p class="editable coworking-subtitle" data-editable="text" data-prop="hero_subtitle" set:html={hero_subtitle}></p>
+                    <h1 class="editable coworking-title" data-editable="text" data-prop="@data[page_coworking].hero_title">{hero_title}</h1>
+                    <p class="editable coworking-subtitle" data-editable="text" data-prop="@data[page_coworking].hero_subtitle" set:html={hero_subtitle}></p>
                     <div class="coworking-ctas">
                         <a href="#" class="btn-coworking">Reserva tu puesto</a>
                         <a href="#" class="btn-coworking">Descubre el Fablab</a>
                     </div>
                 </div>
 
-                <!-- Divider Line -->
                 <div class="coworking-divider"></div>
 
-                <!-- Three Column Info Grid -->
                 <div class="info-grid">
                     <div class="info-col">
                         <div class="info-header">
                             <i data-lucide="box" class="check-icon"></i>
-                            <h3 class="editable" data-editable="text" data-prop="info_1_title">{info_1_title}</h3>
+                            <h3 class="editable" data-editable="text" data-prop="@data[page_coworking].info_1_title">{info_1_title}</h3>
                         </div>
                         <ul class="info-list">
                             <li>Un taller completo, abierto para ti.</li>
@@ -49,7 +46,7 @@ const {
                     <div class="info-col">
                         <div class="info-header">
                             <i data-lucide="zap" class="check-icon"></i>
-                            <h3 class="editable" data-editable="text" data-prop="info_2_title">{info_2_title}</h3>
+                            <h3 class="editable" data-editable="text" data-prop="@data[page_coworking].info_2_title">{info_2_title}</h3>
                         </div>
                         <ul class="info-list">
                             <li>Toda la experiencia Archicercle, ahora abierta al público.</li>
@@ -60,7 +57,7 @@ const {
                     <div class="info-col">
                         <div class="info-header">
                             <i data-lucide="cpu" class="check-icon"></i>
-                            <h3 class="editable" data-editable="text" data-prop="info_3_title">{info_3_title}</h3>
+                            <h3 class="editable" data-editable="text" data-prop="@data[page_coworking].info_3_title">{info_3_title}</h3>
                         </div>
                         <ul class="info-list">
                             <li>Reserva tu acceso: elige un plan, por días, mensual, semanal o anual.</li>
@@ -72,20 +69,17 @@ const {
             </div>
         </section>
 
-        <!-- Who Section -->
         <section class="coworking-who-section">
             <div class="container">
-                <h2 class="editable" data-editable="text" data-prop="who_title">{who_title}</h2>
-                <p class="editable" data-editable="text" data-prop="who_desc">{who_desc}</p>
+                <h2 class="editable" data-editable="text" data-prop="@data[page_coworking].who_title">{who_title}</h2>
+                <p class="editable" data-editable="text" data-prop="@data[page_coworking].who_desc">{who_desc}</p>
             </div>
         </section>
 
-        <!-- Pricing Section -->
         <section class="pricing-section">
             <div class="container">
-                <h2 class="editable" data-editable="text" data-prop="pricing_title">{pricing_title}</h2>
-                <p class="editable" data-editable="text" data-prop="pricing_subtitle">{pricing_subtitle}</p>
-                <!-- Simplified Pricing Grid for brevity -->
+                <h2 class="editable" data-editable="text" data-prop="@data[page_coworking].pricing_title">{pricing_title}</h2>
+                <p class="editable" data-editable="text" data-prop="@data[page_coworking].pricing_subtitle">{pricing_subtitle}</p>
                 <div class="pricing-grid">
                     <div class="pricing-card">
                         <h3>Plan Diario</h3>

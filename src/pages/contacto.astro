@@ -1,12 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import pageData from '../data/pages/contacto.json';
 
 const {
-  title = "Hablemos",
-  intro_1 = "Las marcas tienen que comunicarse con sus clientes. Y no sólo hablar, también tienen que escuchar y responder.",
-  intro_2 = "Hablar, dialogar, debatir, escuchar, ponerse en la piel del otro... no hemos inventado nada, es lo que siempre se ha llamado comunicación. Y es lo que hacemos con nuestros clientes y con todo aquel que quiera conocernos y que lo conozcamos.",
-  intro_3 = "Aquí tiene nuestra dirección, nuestro teléfono y un correo de contacto. Le esperamos con las puertas (y las mentes) bien abiertas.",
-  nos_vemos = "¡Nos vemos!"
+  title = pageData.title,
+  intro_1 = pageData.intro_1,
+  intro_2 = pageData.intro_2,
+  intro_3 = pageData.intro_3,
+  nos_vemos = pageData.nos_vemos
 } = Astro.props;
 ---
 
@@ -15,14 +16,13 @@ const {
         <section class="contact-v2-section">
             <div class="container">
                 <div class="contact-v2-grid">
-                    <!-- Left Column: Info -->
                     <div class="contact-v2-info">
-                        <h1 class="editable hablemos-title" data-editable="text" data-prop="title">{title}</h1>
+                        <h1 class="editable hablemos-title" data-editable="text" data-prop="@data[page_contacto].title">{title}</h1>
                         <div class="hablemos-intro">
-                            <p class="editable" data-editable="text" data-prop="intro_1">{intro_1}</p>
-                            <p class="editable" data-editable="text" data-prop="intro_2">{intro_2}</p>
-                            <p class="editable" data-editable="text" data-prop="intro_3">{intro_3}</p>
-                            <p class="editable nos-vemos" data-editable="text" data-prop="nos_vemos">{nos_vemos}</p>
+                            <p class="editable" data-editable="text" data-prop="@data[page_contacto].intro_1">{intro_1}</p>
+                            <p class="editable" data-editable="text" data-prop="@data[page_contacto].intro_2">{intro_2}</p>
+                            <p class="editable" data-editable="text" data-prop="@data[page_contacto].intro_3">{intro_3}</p>
+                            <p class="editable nos-vemos" data-editable="text" data-prop="@data[page_contacto].nos_vemos">{nos_vemos}</p>
                         </div>
 
                         <div class="direct-contact-list">
@@ -41,7 +41,6 @@ const {
                         </div>
                     </div>
 
-                    <!-- Right Column: Form -->
                     <div class="contact-v2-form-container">
                         <form id="contact-form-v2" class="v2-form">
                             <div class="v2-form-group">
@@ -78,7 +77,6 @@ const {
                     </div>
                 </div>
 
-                <!-- Google Maps -->
                 <div class="contact-map-container">
                     <iframe 
                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.231998462!2d-0.3644!3d39.4844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6048be6b5f4a7f%3A0x6b5f4a7f!2sCalle%20Utiel%2C%206%2C%2046020%20Valencia!5e0!3m2!1ses!2ses!4v1714900000000!5m2!1ses!2ses" 
