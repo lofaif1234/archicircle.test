@@ -1,5 +1,6 @@
 {
   "hero_title": "Materiales",
+  "hero_img": { "src": "/images/banner-materiales-2.png", "alt": "Materials Background" },
   "hero_subtitle": "La base de cada gran proyecto.",
   "mat_1_title": "Maderas y Derivados",
   "mat_1_desc": "Desde contrachapados hasta maderas nobles.",

@@ -19,5 +19,18 @@
     "pinterest": "https://it.pinterest.com/archicercle",
     "tiktok": "https://www.tiktok.com/@archicercle",
     "linkedin": "https://www.linkedin.com/in/pastorpablo/"
+  },
+  "social_icons": {
+    "instagram": { "src": "/images/instagram.png", "alt": "Instagram" },
+    "pinterest": { "src": "/images/pinterest.png", "alt": "Pinterest" },
+    "tiktok": { "src": "/images/tik-tok.png", "alt": "TikTok" },
+    "whatsapp": { "src": "/images/whatsapp.png", "alt": "WhatsApp" },
+    "email": { "src": "/images/email.png", "alt": "Email" },
+    "linkedin": { "src": "/images/linkedin.png", "alt": "LinkedIn" },
+    "whatsapp_float": { "src": "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", "alt": "WhatsApp" }
+  },
+  "kit_digital": {
+    "ue": { "src": "/images/ue-kit.png", "alt": "Financiado por la Unión Europea" },
+    "prtr": { "src": "/images/prtr-kit.png", "alt": "Plan de Recuperación" }
   }
 }

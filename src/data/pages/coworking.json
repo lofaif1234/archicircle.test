@@ -1,11 +1,14 @@
 {
   "hero_title": "Tu espacio de fabricación, sin límites",
+  "hero_bg": { "src": "/images/ChatGPT Image 14 ago 2025 12_48_03.png", "alt": "Coworking Hero Background" },
   "hero_subtitle": "Un FabLab con todo lo que necesitas para pasar del plano a la realidad.<br>Máquinas, materiales y el conocimiento de quienes las han usado al máximo.",
   "info_1_title": "¿Qué es el Archicercle FabLab?",
   "info_2_title": "¿Por qué elegir nuestro FabLab?",
   "info_3_title": "¿Cómo funciona?",
   "who_title": "¿Para quién es este espacio?",
-  "who_desc": "Archicercle FabLab es un espacio abierto a cualquier persona con ganas de crear, aprender y fabricar. No importa si eres un profesional con años de experiencia o si es la primera vez que tocas una máquina.",
+  "who_bg": { "src": "/images/836C4F22-736A-4CFE-9386-57D77E677283.PNG", "alt": "Coworking Who Background" },
+  "who_desc": "Archicercle FabLab es un espacio abierto a cualquier persona con ganas de crear, aprender y fabricar. No importa si eres un profesional con años de experience o si es la primera vez que tocas una máquina.",
   "pricing_title": "Planes de Acceso",
+  "plans_bg": { "src": "/images/ChatGPT Image 14 ago 2025 12_48_03.png", "alt": "Coworking Plans Background" },
   "pricing_subtitle": "Elige el plan que mejor se adapte a tu ritmo de trabajo. Sin permanencias, sin complicaciones."
 }

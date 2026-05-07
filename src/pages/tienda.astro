@@ -4,6 +4,7 @@ import pageData from '../data/pages/tienda.json';
 
 const {
   hero_title = pageData.hero_title,
+  hero_bg = pageData.hero_bg,
   hero_intro = pageData.hero_intro,
   info_1_title = pageData.info_1_title,
   info_1_desc = pageData.info_1_desc,
@@ -21,27 +22,32 @@ const {
 
 <Layout title="Tienda Online - Archicercle">
     <main>
-        <section class="store-hero">
+        <section 
+            class="store-hero editable" 
+            data-editable="image" 
+            data-prop="@data[tienda].hero_bg" 
+            style={`background-image: url(${hero_bg.src});`}
+        >
             <div class="store-hero-overlay"></div>
             <div class="container">
-                <h1 class="editable store-main-title" data-editable="text" data-prop="@data[page_tienda].hero_title">{hero_title}</h1>
-                <p class="editable store-intro-text" data-editable="text" data-prop="@data[page_tienda].hero_intro">{hero_intro}</p>
+                <h1 class="editable store-main-title" data-editable="text" data-prop="@data[tienda].hero_title">{hero_title}</h1>
+                <p class="editable store-intro-text" data-editable="text" data-prop="@data[tienda].hero_intro">{hero_intro}</p>
                 <a href="#" class="btn-store-action">Empieza tu proyecto hoy</a>
 
                 <div class="store-divider"></div>
 
                 <div class="store-info-grid">
                     <div class="store-info-col">
-                        <h3 class="editable" data-editable="text" data-prop="@data[page_tienda].info_1_title">{info_1_title}</h3>
-                        <p class="editable" data-editable="text" data-prop="@data[page_tienda].info_1_desc">{info_1_desc}</p>
+                        <h3 class="editable" data-editable="text" data-prop="@data[tienda].info_1_title">{info_1_title}</h3>
+                        <p class="editable" data-editable="text" data-prop="@data[tienda].info_1_desc">{info_1_desc}</p>
                     </div>
                     <div class="store-info-col">
-                        <h3 class="editable" data-editable="text" data-prop="@data[page_tienda].info_2_title">{info_2_title}</h3>
-                        <p class="editable" data-editable="text" data-prop="@data[page_tienda].info_2_desc">{info_2_desc}</p>
+                        <h3 class="editable" data-editable="text" data-prop="@data[tienda].info_2_title">{info_2_title}</h3>
+                        <p class="editable" data-editable="text" data-prop="@data[tienda].info_2_desc">{info_2_desc}</p>
                     </div>
                     <div class="store-info-col">
-                        <h3 class="editable" data-editable="text" data-prop="@data[page_tienda].info_3_title">{info_3_title}</h3>
-                        <p class="editable" data-editable="text" data-prop="@data[page_tienda].info_3_desc">{info_3_desc}</p>
+                        <h3 class="editable" data-editable="text" data-prop="@data[tienda].info_3_title">{info_3_title}</h3>
+                        <p class="editable" data-editable="text" data-prop="@data[tienda].info_3_desc">{info_3_desc}</p>
                     </div>
                 </div>
             </div>
@@ -50,7 +56,7 @@ const {
         <section class="store-banner-section">
             <div class="container-fluid">
                 <div class="banner-image-wrapper">
-                    <img class="editable" data-editable="image" data-prop="@data[page_tienda].banner_img" src={banner_img.src} alt={banner_img.alt}>
+                    <img class="editable" data-editable="image" data-prop="@data[tienda].banner_img" src={banner_img.src} alt={banner_img.alt}>
                 </div>
             </div>
         </section>
@@ -59,12 +65,12 @@ const {
             <div class="container">
                 <div class="inspiration-layout">
                     <div class="inspiration-text">
-                        <h2 class="editable inspiration-title" data-editable="text" data-prop="@data[page_tienda].inspiration_title">{inspiration_title}</h2>
-                        <p class="editable inspiration-desc" data-editable="text" data-prop="@data[page_tienda].inspiration_desc">{inspiration_desc}</p>
+                        <h2 class="editable inspiration-title" data-editable="text" data-prop="@data[tienda].inspiration_title">{inspiration_title}</h2>
+                        <p class="editable inspiration-desc" data-editable="text" data-prop="@data[tienda].inspiration_desc">{inspiration_desc}</p>
                     </div>
                     <div class="inspiration-card">
-                        <h3 class="editable card-title-red" data-editable="text" data-prop="@data[page_tienda].card_title">{card_title}</h3>
-                        <p class="editable card-text-black" data-editable="text" data-prop="@data[page_tienda].card_desc">{card_desc}</p>
+                        <h3 class="editable card-title-red" data-editable="text" data-prop="@data[tienda].card_title">{card_title}</h3>
+                        <p class="editable card-text-black" data-editable="text" data-prop="@data[tienda].card_desc">{card_desc}</p>
                         <a href="#" class="btn-purple">Quiero un producto a medida</a>
                     </div>
                 </div>
@@ -72,3 +78,4 @@ const {
         </section>
     </main>
 </Layout>
+

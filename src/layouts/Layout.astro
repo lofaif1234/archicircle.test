@@ -84,12 +84,24 @@ const footer_copyright = siteData?.footer_copyright ?? '2025 Todos los derechos 
                     >
                     <p class="editable footer-slogan" data-editable="text" data-prop="@data[site].footer_slogan">{footer_slogan}</p>
                     <div class="footer-socials">
-                        <a href={siteData.social_links.instagram} target="_blank" aria-label="Instagram"><img class="editable" data-editable="image" src="/images/instagram.png" alt="Instagram"></a>
-                        <a href={siteData.social_links.pinterest} target="_blank" aria-label="Pinterest"><img class="editable" data-editable="image" src="/images/pinterest.png" alt="Pinterest"></a>
-                        <a href={siteData.social_links.tiktok} target="_blank" aria-label="TikTok"><img class="editable" data-editable="image" src="/images/tik-tok.png" alt="TikTok"></a>
-                        <a href={siteData.contact_whatsapp} target="_blank" aria-label="WhatsApp"><img class="editable" data-editable="image" src="/images/whatsapp.png" alt="WhatsApp"></a>
-                        <a href={`mailto:${siteData.contact_email}`} aria-label="Email"><img class="editable" data-editable="image" src="/images/email.png" alt="Email"></a>
-                        <a href={siteData.social_links.linkedin} target="_blank" aria-label="LinkedIn"><img class="editable" data-editable="image" src="/images/linkedin.png" alt="LinkedIn"></a>
+                        <a href={siteData.social_links.instagram} target="_blank" aria-label="Instagram">
+                            <img class="editable" data-editable="image" data-prop="@data[site].social_icons.instagram" src={siteData.social_icons.instagram.src} alt={siteData.social_icons.instagram.alt}>
+                        </a>
+                        <a href={siteData.social_links.pinterest} target="_blank" aria-label="Pinterest">
+                            <img class="editable" data-editable="image" data-prop="@data[site].social_icons.pinterest" src={siteData.social_icons.pinterest.src} alt={siteData.social_icons.pinterest.alt}>
+                        </a>
+                        <a href={siteData.social_links.tiktok} target="_blank" aria-label="TikTok">
+                            <img class="editable" data-editable="image" data-prop="@data[site].social_icons.tiktok" src={siteData.social_icons.tiktok.src} alt={siteData.social_icons.tiktok.alt}>
+                        </a>
+                        <a href={siteData.contact_whatsapp} target="_blank" aria-label="WhatsApp">
+                            <img class="editable" data-editable="image" data-prop="@data[site].social_icons.whatsapp" src={siteData.social_icons.whatsapp.src} alt={siteData.social_icons.whatsapp.alt}>
+                        </a>
+                        <a href={`mailto:${siteData.contact_email}`} aria-label="Email">
+                            <img class="editable" data-editable="image" data-prop="@data[site].social_icons.email" src={siteData.social_icons.email.src} alt={siteData.social_icons.email.alt}>
+                        </a>
+                        <a href={siteData.social_links.linkedin} target="_blank" aria-label="LinkedIn">
+                            <img class="editable" data-editable="image" data-prop="@data[site].social_icons.linkedin" src={siteData.social_icons.linkedin.src} alt={siteData.social_icons.linkedin.alt}>
+                        </a>
                     </div>
                 </div>
 
@@ -127,8 +139,8 @@ const footer_copyright = siteData?.footer_copyright ?? '2025 Todos los derechos 
                 <div class="footer-col kit-col">
                     <h3 class="editable" data-editable="text">Kit Digital</h3>
                     <div class="kit-logos">
-                        <img class="editable kit-img" data-editable="image" src="/images/ue-kit.png" alt="Financiado por la Unión Europea">
-                        <img class="editable kit-img" data-editable="image" src="/images/prtr-kit.png" alt="Plan de Recuperación">
+                        <img class="editable kit-img" data-editable="image" data-prop="@data[site].kit_digital.ue" src={siteData.kit_digital.ue.src} alt={siteData.kit_digital.ue.alt}>
+                        <img class="editable kit-img" data-editable="image" data-prop="@data[site].kit_digital.prtr" src={siteData.kit_digital.prtr.src} alt={siteData.kit_digital.prtr.alt}>
                     </div>
                     <a href="/declaracion" class="accessibility-link">DECLARACIÓN DE ACCESIBILIDAD</a>
                 </div>
@@ -143,7 +155,7 @@ const footer_copyright = siteData?.footer_copyright ?? '2025 Todos los derechos 
     </footer>
 
     <a href={siteData.contact_whatsapp} class="whatsapp-float" aria-label="WhatsApp" target="_blank">
-        <img class="editable" data-editable="image" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        <img class="editable" data-editable="image" data-prop="@data[site].social_icons.whatsapp_float" src={siteData.social_icons.whatsapp_float.src} alt={siteData.social_icons.whatsapp_float.alt}>
     </a>
 
     <script>

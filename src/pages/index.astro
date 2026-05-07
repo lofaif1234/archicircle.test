@@ -4,6 +4,7 @@ import pageData from '../data/pages/index.json';
 
 const {
   hero_title = pageData.hero_title,
+  hero_bg = pageData.hero_bg,
   hero_description = pageData.hero_description,
   feature_1_title = pageData.feature_1_title,
   feature_1_desc = pageData.feature_1_desc,
@@ -47,12 +48,17 @@ const {
 <Layout title="Archicercle - Estudio Creativo">
     <main>
         <!-- Hero Section -->
-        <section class="hero">
+        <section 
+            class="hero editable" 
+            data-editable="image" 
+            data-prop="@data[index].hero_bg" 
+            style={`background-image: url(${hero_bg.src});`}
+        >
             <div class="hero-overlay"></div>
             <div class="container">
                 <div class="hero-top">
-                    <h1 class="editable" data-editable="text" data-prop="@data[page_index].hero_title" set:html={hero_title}></h1>
-                    <p class="editable subtitle" data-editable="text" data-prop="@data[page_index].hero_description" set:html={hero_description}></p>
+                    <h1 class="editable" data-editable="text" data-prop="@data[index].hero_title" set:html={hero_title}></h1>
+                    <p class="editable subtitle" data-editable="text" data-prop="@data[index].hero_description" set:html={hero_description}></p>
                     <div class="hero-ctas">
                         <a href="#" class="btn-main">Empieza tu proyecto hoy</a>
                         <a href="#" class="btn-main">Conoce nuestros servicios</a>
@@ -65,41 +71,41 @@ const {
                     <div class="feature-card">
                         <div class="feature-header">
                             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 10V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v4"/></svg>
-                            <h3 class="editable" data-editable="text" data-prop="@data[page_index].feature_1_title">{feature_1_title}</h3>
+                            <h3 class="editable" data-editable="text" data-prop="@data[index].feature_1_title">{feature_1_title}</h3>
                         </div>
-                        <p class="editable" data-editable="text" data-prop="@data[page_index].feature_1_desc">{feature_1_desc}</p>
+                        <p class="editable" data-editable="text" data-prop="@data[index].feature_1_desc">{feature_1_desc}</p>
                     </div>
 
                     <div class="feature-card">
                         <div class="feature-header">
                             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.5 1.5"/><path d="M7 11l5-5"/></svg>
-                            <h3 class="editable" data-editable="text" data-prop="@data[page_index].feature_2_title">{feature_2_title}</h3>
+                            <h3 class="editable" data-editable="text" data-prop="@data[index].feature_2_title">{feature_2_title}</h3>
                         </div>
-                        <p class="editable" data-editable="text" data-prop="@data[page_index].feature_2_desc">{feature_2_desc}</p>
+                        <p class="editable" data-editable="text" data-prop="@data[index].feature_2_desc">{feature_2_desc}</p>
                     </div>
 
                     <div class="feature-card">
                         <div class="feature-header">
                             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
-                            <h3 class="editable" data-editable="text" data-prop="@data[page_index].feature_3_title">{feature_3_title}</h3>
+                            <h3 class="editable" data-editable="text" data-prop="@data[index].feature_3_title">{feature_3_title}</h3>
                         </div>
-                        <p class="editable" data-editable="text" data-prop="@data[page_index].feature_3_desc">{feature_3_desc}</p>
+                        <p class="editable" data-editable="text" data-prop="@data[index].feature_3_desc">{feature_3_desc}</p>
                     </div>
 
                     <div class="feature-card">
                         <div class="feature-header">
                             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>
-                            <h3 class="editable" data-editable="text" data-prop="@data[page_index].feature_4_title">{feature_4_title}</h3>
+                            <h3 class="editable" data-editable="text" data-prop="@data[index].feature_4_title">{feature_4_title}</h3>
                         </div>
-                        <p class="editable" data-editable="text" data-prop="@data[page_index].feature_4_desc">{feature_4_desc}</p>
+                        <p class="editable" data-editable="text" data-prop="@data[index].feature_4_desc">{feature_4_desc}</p>
                     </div>
 
                     <div class="feature-card">
                         <div class="feature-header">
                             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.5-.3-.7-.3s-.5.1-.7.3c-.2.2-.3.5-.3.7s.1.5.3.7c.2.2.5.3.7.3z"/><path d="M12.5 19c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.5-.3-.7-.3s-.5.1-.7.3c-.2.2-.3.5-.3.7s.1.5.3.7c.2.2.5.3.7.3z"/><path d="M7.5 19c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.5-.3-.7-.3s-.5.1-.7.3c-.2.2-.3.5-.3.7s.1.5.3.7c.2.2.5.3.7.3z"/><path d="M20 12.5V11a8 8 0 0 0-16 0v1.5"/><path d="M3 12.5h18"/></svg>
-                            <h3 class="editable" data-editable="text" data-prop="@data[page_index].feature_5_title">{feature_5_title}</h3>
+                            <h3 class="editable" data-editable="text" data-prop="@data[index].feature_5_title">{feature_5_title}</h3>
                         </div>
-                        <p class="editable" data-editable="text" data-prop="@data[page_index].feature_5_desc">{feature_5_desc}</p>
+                        <p class="editable" data-editable="text" data-prop="@data[index].feature_5_desc">{feature_5_desc}</p>
                     </div>
 
                     <div class="feature-action">
@@ -110,8 +116,8 @@ const {
                 <div class="hero-divider"></div>
 
                 <div class="why-us">
-                    <h2 class="editable section-title" data-editable="text" data-prop="@data[page_index].why_us_title">{why_us_title}</h2>
-                    <p class="editable section-subtitle" data-editable="text" data-prop="@data[page_index].why_us_subtitle">{why_us_subtitle}</p>
+                    <h2 class="editable section-title" data-editable="text" data-prop="@data[index].why_us_title">{why_us_title}</h2>
+                    <p class="editable section-subtitle" data-editable="text" data-prop="@data[index].why_us_subtitle">{why_us_subtitle}</p>
                     
                     <div class="why-grid">
                         <div class="why-item">
@@ -141,8 +147,8 @@ const {
 
                 <div class="workflow-section">
                     <div class="workflow-content">
-                        <h2 class="editable section-title" data-editable="text" data-prop="@data[page_index].workflow_title">{workflow_title}</h2>
-                        <p class="editable section-subtitle" data-editable="text" data-prop="@data[page_index].workflow_subtitle">{workflow_subtitle}</p>
+                        <h2 class="editable section-title" data-editable="text" data-prop="@data[index].workflow_title">{workflow_title}</h2>
+                        <p class="editable section-subtitle" data-editable="text" data-prop="@data[index].workflow_subtitle">{workflow_subtitle}</p>
                         
                         <div class="workflow-grid">
                             <div class="workflow-step">
@@ -165,8 +171,8 @@ const {
                     </div>
 
                     <div class="idea-card">
-                        <h3 class="editable" data-editable="text" data-prop="@data[page_index].idea_card_title">{idea_card_title}</h3>
-                        <p class="editable" data-editable="text" data-prop="@data[page_index].idea_card_desc">{idea_card_desc}</p>
+                        <h3 class="editable" data-editable="text" data-prop="@data[index].idea_card_title">{idea_card_title}</h3>
+                        <p class="editable" data-editable="text" data-prop="@data[index].idea_card_desc">{idea_card_desc}</p>
                         <a href="#" class="btn-card">Quiero fabricar un producto</a>
                     </div>
                 </div>
@@ -176,15 +182,15 @@ const {
         <!-- Services -->
         <section class="services-section">
             <div class="container">
-                <h2 class="editable services-main-title" data-editable="text" data-prop="@data[page_index].services_section_title">{services_section_title}</h2>
+                <h2 class="editable services-main-title" data-editable="text" data-prop="@data[index].services_section_title">{services_section_title}</h2>
                 <div class="services-grid">
                     <div class="service-card">
                         <div class="service-top">
                             <i data-lucide="pen-tool" class="service-icon"></i>
                         </div>
                         <div class="service-bottom">
-                            <h3 class="editable" data-editable="text" data-prop="@data[page_index].service_1_name">{service_1_name}</h3>
-                            <p class="editable" data-editable="text" data-prop="@data[page_index].service_1_desc">{service_1_desc}</p>
+                            <h3 class="editable" data-editable="text" data-prop="@data[index].service_1_name">{service_1_name}</h3>
+                            <p class="editable" data-editable="text" data-prop="@data[index].service_1_desc">{service_1_desc}</p>
                             <a href="#" class="btn-info">+ INFO</a>
                         </div>
                     </div>
@@ -194,8 +200,8 @@ const {
                             <i data-lucide="hammer" class="service-icon"></i>
                         </div>
                         <div class="service-bottom">
-                            <h3 class="editable" data-editable="text" data-prop="@data[page_index].service_2_name">{service_2_name}</h3>
-                            <p class="editable" data-editable="text" data-prop="@data[page_index].service_2_desc">{service_2_desc}</p>
+                            <h3 class="editable" data-editable="text" data-prop="@data[index].service_2_name">{service_2_name}</h3>
+                            <p class="editable" data-editable="text" data-prop="@data[index].service_2_desc">{service_2_desc}</p>
                             <a href="#" class="btn-info">+ INFO</a>
                         </div>
                     </div>
@@ -205,8 +211,8 @@ const {
                             <i data-lucide="award" class="service-icon"></i>
                         </div>
                         <div class="service-bottom">
-                            <h3 class="editable" data-editable="text" data-prop="@data[page_index].service_3_name">{service_3_name}</h3>
-                            <p class="editable" data-editable="text" data-prop="@data[page_index].service_3_desc">{service_3_desc}</p>
+                            <h3 class="editable" data-editable="text" data-prop="@data[index].service_3_name">{service_3_name}</h3>
+                            <p class="editable" data-editable="text" data-prop="@data[index].service_3_desc">{service_3_desc}</p>
                             <a href="#" class="btn-info">+ INFO</a>
                         </div>
                     </div>
@@ -216,8 +222,8 @@ const {
                             <i data-lucide="users" class="service-icon"></i>
                         </div>
                         <div class="service-bottom">
-                            <h3 class="editable" data-editable="text" data-prop="@data[page_index].service_4_name">{service_4_name}</h3>
-                            <p class="editable" data-editable="text" data-prop="@data[page_index].service_4_desc">{service_4_desc}</p>
+                            <h3 class="editable" data-editable="text" data-prop="@data[index].service_4_name">{service_4_name}</h3>
+                            <p class="editable" data-editable="text" data-prop="@data[index].service_4_desc">{service_4_desc}</p>
                             <a href="/coworking" class="btn-info">+ INFO</a>
                         </div>
                     </div>
@@ -230,14 +236,14 @@ const {
             <div class="container">
                 <div class="studio-layout">
                     <div class="studio-text">
-                        <h2 class="editable studio-title" data-editable="text" data-prop="@data[page_index].studio_title">{studio_title}</h2>
-                        <h4 class="editable studio-subtitle" data-editable="text" data-prop="@data[page_index].studio_name">{studio_name}</h4>
-                        <p class="editable" data-editable="text" data-prop="@data[page_index].studio_desc_1">{studio_desc_1}</p>
-                        <p class="editable" data-editable="text" data-prop="@data[page_index].studio_desc_2">{studio_desc_2}</p>
-                        <p class="editable" data-editable="text" data-prop="@data[page_index].studio_desc_3">{studio_desc_3}</p>
+                        <h2 class="editable studio-title" data-editable="text" data-prop="@data[index].studio_title">{studio_title}</h2>
+                        <h4 class="editable studio-subtitle" data-editable="text" data-prop="@data[index].studio_name">{studio_name}</h4>
+                        <p class="editable" data-editable="text" data-prop="@data[index].studio_desc_1">{studio_desc_1}</p>
+                        <p class="editable" data-editable="text" data-prop="@data[index].studio_desc_2">{studio_desc_2}</p>
+                        <p class="editable" data-editable="text" data-prop="@data[index].studio_desc_3">{studio_desc_3}</p>
                     </div>
                     <div class="studio-image">
-                        <img class="editable" data-editable="image" data-prop="@data[page_index].studio_img" src={studio_img.src} alt={studio_img.alt}>
+                        <img class="editable" data-editable="image" data-prop="@data[index].studio_img" src={studio_img.src} alt={studio_img.alt}>
                         <a href="/servicios-de-diseno" class="image-btn">Servicios de diseño</a>
                     </div>
                 </div>
@@ -249,12 +255,12 @@ const {
             <div class="container">
                 <div class="factory-layout">
                     <div class="factory-image">
-                        <img class="editable" data-editable="image" data-prop="@data[page_index].factory_img" src={factory_img.src} alt={factory_img.alt}>
+                        <img class="editable" data-editable="image" data-prop="@data[index].factory_img" src={factory_img.src} alt={factory_img.alt}>
                     </div>
                     <div class="factory-text">
-                        <h2 class="editable factory-title" data-editable="text" data-prop="@data[page_index].factory_title">{factory_title}</h2>
-                        <h4 class="editable factory-subtitle" data-editable="text" data-prop="@data[page_index].factory_name">{factory_name}</h4>
-                        <p class="editable" data-editable="text" data-prop="@data[page_index].factory_desc">{factory_desc}</p>
+                        <h2 class="editable factory-title" data-editable="text" data-prop="@data[index].factory_title">{factory_title}</h2>
+                        <h4 class="editable factory-subtitle" data-editable="text" data-prop="@data[index].factory_name">{factory_name}</h4>
+                        <p class="editable" data-editable="text" data-prop="@data[index].factory_desc">{factory_desc}</p>
                         <div class="factory-ctas">
                             <a href="/maquinaria" class="btn-factory">Nuestras Máquinas</a>
                             <a href="/servicios-de-fabricacion" class="btn-factory">Servicios de Fabricación</a>
@@ -265,3 +271,4 @@ const {
         </section>
     </main>
 </Layout>
+

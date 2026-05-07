@@ -4,6 +4,7 @@ import pageData from '../data/pages/materiales.json';
 
 const {
   hero_title = pageData.hero_title,
+  hero_img = pageData.hero_img,
   hero_subtitle = pageData.hero_subtitle,
   mat_1_title = pageData.mat_1_title,
   mat_1_desc = pageData.mat_1_desc,
@@ -16,28 +17,39 @@ const {
 
 <Layout title="Materiales - Archicercle">
     <main>
-        <section class="material-hero">
+        <section class="materials-hero-custom">
+            <img 
+                class="editable materials-hero-bg" 
+                data-editable="image" 
+                data-prop="@data[materiales].hero_img" 
+                src={hero_img.src} 
+                alt={hero_img.alt}
+            >
+            <div class="materials-hero-overlay"></div>
             <div class="container">
-                <h1 class="editable" data-editable="text" data-prop="@data[page_materiales].hero_title">{hero_title}</h1>
-                <p class="editable" data-editable="text" data-prop="@data[page_materiales].hero_subtitle">{hero_subtitle}</p>
+                <div class="materials-hero-content">
+                    <h1 class="editable" data-editable="text" data-prop="@data[materiales].hero_title">{hero_title}</h1>
+                    <p class="editable" data-editable="text" data-prop="@data[materiales].hero_subtitle">{hero_subtitle}</p>
+                </div>
             </div>
         </section>
 
         <section class="material-grid">
             <div class="container">
                 <div class="material-item">
-                    <h3 class="editable" data-editable="text" data-prop="@data[page_materiales].mat_1_title">{mat_1_title}</h3>
-                    <p class="editable" data-editable="text" data-prop="@data[page_materiales].mat_1_desc">{mat_1_desc}</p>
+                    <h3 class="editable" data-editable="text" data-prop="@data[materiales].mat_1_title">{mat_1_title}</h3>
+                    <p class="editable" data-editable="text" data-prop="@data[materiales].mat_1_desc">{mat_1_desc}</p>
                 </div>
                 <div class="material-item">
-                    <h3 class="editable" data-editable="text" data-prop="@data[page_materiales].mat_2_title">{mat_2_title}</h3>
-                    <p class="editable" data-editable="text" data-prop="@data[page_materiales].mat_2_desc">{mat_2_desc}</p>
+                    <h3 class="editable" data-editable="text" data-prop="@data[materiales].mat_2_title">{mat_2_title}</h3>
+                    <p class="editable" data-editable="text" data-prop="@data[materiales].mat_2_desc">{mat_2_desc}</p>
                 </div>
                 <div class="material-item">
-                    <h3 class="editable" data-editable="text" data-prop="@data[page_materiales].mat_3_title">{mat_3_title}</h3>
-                    <p class="editable" data-editable="text" data-prop="@data[page_materiales].mat_3_desc">{mat_3_desc}</p>
+                    <h3 class="editable" data-editable="text" data-prop="@data[materiales].mat_3_title">{mat_3_title}</h3>
+                    <p class="editable" data-editable="text" data-prop="@data[materiales].mat_3_desc">{mat_3_desc}</p>
                 </div>
             </div>
         </section>
     </main>
 </Layout>
+

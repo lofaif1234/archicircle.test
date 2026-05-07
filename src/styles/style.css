@@ -148,7 +148,7 @@ body {
     position: relative;
     min-height: 100svh;
     padding: 120px 0;
-    background-image: url('images/8BBFCC7C-81C4-4ABA-8626-B9DF3DA9DC86.PNG');
+    background-image: url('/images/8BBFCC7C-81C4-4ABA-8626-B9DF3DA9DC86.PNG');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -1871,7 +1871,7 @@ body {
     position: relative;
     min-height: 100svh;
     padding: 100px 0;
-    background-image: url('images/ChatGPT Image 14 ago 2025 12_48_03.png');
+    background-image: url('/images/ChatGPT Image 14 ago 2025 12_48_03.png');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -2098,7 +2098,7 @@ body {
     position: relative;
     min-height: 360px;
     padding: 120px 0;
-    background-image: url('images/836C4F22-736A-4CFE-9386-57D77E677283.PNG');
+    background-image: url('/images/836C4F22-736A-4CFE-9386-57D77E677283.PNG');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -2295,7 +2295,7 @@ body {
     position: relative;
     min-height: 360px;
     padding: 80px 0;
-    background-image: url('images/836C4F22-736A-4CFE-9386-57D77E677283.PNG');
+    background-image: url('/images/836C4F22-736A-4CFE-9386-57D77E677283.PNG');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -2382,7 +2382,7 @@ body {
     position: relative;
     min-height: 360px;
     padding: 100px 0;
-    background-image: url('images/ChatGPT Image 14 ago 2025 12_48_03.png');
+    background-image: url('/images/ChatGPT Image 14 ago 2025 12_48_03.png');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -4246,7 +4246,7 @@ body {
 .fabrication-hero {
     position: relative;
     padding: 120px 0;
-    background-image: url('images/E088816E-E3D3-4FFB-A055-0A60F4349B4D.PNG');
+    background-image: url('/images/E088816E-E3D3-4FFB-A055-0A60F4349B4D.PNG');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -5374,7 +5374,7 @@ body {
     position: relative;
     min-height: 100vh;
     padding: 140px 0 100px;
-    background-image: url('images/E4A085FA-F96C-4D14-B8BE-36E7DE967E74.PNG');
+    background-image: url('/images/E4A085FA-F96C-4D14-B8BE-36E7DE967E74.PNG');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -6730,7 +6730,7 @@ body {
 
 /* --- Legal Pages (Accessibility, Privacy, etc.) --- */
 .legal-hero {
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url('images/hero-bg-dark.jpg');
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url('/images/hero-bg-dark.jpg');
     background-color: #111;
     background-size: cover;
     background-position: center;
@@ -6926,7 +6926,7 @@ body {
 
 /* --- Contact Page Styles --- */
 .contact-hero {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('images/hero-bg-dark.jpg');
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('/images/hero-bg-dark.jpg');
     background-size: cover;
     background-position: center;
     padding: 180px 0 100px;

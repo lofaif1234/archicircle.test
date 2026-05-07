@@ -4,25 +4,33 @@ import pageData from '../data/pages/coworking.json';
 
 const {
   hero_title = pageData.hero_title,
+  hero_bg = pageData.hero_bg,
   hero_subtitle = pageData.hero_subtitle,
   info_1_title = pageData.info_1_title,
   info_2_title = pageData.info_2_title,
   info_3_title = pageData.info_3_title,
   who_title = pageData.who_title,
+  who_bg = pageData.who_bg,
   who_desc = pageData.who_desc,
   pricing_title = pageData.pricing_title,
+  plans_bg = pageData.plans_bg,
   pricing_subtitle = pageData.pricing_subtitle
 } = Astro.props;
 ---
 
 <Layout title="Coworking - Archicercle">
     <main>
-        <section class="coworking-hero-full">
+        <section 
+            class="coworking-hero-full editable" 
+            data-editable="image" 
+            data-prop="@data[coworking].hero_bg" 
+            style={`background-image: url(${hero_bg.src});`}
+        >
             <div class="hero-overlay"></div>
             <div class="container">
                 <div class="coworking-hero-content">
-                    <h1 class="editable coworking-title" data-editable="text" data-prop="@data[page_coworking].hero_title">{hero_title}</h1>
-                    <p class="editable coworking-subtitle" data-editable="text" data-prop="@data[page_coworking].hero_subtitle" set:html={hero_subtitle}></p>
+                    <h1 class="editable coworking-title" data-editable="text" data-prop="@data[coworking].hero_title">{hero_title}</h1>
+                    <p class="editable coworking-subtitle" data-editable="text" data-prop="@data[coworking].hero_subtitle" set:html={hero_subtitle}></p>
                     <div class="coworking-ctas">
                         <a href="#" class="btn-coworking">Reserva tu puesto</a>
                         <a href="#" class="btn-coworking">Descubre el Fablab</a>
@@ -35,7 +43,7 @@ const {
                     <div class="info-col">
                         <div class="info-header">
                             <i data-lucide="box" class="check-icon"></i>
-                            <h3 class="editable" data-editable="text" data-prop="@data[page_coworking].info_1_title">{info_1_title}</h3>
+                            <h3 class="editable" data-editable="text" data-prop="@data[coworking].info_1_title">{info_1_title}</h3>
                         </div>
                         <ul class="info-list">
                             <li>Un taller completo, abierto para ti.</li>
@@ -46,7 +54,7 @@ const {
                     <div class="info-col">
                         <div class="info-header">
                             <i data-lucide="zap" class="check-icon"></i>
-                            <h3 class="editable" data-editable="text" data-prop="@data[page_coworking].info_2_title">{info_2_title}</h3>
+                            <h3 class="editable" data-editable="text" data-prop="@data[coworking].info_2_title">{info_2_title}</h3>
                         </div>
                         <ul class="info-list">
                             <li>Toda la experiencia Archicercle, ahora abierta al público.</li>
@@ -57,7 +65,7 @@ const {
                     <div class="info-col">
                         <div class="info-header">
                             <i data-lucide="cpu" class="check-icon"></i>
-                            <h3 class="editable" data-editable="text" data-prop="@data[page_coworking].info_3_title">{info_3_title}</h3>
+                            <h3 class="editable" data-editable="text" data-prop="@data[coworking].info_3_title">{info_3_title}</h3>
                         </div>
                         <ul class="info-list">
                             <li>Reserva tu acceso: elige un plan, por días, mensual, semanal o anual.</li>
@@ -69,17 +77,28 @@ const {
             </div>
         </section>
 
-        <section class="coworking-who-section">
+        <section 
+            class="coworking-who-section editable" 
+            data-editable="image" 
+            data-prop="@data[coworking].who_bg" 
+            style={`background-image: url(${who_bg.src});`}
+        >
+            <div class="hero-overlay"></div>
             <div class="container">
-                <h2 class="editable" data-editable="text" data-prop="@data[page_coworking].who_title">{who_title}</h2>
-                <p class="editable" data-editable="text" data-prop="@data[page_coworking].who_desc">{who_desc}</p>
+                <h2 class="editable" data-editable="text" data-prop="@data[coworking].who_title">{who_title}</h2>
+                <p class="editable" data-editable="text" data-prop="@data[coworking].who_desc">{who_desc}</p>
             </div>
         </section>
 
-        <section class="pricing-section">
+        <section 
+            class="coworking-plans-section editable" 
+            data-editable="image" 
+            data-prop="@data[coworking].plans_bg" 
+            style={`background-image: url(${plans_bg.src});`}
+        >
             <div class="container">
-                <h2 class="editable" data-editable="text" data-prop="@data[page_coworking].pricing_title">{pricing_title}</h2>
-                <p class="editable" data-editable="text" data-prop="@data[page_coworking].pricing_subtitle">{pricing_subtitle}</p>
+                <h2 class="editable" data-editable="text" data-prop="@data[coworking].pricing_title">{pricing_title}</h2>
+                <p class="editable" data-editable="text" data-prop="@data[coworking].pricing_subtitle">{pricing_subtitle}</p>
                 <div class="pricing-grid">
                     <div class="pricing-card">
                         <h3>Plan Diario</h3>
@@ -96,3 +115,4 @@ const {
         </section>
     </main>
 </Layout>
+

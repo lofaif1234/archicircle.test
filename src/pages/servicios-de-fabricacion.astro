@@ -4,6 +4,7 @@ import pageData from '../data/pages/servicios-de-fabricacion.json';
 
 const {
   hero_title = pageData.hero_title,
+  hero_bg = pageData.hero_bg,
   hero_subtitle = pageData.hero_subtitle,
   info_1_title = pageData.info_1_title,
   info_1_desc = pageData.info_1_desc,
@@ -19,10 +20,16 @@ const {
 
 <Layout title="Servicios de Fabricación - Archicercle">
     <main>
-        <section class="factory-hero-v2">
+        <section 
+            class="fabrication-hero editable" 
+            data-editable="image" 
+            data-prop="@data[servicios_fabricacion].hero_bg" 
+            style={`background-image: url(${hero_bg.src});`}
+        >
+            <div class="hero-overlay"></div>
             <div class="container">
-                <h1 class="editable" data-editable="text" data-prop="@data[page_servicios_fabricacion].hero_title">{hero_title}</h1>
-                <p class="editable" data-editable="text" data-prop="@data[page_servicios_fabricacion].hero_subtitle">{hero_subtitle}</p>
+                <h1 class="editable" data-editable="text" data-prop="@data[servicios_fabricacion].hero_title">{hero_title}</h1>
+                <p class="editable" data-editable="text" data-prop="@data[servicios_fabricacion].hero_subtitle">{hero_subtitle}</p>
             </div>
         </section>
 
@@ -30,12 +37,12 @@ const {
             <div class="container">
                 <div class="info-row">
                     <div class="info-block">
-                        <h3 class="editable" data-editable="text" data-prop="@data[page_servicios_fabricacion].info_1_title">{info_1_title}</h3>
-                        <p class="editable" data-editable="text" data-prop="@data[page_servicios_fabricacion].info_1_desc">{info_1_desc}</p>
+                        <h3 class="editable" data-editable="text" data-prop="@data[servicios_fabricacion].info_1_title">{info_1_title}</h3>
+                        <p class="editable" data-editable="text" data-prop="@data[servicios_fabricacion].info_1_desc">{info_1_desc}</p>
                     </div>
                     <div class="info-block">
-                        <h3 class="editable" data-editable="text" data-prop="@data[page_servicios_fabricacion].info_2_title">{info_2_title}</h3>
-                        <p class="editable" data-editable="text" data-prop="@data[page_servicios_fabricacion].info_2_desc">{info_2_desc}</p>
+                        <h3 class="editable" data-editable="text" data-prop="@data[servicios_fabricacion].info_2_title">{info_2_title}</h3>
+                        <p class="editable" data-editable="text" data-prop="@data[servicios_fabricacion].info_2_desc">{info_2_desc}</p>
                     </div>
                 </div>
             </div>
@@ -43,14 +50,15 @@ const {
 
         <section class="factory-experience">
             <div class="container">
-                <h2 class="editable" data-editable="text" data-prop="@data[page_servicios_fabricacion].experience_title">{experience_title}</h2>
+                <h2 class="editable" data-editable="text" data-prop="@data[servicios_fabricacion].experience_title">{experience_title}</h2>
                 <ul class="experience-list">
-                    <li class="editable" data-editable="text" data-prop="@data[page_servicios_fabricacion].experience_item_1">{experience_item_1}</li>
-                    <li class="editable" data-editable="text" data-prop="@data[page_servicios_fabricacion].experience_item_2">{experience_item_2}</li>
-                    <li class="editable" data-editable="text" data-prop="@data[page_servicios_fabricacion].experience_item_3">{experience_item_3}</li>
-                    <li class="editable" data-editable="text" data-prop="@data[page_servicios_fabricacion].experience_item_4">{experience_item_4}</li>
+                    <li class="editable" data-editable="text" data-prop="@data[servicios_fabricacion].experience_item_1">{experience_item_1}</li>
+                    <li class="editable" data-editable="text" data-prop="@data[servicios_fabricacion].experience_item_2">{experience_item_2}</li>
+                    <li class="editable" data-editable="text" data-prop="@data[servicios_fabricacion].experience_item_3">{experience_item_3}</li>
+                    <li class="editable" data-editable="text" data-prop="@data[servicios_fabricacion].experience_item_4">{experience_item_4}</li>
                 </ul>
             </div>
         </section>
     </main>
 </Layout>
+

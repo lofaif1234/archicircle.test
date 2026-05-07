@@ -4,6 +4,7 @@ import pageData from '../data/pages/servicios-de-diseno.json';
 
 const {
   hero_title = pageData.hero_title,
+  hero_img = pageData.hero_img,
   hero_subtitle = pageData.hero_subtitle,
   intro_text = pageData.intro_text,
   design_1_title = pageData.design_1_title,
@@ -18,10 +19,20 @@ const {
 <Layout title="Servicios de Diseño - Archicercle">
     <main>
         <section class="design-hero">
+            <img 
+                class="editable design-hero-bg" 
+                data-editable="image" 
+                data-prop="@data[servicios_diseno].hero_img" 
+                src={hero_img.src} 
+                alt={hero_img.alt}
+            >
+            <div class="design-hero-overlay"></div>
             <div class="container">
-                <h1 class="editable" data-editable="text" data-prop="@data[page_servicios_diseno].hero_title">{hero_title}</h1>
-                <p class="editable" data-editable="text" data-prop="@data[page_servicios_diseno].hero_subtitle">{hero_subtitle}</p>
-                <p class="editable" data-editable="text" data-prop="@data[page_servicios_diseno].intro_text">{intro_text}</p>
+                <div class="design-hero-header">
+                    <h1 class="editable" data-editable="text" data-prop="@data[servicios_diseno].hero_title">{hero_title}</h1>
+                    <p class="editable" data-editable="text" data-prop="@data[servicios_diseno].hero_subtitle">{hero_subtitle}</p>
+                    <p class="editable" data-editable="text" data-prop="@data[servicios_diseno].intro_text">{intro_text}</p>
+                </div>
             </div>
         </section>
 
@@ -29,19 +40,20 @@ const {
             <div class="container">
                 <div class="service-row">
                     <div class="service-item">
-                        <h3 class="editable" data-editable="text" data-prop="@data[page_servicios_diseno].design_1_title">{design_1_title}</h3>
-                        <p class="editable" data-editable="text" data-prop="@data[page_servicios_diseno].design_1_desc">{design_1_desc}</p>
+                        <h3 class="editable" data-editable="text" data-prop="@data[servicios_diseno].design_1_title">{design_1_title}</h3>
+                        <p class="editable" data-editable="text" data-prop="@data[servicios_diseno].design_1_desc">{design_1_desc}</p>
                     </div>
                     <div class="service-item">
-                        <h3 class="editable" data-editable="text" data-prop="@data[page_servicios_diseno].design_2_title">{design_2_title}</h3>
-                        <p class="editable" data-editable="text" data-prop="@data[page_servicios_diseno].design_2_desc">{design_2_desc}</p>
+                        <h3 class="editable" data-editable="text" data-prop="@data[servicios_diseno].design_2_title">{design_2_title}</h3>
+                        <p class="editable" data-editable="text" data-prop="@data[servicios_diseno].design_2_desc">{design_2_desc}</p>
                     </div>
                     <div class="service-item">
-                        <h3 class="editable" data-editable="text" data-prop="@data[page_servicios_diseno].design_3_title">{design_3_title}</h3>
-                        <p class="editable" data-editable="text" data-prop="@data[page_servicios_diseno].design_3_desc">{design_3_desc}</p>
+                        <h3 class="editable" data-editable="text" data-prop="@data[servicios_diseno].design_3_title">{design_3_title}</h3>
+                        <p class="editable" data-editable="text" data-prop="@data[servicios_diseno].design_3_desc">{design_3_desc}</p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 </Layout>
+

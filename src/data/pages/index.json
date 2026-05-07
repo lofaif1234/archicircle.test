@@ -1,5 +1,6 @@
 {
   "hero_title": "El lugar dónde incluso sin una idea,<br>haremos tu proyecto realidad.",
+  "hero_bg": { "src": "/images/8BBFCC7C-81C4-4ABA-8626-B9DF3DA9DC86.PNG", "alt": "Archicercle Hero Background" },
   "hero_description": "Diseño + fabricación, todo en uno. Somos Archicercle: un estudio de fabricación.<br>Diseñamos productos que funcionan. Fabricamos ideas que se pueden tocar.<br>Y cuando algo no existe, lo inventamos.",
   "feature_1_title": "Somos un estudio de fabricación.",
   "feature_1_desc": "Ni solo diseñamos. Ni solo fabricamos. Hacemos que las ideas se conviertan en objetos reales, bien pensados y bien hechos. Un estudio multidisciplinar.",

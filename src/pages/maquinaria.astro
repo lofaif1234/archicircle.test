@@ -4,6 +4,7 @@ import pageData from '../data/pages/maquinaria.json';
 
 const {
   hero_title = pageData.hero_title,
+  hero_img = pageData.hero_img,
   hero_subtitle = pageData.hero_subtitle,
   machine_1_title = pageData.machine_1_title,
   machine_1_desc = pageData.machine_1_desc,
@@ -16,28 +17,39 @@ const {
 
 <Layout title="Maquinaria - Archicercle">
     <main>
-        <section class="machine-hero">
+        <section class="machinery-hero">
+            <img 
+                class="editable machinery-hero-bg" 
+                data-editable="image" 
+                data-prop="@data[maquinaria].hero_img" 
+                src={hero_img.src} 
+                alt={hero_img.alt}
+            >
+            <div class="machinery-hero-overlay"></div>
             <div class="container">
-                <h1 class="editable" data-editable="text" data-prop="@data[page_maquinaria].hero_title">{hero_title}</h1>
-                <p class="editable" data-editable="text" data-prop="@data[page_maquinaria].hero_subtitle">{hero_subtitle}</p>
+                <div class="machinery-hero-content">
+                    <h1 class="editable" data-editable="text" data-prop="@data[maquinaria].hero_title">{hero_title}</h1>
+                    <p class="editable" data-editable="text" data-prop="@data[maquinaria].hero_subtitle">{hero_subtitle}</p>
+                </div>
             </div>
         </section>
 
         <section class="machine-grid">
             <div class="container">
                 <div class="machine-item">
-                    <h3 class="editable" data-editable="text" data-prop="@data[page_maquinaria].machine_1_title">{machine_1_title}</h3>
-                    <p class="editable" data-editable="text" data-prop="@data[page_maquinaria].machine_1_desc">{machine_1_desc}</p>
+                    <h3 class="editable" data-editable="text" data-prop="@data[maquinaria].machine_1_title">{machine_1_title}</h3>
+                    <p class="editable" data-editable="text" data-prop="@data[maquinaria].machine_1_desc">{machine_1_desc}</p>
                 </div>
                 <div class="machine-item">
-                    <h3 class="editable" data-editable="text" data-prop="@data[page_maquinaria].machine_2_title">{machine_2_title}</h3>
-                    <p class="editable" data-editable="text" data-prop="@data[page_maquinaria].machine_2_desc">{machine_2_desc}</p>
+                    <h3 class="editable" data-editable="text" data-prop="@data[maquinaria].machine_2_title">{machine_2_title}</h3>
+                    <p class="editable" data-editable="text" data-prop="@data[maquinaria].machine_2_desc">{machine_2_desc}</p>
                 </div>
                 <div class="machine-item">
-                    <h3 class="editable" data-editable="text" data-prop="@data[page_maquinaria].machine_3_title">{machine_3_title}</h3>
-                    <p class="editable" data-editable="text" data-prop="@data[page_maquinaria].machine_3_desc">{machine_3_desc}</p>
+                    <h3 class="editable" data-editable="text" data-prop="@data[maquinaria].machine_3_title">{machine_3_title}</h3>
+                    <p class="editable" data-editable="text" data-prop="@data[maquinaria].machine_3_desc">{machine_3_desc}</p>
                 </div>
             </div>
         </section>
     </main>
 </Layout>
+

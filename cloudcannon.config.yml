@@ -18,27 +18,27 @@ ssg: astro
 data_config:
   site:
     path: src/data/site.json
-  page_index:
+  index:
     path: src/data/pages/index.json
-  page_contacto:
+  contacto:
     path: src/data/pages/contacto.json
-  page_coworking:
+  coworking:
     path: src/data/pages/coworking.json
-  page_corte_laser:
+  corte_laser:
     path: src/data/pages/corte-laser-online.json
-  page_declaracion:
+  declaracion:
     path: src/data/pages/declaracion.json
-  page_maquinaria:
+  maquinaria:
     path: src/data/pages/maquinaria.json
-  page_materiales:
+  materiales:
     path: src/data/pages/materiales.json
-  page_servicios_diseno:
+  servicios_diseno:
     path: src/data/pages/servicios-de-diseno.json
-  page_servicios_fabricacion:
+  servicios_fabricacion:
     path: src/data/pages/servicios-de-fabricacion.json
-  page_sobre_nosotros:
+  sobre_nosotros:
     path: src/data/pages/sobre-nosotros.json
-  page_tienda:
+  tienda:
     path: src/data/pages/tienda.json
 
 # ─── Collections ──────────────────────────────────────────────────────────────
